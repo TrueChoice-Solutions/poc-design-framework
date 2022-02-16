@@ -9,6 +9,7 @@
 
 /**
  * @description - returns Timeline component
+ * @param {string} props.text - the text to show which section the user is on
  * @return {jsx} - the Timeline component to render
  */
 

@@ -15,10 +15,10 @@ import Logo from './Logo';
  * @description - returns Header component
  * @return {jsx} - the Header to render
  */
-const Header = () => {
+const Header = ({ logoImage }) => {
   return (
     <section className="header">
-      <Logo />
+      <Logo logoImage={logoImage} />
     </section>
   );
 };

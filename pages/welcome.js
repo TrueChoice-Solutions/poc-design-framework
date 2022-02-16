@@ -20,7 +20,7 @@ import Header from '../components/Header/Header';
 const Welcome = () => {
   return (
     <Container className={styles.container}>
-      <Header />
+      <Header logoImage="https://cdn.pixabay.com/photo/2017/07/24/15/01/vector-2534950_960_720.png" />
     </Container>
   );
 };

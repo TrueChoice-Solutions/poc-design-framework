@@ -11,3 +11,9 @@
  * @description - returns Logo component
  * @return {jsx} - the Logo component to render
  */
+
+const Logo = () => {
+  return <div>LOGO</div>;
+};
+
+export default Logo;

@@ -11,7 +11,7 @@
 import Container from 'react-bootstrap/Container';
 // local files
 import styles from './welcome.module.css';
-import Header from '../components/Header/Header';
+import Header from '../components/header/Header';
 
 /**
  * @description - returns Welcome component

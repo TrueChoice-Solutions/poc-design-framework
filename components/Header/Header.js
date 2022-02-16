@@ -20,14 +20,12 @@ import Timeline from './Timeline';
  */
 const Header = ({ logoImage }) => {
   return (
-    <Container>
-      <section className={styles.header}>
-        <Logo logoImage={logoImage} />
-        <div className={styles.timeline}>
-          <Timeline text="Welcome" />
-        </div>
-      </section>
-    </Container>
+    <section className={styles.header}>
+      <Logo logoImage={logoImage} />
+      <div className={styles.timeline}>
+        <Timeline text="Welcome" />
+      </div>
+    </section>
   );
 };
 

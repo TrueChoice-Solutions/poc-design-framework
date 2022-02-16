@@ -13,13 +13,14 @@ import Image from 'next/image';
 /**
  * @description - returns Logo component
  * @param {string} props.imageSrc - the image source
+ * @param {string} props.altText - the text for user accessibility
  * @return {jsx} - the Logo component to render
  */
-const Logo = ({ imageSrc }) => {
+const Logo = ({ imageSrc, altText }) => {
   return (
     <Image
       src={`/images/${imageSrc}`}
-      alt="Hello"
+      alt={altText}
       width={216}
       height={31.73}
       layout="fixed"

@@ -17,7 +17,7 @@ import Header from '../components/Header/Header';
  * @description - returns Welcome component
  * @return {jsx} - the Welcome Page to render
  */
-const Welcome = () => {
+const WelcomePage = () => {
   return (
     <main className={styles.welcomePage}>
       <Container className={styles.container}>
@@ -27,4 +27,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default WelcomePage;

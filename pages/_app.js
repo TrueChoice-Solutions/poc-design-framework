@@ -7,9 +7,14 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-import '../styles/globals.css';
+// local files
+// dependencies
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+/**
+ * @description - returns App
+ * @return {jsx} - the App to render
+ */
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }

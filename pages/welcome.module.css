@@ -1,14 +1,12 @@
 .welcomePage {
   background-color: #e5e5e5;
+  max-width: 1440px;
+  background-color: #6495ed;
 }
 
 .container {
-  background-color: #6495ed;
-  max-width: 1440px;
+  border: 1px solid red;
+  max-width: 1110px;
   height: 100vh;
   position: relative;
-}
-
-.content {
-  max-width: 1110px;
 }

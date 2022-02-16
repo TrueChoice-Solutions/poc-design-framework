@@ -13,7 +13,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 // local files
-import BackgroundImage from '../components/Background/BackgroundImage';
+import styles from './welcome.module.css';
 
 /**
  * @description - returns Welcome component
@@ -21,7 +21,7 @@ import BackgroundImage from '../components/Background/BackgroundImage';
  */
 const Welcome = () => {
   return (
-    <Container>
+    <Container className={styles.container}>
       <Row>
         <Col xs={3}>1 of 12</Col>
         <Col xs={3}>1 of 12</Col>

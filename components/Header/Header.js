@@ -11,7 +11,6 @@
  * @description - returns Header component
  * @return {jsx} - the Header component to render
  */
-
 const Header = () => {
   return (
     <section>

@@ -13,6 +13,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // local files
 import styles from './Header.module.css';
+import Logo from '../shared/Logo';
 
 /**
  * @description - returns Header component
@@ -23,7 +24,9 @@ const Header = () => {
     <section className={styles.header}>
       <Container>
         <Row>
-          <Col sm={6}>asdf</Col>
+          <Col sm={6}>
+            <Logo />
+          </Col>
           <Col sm={6}>Dude</Col>
         </Row>
       </Container>

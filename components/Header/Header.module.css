@@ -1,5 +1,11 @@
 .header {
   padding-top: 32px;
-  height: 102px;
   border: 1px solid red;
+}
+
+.timeline {
+  height: 56px;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid blue;
 }

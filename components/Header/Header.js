@@ -12,6 +12,7 @@ import Container from 'react-bootstrap/Container';
 // local files
 import styles from './Header.module.css';
 import Logo from './Logo';
+import Timeline from './Timeline';
 
 /**
  * @description - returns Header component
@@ -22,6 +23,9 @@ const Header = ({ logoImage }) => {
     <Container>
       <section className={styles.header}>
         <Logo logoImage={logoImage} />
+        <div className={styles.timeline}>
+          <Timeline text="Welcome" />
+        </div>
       </section>
     </Container>
   );

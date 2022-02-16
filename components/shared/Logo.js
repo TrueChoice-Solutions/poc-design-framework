@@ -12,6 +12,7 @@ import Image from 'next/image';
 
 /**
  * @description - returns Logo component
+ * @param {string} props.imageSrc - the image source
  * @return {jsx} - the Logo component to render
  */
 const Logo = ({ imageSrc }) => {

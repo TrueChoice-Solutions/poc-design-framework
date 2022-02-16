@@ -7,20 +7,6 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-// dependencies
-// local files
-import styles from './Header.module.css';
-
-/**
- * @description - returns Header component
- * @return {jsx} - the Header component to render
- */
-const Header = () => {
-  return (
-    <section className={styles.header}>
-      <div>Hello</div>
-    </section>
-  );
-};
-
-export default Header;
+.header {
+  color: #fff;
+}

@@ -14,6 +14,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 // local files
 import styles from './welcome.module.css';
+import BackgroundImage from '../components/Background/BackgroundImage';
 
 /**
  * @description - returns Welcome component
@@ -22,7 +23,9 @@ import styles from './welcome.module.css';
 const Welcome = () => {
   return (
     <Container className={styles.container}>
-      <div>Hello</div>
+      <BackgroundImage imageSrc="https://mdbootstrap.com/img/new/slides/041.webp">
+        <div>Hello world</div>
+      </BackgroundImage>
     </Container>
   );
 };

@@ -19,7 +19,9 @@ const BackgroundImage = ({ children, imageSrc }) => {
           layout="fill"
         />
       </div>
-      <div style={{ position: 'absolute', top: '0' }}>{children}</div>
+      <div style={{ position: 'absolute', top: '0', left: '0' }}>
+        {children}
+      </div>
     </div>
   );
 };

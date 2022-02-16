@@ -19,9 +19,7 @@ import styles from './welcome.module.css';
 const Welcome = () => {
   return (
     <main className={styles.welcomePage}>
-      <Container className={styles.container}>
-        <div>Hello</div>
-      </Container>
+      <Container className={styles.container}></Container>
     </main>
   );
 };

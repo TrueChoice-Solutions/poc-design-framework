@@ -22,12 +22,7 @@ import styles from './welcome.module.css';
 const Welcome = () => {
   return (
     <Container className={styles.container}>
-      <Row>
-        <Col xs={3}>1 of 12</Col>
-        <Col xs={3}>1 of 12</Col>
-        <Button variant="danger">Danger</Button>{' '}
-        <Button variant="info">Info</Button>{' '}
-      </Row>
+      <div>Hello</div>
     </Container>
   );
 };

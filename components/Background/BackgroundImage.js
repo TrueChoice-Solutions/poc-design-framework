@@ -1,0 +1,21 @@
+// dependencies
+import Image from 'next/image';
+// local files
+
+const BackgroundImage = ({ children, imageSrc }) => {
+  return (
+    <div style={{ width: '100%' }}>
+      <div style={{ height: '100vh', width: '100vw' }}>
+        <Image
+          src={imageSrc}
+          className="img-fluid shadow-4"
+          alt="Landscape pic"
+          layout="fill"
+        />
+      </div>
+      <div style={{ position: 'absolute', top: '0' }}>{children}</div>
+    </div>
+  );
+};
+
+export default BackgroundImage;

@@ -7,6 +7,10 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
+/**
+ * @description - returns HomePage component
+ * @return {jsx} - the Home Page to render
+ */
 const HomePage = () => {
   return <main className="HomePage">Home Page</main>;
 };

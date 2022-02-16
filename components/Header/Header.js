@@ -8,6 +8,9 @@
  */
 
 // dependencies
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // local files
 import styles from './Header.module.css';
 
@@ -18,7 +21,16 @@ import styles from './Header.module.css';
 const Header = () => {
   return (
     <section className={styles.header}>
-      <div>Hello</div>
+      <Container>
+        <Row>
+          <Col md={6} sm={12}>
+            asdf
+          </Col>
+          <Col md={6} sm={12}>
+            Dude
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };

@@ -2,6 +2,10 @@
   background-color: #e5e5e5;
   max-width: 1440px;
   background-color: #6495ed;
+  background-image: url('../public/images/nature.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .container {

@@ -6,16 +6,14 @@
  * ("Confidential Information").  You shall not disclose such Confidential Information and shall
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
-
-import Image from 'next/image';
 // dependencies
+import Image from 'next/image';
 // local files
 
 /**
  * @description - returns Logo component
  * @return {jsx} - the Logo component to render
  */
-
 const Logo = ({ imageSrc }) => {
   return (
     <Image

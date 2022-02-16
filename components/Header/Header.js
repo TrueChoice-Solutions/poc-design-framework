@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <section className={styles.header}>
       <Container>
-        <Row>
+        <Row className={styles.row}>
           <Col sm={6}>
             <Logo imageSrc="logo.png" />
           </Col>

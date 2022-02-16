@@ -9,13 +9,14 @@
 
 // dependencies
 // local files
+import styles from './Logo.module.css';
 
 /**
  * @description - returns Logo component
  * @return {jsx} - the Logo Image to render
  */
 const Logo = ({ logoImage }) => {
-  return <img src={logoImage} alt="Text" />;
+  return <img className={styles.logoImage} src={logoImage} alt="Text" />;
 };
 
 export default Logo;

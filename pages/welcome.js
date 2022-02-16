@@ -20,7 +20,7 @@ import Header from '../components/Header/Header';
 const Welcome = () => {
   return (
     <Container className={styles.container}>
-      <Header logoImage="https://cdn.pixabay.com/photo/2017/07/24/15/01/vector-2534950_960_720.png" />
+      <Header logoImage="https://api.media.atlassian.com/file/9ca2847d-827b-40ca-bbca-dc03d3ab988f/binary?token=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI3NTljNWMwZi05MWMyLTQ3MmMtYWJlNC1hMmI0MjA0YjlhNDgiLCJhY2Nlc3MiOnsidXJuOmZpbGVzdG9yZTpmaWxlOjljYTI4NDdkLTgyN2ItNDBjYS1iYmNhLWRjMDNkM2FiOTg4ZiI6WyJyZWFkIl19LCJleHAiOjE2NDUwNTMzMDMsIm5iZiI6MTY0NDk3MDMyM30.dC-IYiz5fVrjNi1LetRDUZM6Woo9xh9eL_SjldhWryQ&client=759c5c0f-91c2-472c-abe4-a2b4204b9a48&name=atl.site.logo&max-age=2940" />
     </Container>
   );
 };

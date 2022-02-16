@@ -29,7 +29,7 @@ const Header = () => {
             <Logo imageSrc="logo.png" />
           </Col>
           <Col sm={4}>
-            <Timeline />
+            <Timeline text="Welcome" />
           </Col>
         </Row>
       </Container>

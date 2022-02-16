@@ -12,10 +12,10 @@
  * @return {jsx} - the Timeline component to render
  */
 
-const Timeline = () => {
+const Timeline = ({ text }) => {
   return (
     <div>
-      <div>Timeline</div>
+      <div>{text}</div>
     </div>
   );
 };

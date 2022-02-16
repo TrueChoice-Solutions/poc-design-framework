@@ -23,12 +23,8 @@ const Header = () => {
     <section className={styles.header}>
       <Container>
         <Row>
-          <Col md={6} sm={12}>
-            asdf
-          </Col>
-          <Col md={6} sm={12}>
-            Dude
-          </Col>
+          <Col sm={6}>asdf</Col>
+          <Col sm={6}>Dude</Col>
         </Row>
       </Container>
     </section>

@@ -14,6 +14,7 @@ import Col from 'react-bootstrap/Col';
 // local files
 import styles from './Header.module.css';
 import Logo from '../shared/Logo';
+import Timeline from '../shared/Timeline';
 
 /**
  * @description - returns Header component
@@ -27,7 +28,9 @@ const Header = () => {
           <Col sm={8}>
             <Logo imageSrc="logo.png" />
           </Col>
-          <Col sm={4}>Dude</Col>
+          <Col sm={4}>
+            <Timeline />
+          </Col>
         </Row>
       </Container>
     </section>

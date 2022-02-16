@@ -21,9 +21,9 @@ const Logo = ({ imageSrc }) => {
     <Image
       src={`/images/${imageSrc}`}
       alt="Hello"
+      width={216}
+      height={31.73}
       layout="fixed"
-      width={100}
-      height={100}
     />
   );
 };

@@ -24,10 +24,10 @@ const Header = () => {
     <section className={styles.header}>
       <Container>
         <Row className={styles.row}>
-          <Col sm={6}>
+          <Col sm={8}>
             <Logo imageSrc="logo.png" />
           </Col>
-          <Col sm={6}>Dude</Col>
+          <Col sm={4}>Dude</Col>
         </Row>
       </Container>
     </section>

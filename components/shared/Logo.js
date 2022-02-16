@@ -7,13 +7,25 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
+import Image from 'next/image';
+// dependencies
+// local files
+
 /**
  * @description - returns Logo component
  * @return {jsx} - the Logo component to render
  */
 
-const Logo = () => {
-  return <div>LOGO</div>;
+const Logo = ({ imageSrc }) => {
+  return (
+    <Image
+      src={`/images/${imageSrc}`}
+      alt="Hello"
+      layout="fixed"
+      width={100}
+      height={100}
+    />
+  );
 };
 
 export default Logo;

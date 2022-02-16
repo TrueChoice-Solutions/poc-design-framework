@@ -25,7 +25,7 @@ const Header = () => {
       <Container>
         <Row>
           <Col sm={6}>
-            <Logo />
+            <Logo imageSrc="logo.png" />
           </Col>
           <Col sm={6}>Dude</Col>
         </Row>

@@ -11,6 +11,7 @@
 import Container from 'react-bootstrap/Container';
 // local files
 import styles from './welcome.module.css';
+import Header from '../components/Header/Header';
 
 /**
  * @description - returns Welcome component
@@ -19,7 +20,7 @@ import styles from './welcome.module.css';
 const Welcome = () => {
   return (
     <Container className={styles.container}>
-      <div>Hello world</div>
+      <Header />
     </Container>
   );
 };

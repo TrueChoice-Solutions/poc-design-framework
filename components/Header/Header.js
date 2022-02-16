@@ -9,7 +9,7 @@
 
 // dependencies
 // local files
-import Logo from './Logo/Logo';
+import Logo from './Logo';
 
 /**
  * @description - returns Header component

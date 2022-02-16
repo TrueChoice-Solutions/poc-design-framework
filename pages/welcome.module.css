@@ -1,5 +1,11 @@
+.welcomePage {
+  background-color: #e5e5e5;
+}
+
 .container {
+  background-color: #6495ed;
   max-width: 1440px;
+  height: 100vh;
   padding: 0;
   position: relative;
 }

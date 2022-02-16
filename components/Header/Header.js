@@ -8,6 +8,7 @@
  */
 
 // dependencies
+import Container from 'react-bootstrap/Container';
 // local files
 import styles from './Header.module.css';
 import Logo from './Logo';
@@ -18,9 +19,11 @@ import Logo from './Logo';
  */
 const Header = ({ logoImage }) => {
   return (
-    <section className={styles.header}>
-      <Logo logoImage={logoImage} />
-    </section>
+    <Container>
+      <section className={styles.header}>
+        <Logo logoImage={logoImage} />
+      </section>
+    </Container>
   );
 };
 

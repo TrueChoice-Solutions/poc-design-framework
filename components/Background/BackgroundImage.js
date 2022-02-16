@@ -2,6 +2,12 @@
 import Image from 'next/image';
 // local files
 
+/**
+ * @description - returns a background Image
+ * @param {jsx} props.children - nested jsx
+ * @param {string} props.imageSrc - Image src
+ * @return {jsx} - the Background Image to render
+ */
 const BackgroundImage = ({ children, imageSrc }) => {
   return (
     <div style={{ width: '100%' }}>

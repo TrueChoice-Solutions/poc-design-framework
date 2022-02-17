@@ -11,7 +11,6 @@
 import Image from 'next/image';
 import React from 'react';
 // local files
-import styles from './Logo.module.css';
 
 /**
  * @description - returns Logo component
@@ -23,16 +22,14 @@ import styles from './Logo.module.css';
  */
 const Logo = ({ imageSrc, altText, imageWidth, imageHeight }) => {
   return (
-    <div className={styles.image}>
-      <Image
-        src={`/images/${imageSrc}`}
-        alt={altText}
-        // change width and height divisor (bottom) to fit accordingly. Keep them the same! E.g. imageWidth / 4, change imageHeight / 4
-        width={`${imageWidth / 3}`}
-        height={`${imageHeight / 3}`}
-        layout="intrinsic"
-      />
-    </div>
+    <Image
+      src={`/images/${imageSrc}`}
+      alt={altText}
+      // change width and height divisor (bottom) to fit accordingly. Keep them the same! E.g. imageWidth / 4, change imageHeight / 4
+      width={`${imageWidth}`}
+      height={`${imageHeight}`}
+      layout="intrinsic"
+    />
   );
 };
 

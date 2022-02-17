@@ -29,7 +29,19 @@ const Timeline = ({ text }) => {
       </Row>
       <Row>
         <Col>
-          <div>Hello</div>
+          <div className={styles.longProgressBar}></div>
+        </Col>
+        <Col>
+          <div className={styles.shortProgressBar}></div>
+        </Col>
+        <Col>
+          <div className={styles.shortProgressBar}></div>
+        </Col>
+        <Col>
+          <div className={styles.shortProgressBar}></div>
+        </Col>
+        <Col>
+          <div className={styles.shortProgressBar}></div>
         </Col>
       </Row>
     </Container>

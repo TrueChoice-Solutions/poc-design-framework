@@ -9,6 +9,7 @@
 // dependencies
 import Image from 'next/image';
 // local files
+import styles from './Logo.module.css';
 
 /**
  * @description - returns Logo component
@@ -18,13 +19,15 @@ import Image from 'next/image';
  */
 const Logo = ({ imageSrc, altText }) => {
   return (
-    <Image
-      src={`/images/${imageSrc}`}
-      alt={altText}
-      width={216}
-      height={31.73}
-      layout="fixed"
-    />
+    <div className={styles.image}>
+      <Image
+        src={`/images/${imageSrc}`}
+        alt={altText}
+        width={200}
+        height={33.33}
+        layout="fixed"
+      />
+    </div>
   );
 };
 

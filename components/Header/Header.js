@@ -29,8 +29,8 @@ const Header = () => {
             <Logo
               imageSrc="logo.png"
               altText="TrueChoice Logo"
-              imageWidth={600 / 3}
-              imageHeight={100 / 3}
+              imageWidth={200}
+              imageHeight={33.33}
             />
           </Col>
           <Col md={6} xl={4} className={styles.timeline}>

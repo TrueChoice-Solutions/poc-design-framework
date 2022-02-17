@@ -31,14 +31,33 @@ const Footer = () => {
       }}
     >
       <Container fluid>
-        <NavbarBrand href="https://www.truechoice.io">
+        <NavbarBrand
+          style={{ display: 'flex', alignItems: 'center' }}
+          href="https://www.truechoice.io"
+        >
           <Logo
             imageSrc="logo.png"
             altText="TrueChoice Logo"
             imageWidth={200}
             imageHeight={33.33}
           />
-          <span>© TrueChoice Solutions, Inc. | Privacy Policy</span>
+          <span
+            style={{ color: 'white', marginLeft: '20px', fontSize: '16px' }}
+          >
+            <a
+              style={{ textDecoration: 'none', color: 'white' }}
+              href="https://www.truechoice.io"
+            >
+              © TrueChoice Solutions, Inc.
+            </a>{' '}
+            |{' '}
+            <a
+              style={{ textDecoration: 'none', color: 'white' }}
+              href="https://www.truechoice.io/privacy-policy"
+            >
+              Privacy Policy
+            </a>
+          </span>
         </NavbarBrand>
       </Container>
     </Navbar>

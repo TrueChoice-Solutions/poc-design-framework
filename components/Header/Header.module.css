@@ -14,3 +14,19 @@
 .row {
   padding-top: 20px;
 }
+
+.logo,
+.timeline {
+  padding: 0;
+}
+
+.timeline {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    justify-content: flex-start;
+  }
+}

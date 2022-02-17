@@ -25,11 +25,13 @@ const Header = () => {
     <section className={styles.header}>
       <Container>
         <Row className={styles.row}>
-          <Col md={6} xl={8}>
+          <Col md={6} xl={8} className={styles.logo}>
             <Logo imageSrc="logo.png" altText={'TrueChoice Logo'} />
           </Col>
-          <Col md={6} xl={4}>
-            <Timeline text="Welcome" />
+          <Col md={6} xl={4} className={styles.timeline}>
+            <div>
+              <Timeline text="Welcome" />
+            </div>
           </Col>
         </Row>
       </Container>

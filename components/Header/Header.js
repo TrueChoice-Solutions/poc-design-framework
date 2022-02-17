@@ -26,7 +26,12 @@ const Header = () => {
       <Container>
         <Row className={styles.row}>
           <Col md={6} xl={8} className={styles.logo}>
-            <Logo imageSrc="logo.png" altText={'TrueChoice Logo'} />
+            <Logo
+              imageSrc="logo.png"
+              altText="TrueChoice Logo"
+              imageWidth={600}
+              imageHeight={100}
+            />
           </Col>
           <Col md={6} xl={4} className={styles.timeline}>
             <div>

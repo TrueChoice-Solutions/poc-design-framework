@@ -12,18 +12,26 @@
   border: 1px solid red;
 }
 
+.progressBars {
+  display: flex;
+}
+
 .longProgressBar,
 .shortProgressBar {
   background-color: #fff;
+  margin-right: 15px;
 }
 
 .longProgressBar {
   width: 190px;
   height: 8px;
-  border-radius: 1px;
 }
 
 .shortProgressBar {
   width: 8px;
   height: 8px;
+}
+
+.shortProgressBar:last-child {
+  margin-right: 0px;
 }

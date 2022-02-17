@@ -28,19 +28,11 @@ const Timeline = ({ text }) => {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col className={styles.progressBars}>
           <div className={styles.longProgressBar}></div>
-        </Col>
-        <Col>
           <div className={styles.shortProgressBar}></div>
-        </Col>
-        <Col>
           <div className={styles.shortProgressBar}></div>
-        </Col>
-        <Col>
           <div className={styles.shortProgressBar}></div>
-        </Col>
-        <Col>
           <div className={styles.shortProgressBar}></div>
         </Col>
       </Row>

@@ -36,11 +36,14 @@ const Footer = () => {
           imageHeight={24}
         />
         <div className={styles.links}>
-          <a className={styles.link} href="https://www.google.com">
+          <a className={styles.link} href="https://www.truechoice.io/">
             © TrueChoice Solutions, Inc.
           </a>{' '}
           |{' '}
-          <a className={styles.link} href="https://www.google.com">
+          <a
+            className={styles.link}
+            href="https://www.truechoice.io/privacy-policy"
+          >
             Privacy Policy
           </a>
         </div>

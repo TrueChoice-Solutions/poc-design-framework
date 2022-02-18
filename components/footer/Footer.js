@@ -26,8 +26,8 @@ const Footer = () => {
       <Navbar
         fixed="bottom"
         style={{
-          border: '1px solid red',
-          width: '1110px',
+          border: '5px solid red',
+          maxWidth: '1110px',
           margin: '0 auto',
           padding: '0 1rem'
         }}

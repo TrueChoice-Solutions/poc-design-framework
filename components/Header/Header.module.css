@@ -11,13 +11,16 @@
   color: #fff;
 }
 
+.container {
+  padding: 0;
+}
+
 .row {
   padding-top: 20px;
 }
 
 .logo,
 .timeline {
-  padding: 0;
 }
 
 .timeline {

@@ -8,7 +8,6 @@
  */
 
 // dependencies
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // local files
@@ -23,23 +22,21 @@ import Timeline from '../shared/Timeline';
 const Header = () => {
   return (
     <section className={styles.header}>
-      <Container>
-        <Row className={styles.row}>
-          <Col md={6} xl={8} className={styles.logo}>
-            <Logo
-              imageSrc="logo.png"
-              altText="TrueChoice Logo"
-              imageWidth={200}
-              imageHeight={33.33}
-            />
-          </Col>
-          <Col md={6} xl={4} className={styles.timeline}>
-            <div>
-              <Timeline text="Welcome" />
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <Row className={styles.row}>
+        <Col md={6} xl={8} className={styles.logo}>
+          <Logo
+            imageSrc="logo.png"
+            altText="TrueChoice Logo"
+            imageWidth={200}
+            imageHeight={33.33}
+          />
+        </Col>
+        <Col md={6} xl={4} className={styles.timeline}>
+          <div>
+            <Timeline text="Welcome" />
+          </div>
+        </Col>
+      </Row>
     </section>
   );
 };

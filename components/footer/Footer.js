@@ -22,72 +22,33 @@ import Logo from '../shared/Logo';
  * @return {jsx} - the Footer component to render
  */
 const Footer = () => {
-  // md={6} xl={8}
   return (
     <section className="footer">
       <Navbar
         fixed="bottom"
         style={{
-          border: '1px solid red',
-          maxWidth: '1110px',
           margin: '0 auto',
-          padding: '0 1rem',
-          color: '#fff'
+          padding: '0 1rem'
         }}
+        className={styles.navbar}
       >
-        <NavbarBrand href="#" className={styles.navbarBrand}>
-          <Logo
-            imageSrc="truechoice.png"
-            altText="Powered by TrueChoice"
-            imageWidth={110}
-            imageHeight={24}
-          />
-          <span className={styles.links}>
-            <a className={styles.link} href="https://www.google.com">
-              © TrueChoice Solutions, Inc.
-            </a>{' '}
-            |{' '}
-            <a className={styles.link} href="https://www.google.com">
-              Privacy Policy
-            </a>
-          </span>
-        </NavbarBrand>
+        <Logo
+          imageSrc="truechoice.png"
+          altText="Powered by TrueChoice"
+          imageWidth={110}
+          imageHeight={24}
+        />
+        <div className={styles.links}>
+          <a className={styles.link} href="https://www.google.com">
+            © TrueChoice Solutions, Inc.
+          </a>{' '}
+          |{' '}
+          <a className={styles.link} href="https://www.google.com">
+            Privacy Policy
+          </a>
+        </div>
       </Navbar>
     </section>
-
-    // <Row>
-    //   <Navbar
-    //     fixed="bottom"
-    //     style={{
-    //       border: '1px solid red',
-    //       maxWidth: '1110px',
-    //       margin: '0 auto',
-    //       padding: '0 1rem'
-    //     }}
-    //   >
-    //     <Col md={10} xl={8}>
-    //       <NavbarBrand href="#">
-    //         <Logo
-    //           imageSrc="truechoice.png"
-    //           altText="Powered by TrueChoice"
-    //           imageWidth={110}
-    //           imageHeight={24}
-    //         />
-    //       </NavbarBrand>
-    //     </Col>
-    //     <Col md={2} xl={8}>
-    //       <NavLink
-    //         href="#"
-    //         style={{
-    //           color: 'rgba(255, 255, 255, 0.5)',
-    //           fontSize: '12px'
-    //         }}
-    //       >
-    //         © TrueChoice Solutions, Inc. | Privacy Policy
-    //       </NavLink>
-    //     </Col>
-    //   </Navbar>
-    // </Row>
   );
 };
 

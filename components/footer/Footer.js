@@ -9,10 +9,6 @@
 
 // dependencies
 import Navbar from 'react-bootstrap/Navbar';
-import NavbarBrand from 'react-bootstrap/NavbarBrand';
-import NavLink from 'react-bootstrap/NavLink';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 // local files
 import styles from './Footer.module.css';
 import Logo from '../shared/Logo';

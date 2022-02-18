@@ -9,4 +9,14 @@
 
 .body {
   color: #fff;
+  border: 1px solid red;
+  height: 70vh;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }

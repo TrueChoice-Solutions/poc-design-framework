@@ -18,7 +18,7 @@ import styles from './Body.module.css';
 const Body = () => {
   return (
     <section className={styles.body}>
-      <div>HELLO</div>
+      <div className={styles.content}>HELLO</div>
     </section>
   );
 };

@@ -17,25 +17,17 @@
   color: white;
 }
 
-.link {
+.link,
+.link:hover {
   text-decoration: none;
   font-size: 12px;
   color: white;
 }
 
-.link:hover {
-  color: white;
-}
-
-.hello {
-  border: 1px solid blue;
-  position: absolute;
-}
-
 @media (min-width: 768px) {
   .navbar {
     flex-direction: row;
-    align-items: center;
+    padding: 15px 1rem;
   }
   .links {
     padding-left: 20px;

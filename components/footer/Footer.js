@@ -22,14 +22,26 @@ import Col from 'react-bootstrap/Col';
  */
 const Footer = () => {
   return (
-    <section>
-      <Logo
-        imageSrc="logo.png"
-        altText="TrueChoice Logo"
-        imageWidth={200}
-        imageHeight={33.33}
-      />
-    </section>
+    <row>
+      <Navbar
+        fixed="bottom"
+        style={{
+          border: '1px solid red',
+          width: '1110px',
+          margin: '0 auto',
+          padding: '0 1rem'
+        }}
+      >
+        <NavbarBrand href="#">
+          <Logo
+            imageSrc="logo.png"
+            altText="TrueChoice Logo"
+            imageWidth={200}
+            imageHeight={33.33}
+          />
+        </NavbarBrand>
+      </Navbar>
+    </row>
   );
 };
 

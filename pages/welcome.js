@@ -23,8 +23,8 @@ const WelcomePage = () => {
     <main className={styles.welcomePage}>
       <Container className={styles.container}>
         <Header />
-        <Footer />
       </Container>
+      <Footer />
     </main>
   );
 };

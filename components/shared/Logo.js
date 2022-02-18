@@ -16,20 +16,23 @@ import React from 'react';
  * @description - returns Logo component
  * @param {string} props.imageSrc - the image source
  * @param {string} props.altText - the text for user accessibility
+ * @param {string} props.linkSrc - the link to send user to
  * @param {number} props.imageWidth - the image's width
  * @param {number} props.imageHeight - the image's height
  * @return {jsx} - the Logo component to render
  */
-const Logo = ({ imageSrc, altText, imageWidth, imageHeight }) => {
+const Logo = ({ imageSrc, altText, linkSrc, imageWidth, imageHeight }) => {
   return (
-    <Image
-      src={`/images/${imageSrc}`}
-      alt={altText}
-      // change width and height divisor (bottom) to fit accordingly. Keep them the same! E.g. imageWidth / 4, change imageHeight / 4
-      width={`${imageWidth}`}
-      height={`${imageHeight}`}
-      layout="intrinsic"
-    />
+    <a href={linkSrc} target="_blank" rel="noreferrer">
+      <Image
+        src={`/images/${imageSrc}`}
+        alt={altText}
+        // change width and height divisor (bottom) to fit accordingly. Keep them the same! E.g. imageWidth / 4, change imageHeight / 4
+        width={`${imageWidth}`}
+        height={`${imageHeight}`}
+        layout="intrinsic"
+      />
+    </a>
   );
 };
 

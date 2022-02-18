@@ -27,6 +27,7 @@ const Header = () => {
           <Logo
             imageSrc="logo.png"
             altText="TrueChoice Logo"
+            linkSrc="https://www.truechoice.io"
             imageWidth={200}
             imageHeight={33.33}
           />

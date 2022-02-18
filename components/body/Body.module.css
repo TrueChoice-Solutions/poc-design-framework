@@ -7,20 +7,6 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-// dependencies
-// local files
-import styles from './Body.module.css';
-
-/**
- * @description - returns Body component
- * @return {jsx} - the Body component to render
- */
-const Body = () => {
-  return (
-    <section className={styles.body}>
-      <div>HELLO</div>
-    </section>
-  );
-};
-
-export default Body;
+.body {
+  color: #fff;
+}

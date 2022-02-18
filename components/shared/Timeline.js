@@ -8,7 +8,6 @@
  */
 
 // dependencies
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // local files
@@ -21,7 +20,7 @@ import styles from './Timeline.module.css';
  */
 const Timeline = ({ text }) => {
   return (
-    <Container className={styles.container}>
+    <div>
       <Row>
         <Col>
           <div className={styles.row}>{text}</div>
@@ -36,7 +35,7 @@ const Timeline = ({ text }) => {
           <div className={styles.shortProgressBar}></div>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 

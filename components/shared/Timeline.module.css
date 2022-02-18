@@ -7,10 +7,6 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-.container {
-  padding: 0;
-}
-
 .progressBars {
   display: flex;
 }

@@ -22,12 +22,14 @@ import Col from 'react-bootstrap/Col';
  */
 const Footer = () => {
   return (
-    <Logo
-      imageSrc="logo.png"
-      altText="TrueChoice Logo"
-      imageWidth={200}
-      imageHeight={33.33}
-    />
+    <section>
+      <Logo
+        imageSrc="logo.png"
+        altText="TrueChoice Logo"
+        imageWidth={200}
+        imageHeight={33.33}
+      />
+    </section>
   );
 };
 

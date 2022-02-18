@@ -35,6 +35,7 @@ const Footer = () => {
         <Logo
           imageSrc="truechoice.png"
           altText="Powered by TrueChoice"
+          linkSrc="https://www.truechoice.io/"
           imageWidth={110}
           imageHeight={24}
         />

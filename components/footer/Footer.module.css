@@ -22,6 +22,10 @@
   color: white;
 }
 
+.link:hover {
+  color: white;
+}
+
 @media (min-width: 768px) {
   .navbar {
     flex-direction: row;

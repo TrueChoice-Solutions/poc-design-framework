@@ -20,14 +20,7 @@ import Logo from '../shared/Logo';
 const Footer = () => {
   return (
     <section className="footer">
-      <Navbar
-        fixed="bottom"
-        style={{
-          margin: '0 auto',
-          padding: '0 1rem'
-        }}
-        className={styles.navbar}
-      >
+      <Navbar fixed="bottom" className={styles.navbar}>
         <Logo
           imageSrc="truechoice.png"
           altText="Powered by TrueChoice"

@@ -13,24 +13,21 @@
 
 .row {
   padding-top: 20px;
-  border: 1px solid blue;
   display: flex;
   align-items: center;
 }
 
 .logo {
-  border: 1px solid red;
+  display: flex;
 }
 
 .timeline {
   display: flex;
-  border: 1px solid red;
   justify-content: flex-start;
 }
 
 @media (min-width: 768px) {
   .timeline {
-    justify-content: flex-start;
     justify-content: flex-end;
   }
 }

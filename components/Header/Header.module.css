@@ -13,10 +13,18 @@
 
 .row {
   padding-top: 20px;
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  border: 1px solid red;
 }
 
 .timeline {
   display: flex;
+  border: 1px solid red;
   justify-content: flex-start;
 }
 

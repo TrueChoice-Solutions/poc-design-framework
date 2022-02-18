@@ -32,9 +32,7 @@ const Header = () => {
           />
         </Col>
         <Col md={6} xl={4} className={styles.timeline}>
-          <div>
-            <Timeline text="Welcome" />
-          </div>
+          <Timeline text="Welcome" />
         </Col>
       </Row>
     </section>

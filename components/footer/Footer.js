@@ -11,6 +11,7 @@
 import Logo from '../shared/Logo';
 import Navbar from 'react-bootstrap/Navbar';
 import NavbarBrand from 'react-bootstrap/NavbarBrand';
+import NavLink from 'react-bootstrap/NavLink';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -34,10 +35,10 @@ const Footer = () => {
       >
         <NavbarBrand href="#">
           <Logo
-            imageSrc="logo.png"
-            altText="TrueChoice Logo"
-            imageWidth={200}
-            imageHeight={33.33}
+            imageSrc="truechoice.png"
+            altText="Powered by TrueChoice"
+            imageWidth={110}
+            imageHeight={24}
           />
         </NavbarBrand>
       </Navbar>

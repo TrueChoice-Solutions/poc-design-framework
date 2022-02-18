@@ -10,9 +10,10 @@
 // dependencies
 import Logo from '../shared/Logo';
 import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
 import NavbarBrand from 'react-bootstrap/NavbarBrand';
-import NavLink from 'react-bootstrap/NavLink';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // local files
 
 /**
@@ -21,46 +22,14 @@ import NavLink from 'react-bootstrap/NavLink';
  */
 const Footer = () => {
   return (
-    <Navbar
-      fixed="bottom"
-      style={{
-        border: '1px solid red',
-        maxWidth: '1110px',
-        margin: '0 auto',
-        color: 'white'
-      }}
-    >
-      <Container fluid>
-        <NavbarBrand
-          style={{ display: 'flex', alignItems: 'center' }}
-          href="https://www.truechoice.io"
-        >
-          <Logo
-            imageSrc="logo.png"
-            altText="TrueChoice Logo"
-            imageWidth={200}
-            imageHeight={33.33}
-          />
-          <span
-            style={{ color: 'white', marginLeft: '20px', fontSize: '16px' }}
-          >
-            <a
-              style={{ textDecoration: 'none', color: 'white' }}
-              href="https://www.truechoice.io"
-            >
-              © TrueChoice Solutions, Inc.
-            </a>{' '}
-            |{' '}
-            <a
-              style={{ textDecoration: 'none', color: 'white' }}
-              href="https://www.truechoice.io/privacy-policy"
-            >
-              Privacy Policy
-            </a>
-          </span>
-        </NavbarBrand>
-      </Container>
-    </Navbar>
+    <Container style={{ padding: '0' }}>
+      <Logo
+        imageSrc="logo.png"
+        altText="TrueChoice Logo"
+        imageWidth={200}
+        imageHeight={33.33}
+      />
+    </Container>
   );
 };
 

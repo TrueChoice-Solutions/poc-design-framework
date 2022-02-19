@@ -6,20 +6,3 @@
  * ("Confidential Information").  You shall not disclose such Confidential Information and shall
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
-
-// dependencies
-// local files
-
-/**
- * @description - returns Welcome component
- * @return {jsx} - the Welcome component to render
- */
-const Welcome = ({ h1Text }) => {
-  return (
-    <header>
-      <h1>{h1Text}</h1>
-    </header>
-  );
-};
-
-export default Welcome;

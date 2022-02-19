@@ -20,7 +20,7 @@ const Body = () => {
   return (
     <section className={styles.body}>
       <div className={styles.content}>
-        <Welcome />
+        <Welcome h1Text="What matters to you?" />
       </div>
     </section>
   );

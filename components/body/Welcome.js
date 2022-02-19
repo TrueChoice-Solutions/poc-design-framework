@@ -7,16 +7,19 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-.body {
-  color: #fff;
-  border: 1px solid red;
-  height: 300px;
-  position: relative;
-}
+// dependencies
+// local files
 
-.content {
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+/**
+ * @description - returns Welcome component
+ * @return {jsx} - the Welcome component to render
+ */
+const Welcome = () => {
+  return (
+    <header>
+      <h1>asdf</h1>
+    </header>
+  );
+};
+
+export default Welcome;

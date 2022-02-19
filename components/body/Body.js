@@ -10,6 +10,7 @@
 // dependencies
 // local files
 import styles from './Body.module.css';
+import Welcome from './Welcome';
 
 /**
  * @description - returns Body component
@@ -18,7 +19,9 @@ import styles from './Body.module.css';
 const Body = () => {
   return (
     <section className={styles.body}>
-      <div className={styles.content}>HELLO</div>
+      <div className={styles.content}>
+        <Welcome />
+      </div>
     </section>
   );
 };

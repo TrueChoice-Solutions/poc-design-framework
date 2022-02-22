@@ -8,9 +8,6 @@
  */
 
 // dependencies
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 // local files
 import styles from './Timeline.module.css';
 

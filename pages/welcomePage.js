@@ -10,7 +10,7 @@
 // dependencies
 import Container from 'react-bootstrap/Container';
 // local files
-import styles from './welcome.module.css';
+import styles from './welcomePage.module.css';
 import Header from '../components/header/Header';
 import Body from '../components/body/Body';
 import Footer from '../components/footer/Footer';

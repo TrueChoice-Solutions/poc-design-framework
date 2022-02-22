@@ -8,6 +8,9 @@
  */
 
 // dependencies
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // local files
 import styles from './Body.module.css';
 import Welcome from './Welcome';
@@ -18,14 +21,23 @@ import Welcome from './Welcome';
  */
 const Body = () => {
   return (
-    <section className={styles.body}>
-      <div className={styles.content}>
-        <Welcome
-          h1Text="What matters to you?"
-          h2Text="Share your preferences and perspectives with us."
-        />
-      </div>
-    </section>
+    // <section className={styles.body}>
+    //   <div className={styles.content}>
+    //     <Welcome
+    //       h1Text="What matters to you?"
+    //       h2Text="Share your preferences and perspectives with us."
+    //     />
+    //   </div>
+    // </section>
+
+    <Container fluid>
+      <Row className={`align-items-center ${styles.body}`}>
+        <Col>
+          <h1>What Matters to You!</h1>
+          Share your preferences and perspectives with us.
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

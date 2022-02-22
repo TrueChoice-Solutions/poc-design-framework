@@ -22,6 +22,7 @@ const Welcome = ({ h1Text, h2Text }) => {
     <div className={styles.welcome}>
       <h1 className={styles.h1}>{h1Text}</h1>
       <h2 className={styles.h2}>{h2Text}</h2>
+      <hr style={{ height: '2px' }}></hr>
     </div>
   );
 };

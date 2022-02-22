@@ -22,20 +22,14 @@ import styles from './Timeline.module.css';
 const Timeline = ({ text }) => {
   return (
     <div>
-      <Row>
-        <Col>
-          <div className={styles.row}>{text}</div>
-        </Col>
-      </Row>
-      <Row>
-        <Col className="d-flex">
-          <div className={styles.longProgressBar}></div>
-          <div className={styles.shortProgressBar}></div>
-          <div className={styles.shortProgressBar}></div>
-          <div className={styles.shortProgressBar}></div>
-          <div className={styles.shortProgressBar}></div>
-        </Col>
-      </Row>
+      <div className={styles.row}>{text}</div>
+      <div className="d-flex">
+        <span className={styles.longProgressBar}></span>
+        <span className={styles.shortProgressBar}></span>
+        <span className={styles.shortProgressBar}></span>
+        <span className={styles.shortProgressBar}></span>
+        <span className={styles.shortProgressBar}></span>
+      </div>
     </div>
   );
 };

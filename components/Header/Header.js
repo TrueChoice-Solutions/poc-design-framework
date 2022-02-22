@@ -22,27 +22,6 @@ import Timeline from '../shared/Timeline';
  */
 const Header = () => {
   return (
-    // <Container fluid className={styles.header}>
-    //   <Container>
-    //     <Container>
-    //       <Row className="align-items-center">
-    //         <Col md={6} xl={8} className={styles.logo}>
-    //           <Logo
-    //             imageSrc="logo.png"
-    //             altText="TrueChoice Logo"
-    //             linkSrc="https://www.truechoice.io"
-    //             imageWidth={200}
-    //             imageHeight={33.33}
-    //           />
-    //         </Col>
-    //         <Col md={6} xl={4} className="text-end">
-    //           <Timeline text="Welcome" />
-    //         </Col>
-    //       </Row>
-    //     </Container>
-    //   </Container>
-    // </Container>
-
     <section className={styles.header}>
       <Container>
         <Row className={`d-flex align-items-center ${styles.row}`}>

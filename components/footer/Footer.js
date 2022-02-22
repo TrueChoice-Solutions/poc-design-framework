@@ -54,37 +54,13 @@ const Footer = () => {
     // </section>
     <footer className={styles.footer}>
       <Container>
-        <Row className={styles.row}>
-          <Col>
-            <Logo
-              imageSrc="truechoice.png"
-              altText="Powered by TrueChoice"
-              linkSrc="https://www.truechoice.io/"
-              imageWidth={110}
-              imageHeight={24}
-            />
-          </Col>
-          <Col>
-            <a
-              className={styles.link}
-              href="https://www.truechoice.io/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              © TrueChoice Solutions, Inc.
-            </a>{' '}
-            |{' '}
-            <a
-              className={styles.link}
-              href="https://www.truechoice.io/privacy-policy"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Privacy Policy
-            </a>
-          </Col>
-        </Row>
+        <div>Hello world</div>
       </Container>
+      <div style={{ backgroundColor: 'rgba(8, 22, 57, 0.95)' }}>
+        <Container>
+          <p>Hello world again</p>
+        </Container>
+      </div>
     </footer>
   );
 };

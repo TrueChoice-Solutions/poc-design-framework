@@ -6,3 +6,13 @@
  * ("Confidential Information").  You shall not disclose such Confidential Information and shall
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.welcome {
+  font-family: 'Poppins', sans-serif;
+}
+
+.h1 {
+  font-size: 72px;
+  font-weight: bold;
+}

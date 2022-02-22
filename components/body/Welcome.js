@@ -8,7 +8,10 @@
  */
 
 // dependencies
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // local files
+import styles from './Welcome.module.css';
 
 /**
  * @description - returns Welcome component
@@ -16,9 +19,9 @@
  */
 const Welcome = ({ h1Text }) => {
   return (
-    <header>
-      <h1>{h1Text}</h1>
-    </header>
+    <div className={styles.welcome}>
+      <h1 className={styles.h1}>{h1Text}</h1>
+    </div>
   );
 };
 

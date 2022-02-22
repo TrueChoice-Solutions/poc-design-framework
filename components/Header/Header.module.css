@@ -7,34 +7,6 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-/* .header {
-  color: #fff;
-  background-color: rgba(100, 149, 237, 0.5);
-  top: 0;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  border: 1px solid black;
-  padding: 20px;
-}
-
-.logo {
-  display: flex;
-}
-
-.timeline {
-  display: flex;
-  justify-content: flex-start;
-}
-
-@media (min-width: 768px) {
-  .timeline {
-    justify-content: flex-end;
-  }
-} */
-
 .header {
   background-color: rgba(8, 23, 120, 0.5);
   width: 100%;

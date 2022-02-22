@@ -30,7 +30,7 @@ const Body = () => {
     //   </div>
     // </section>
 
-    <Container fluid>
+    <Container>
       <Row className={`align-items-center ${styles.body}`}>
         <Col>
           <h1>What Matters to You!</h1>

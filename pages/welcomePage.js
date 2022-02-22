@@ -22,7 +22,7 @@ import Footer from '../components/footer/Footer';
 const WelcomePage = () => {
   return (
     <main className={styles.welcomePage}>
-      <Container className={styles.container}>
+      <Container>
         <Header />
         <Body />
       </Container>

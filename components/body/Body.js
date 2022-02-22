@@ -20,7 +20,10 @@ const Body = () => {
   return (
     <section className={styles.body}>
       <div className={styles.content}>
-        <Welcome h1Text="What matters to you?" />
+        <Welcome
+          h1Text="What matters to you?"
+          h2Text="Share your preferences and perspectives with us."
+        />
       </div>
     </section>
   );

@@ -17,10 +17,11 @@ import styles from './Welcome.module.css';
  * @description - returns Welcome component
  * @return {jsx} - the Welcome component to render
  */
-const Welcome = ({ h1Text }) => {
+const Welcome = ({ h1Text, h2Text }) => {
   return (
     <div className={styles.welcome}>
       <h1 className={styles.h1}>{h1Text}</h1>
+      <h2 className={styles.h2}>{h2Text}</h2>
     </div>
   );
 };

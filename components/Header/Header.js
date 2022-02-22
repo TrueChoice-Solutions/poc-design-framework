@@ -8,6 +8,7 @@
  */
 
 // dependencies
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // local files
@@ -21,7 +22,7 @@ import Timeline from '../shared/Timeline';
  */
 const Header = () => {
   return (
-    <section className={styles.header}>
+    <Container fluid className={styles.header}>
       <Row className={styles.row}>
         <Col md={6} xl={8} className={styles.logo}>
           <Logo
@@ -36,7 +37,7 @@ const Header = () => {
           <Timeline text="Welcome" />
         </Col>
       </Row>
-    </section>
+    </Container>
   );
 };
 

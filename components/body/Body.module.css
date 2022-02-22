@@ -7,7 +7,7 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-.body {
+/* .body {
   color: #fff;
   border: 1px solid red;
   height: 100%;
@@ -21,4 +21,11 @@
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+} */
+
+.body {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  color: #fff;
 }

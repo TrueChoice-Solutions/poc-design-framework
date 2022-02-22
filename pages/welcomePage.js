@@ -25,8 +25,8 @@ const WelcomePage = () => {
       <Container>
         <Header />
         <Body />
+        <Footer />
       </Container>
-      <Footer />
     </main>
   );
 };

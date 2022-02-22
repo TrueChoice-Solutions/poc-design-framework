@@ -8,6 +8,7 @@
  */
 
 // dependencies
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // local files
@@ -27,7 +28,7 @@ const Timeline = ({ text }) => {
         </Col>
       </Row>
       <Row>
-        <Col className={styles.progressBars}>
+        <Col className="d-flex">
           <div className={styles.longProgressBar}></div>
           <div className={styles.shortProgressBar}></div>
           <div className={styles.shortProgressBar}></div>

@@ -8,8 +8,6 @@
  */
 
 // dependencies
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 // local files
 import styles from './Welcome.module.css';
 
@@ -19,10 +17,15 @@ import styles from './Welcome.module.css';
  */
 const Welcome = ({ h1Text, h2Text }) => {
   return (
-    <div className={styles.welcome}>
-      <h1 className={styles.h1}>{h1Text}</h1>
-      <h2 className={styles.h2}>{h2Text}</h2>
-      <hr style={{ height: '2px' }}></hr>
+    <div className={`container-fluid ${styles.outer}`}>
+      <div className="container">
+        <div className="row vh-100 min-vh-100 align-items-center">
+          <div className="col">
+            <h1 className="display-2 fw-bolder">{h1Text}</h1>
+            <h2 className="fw-bolder">{h2Text}</h2>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

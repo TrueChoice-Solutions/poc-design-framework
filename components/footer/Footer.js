@@ -8,10 +8,6 @@
  */
 
 // dependencies
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 // local files
 import styles from './Footer.module.css';
 import Logo from '../shared/Logo';
@@ -22,50 +18,21 @@ import Logo from '../shared/Logo';
  */
 const Footer = () => {
   return (
-    // <section className="footer">
-    //   <Navbar fixed="bottom" className={styles.navbar}>
-    //     <Logo
-    //       imageSrc="truechoice.png"
-    //       altText="Powered by TrueChoice"
-    //       linkSrc="https://www.truechoice.io/"
-    //       imageWidth={110}
-    //       imageHeight={24}
-    //     />
-    //     <div className={styles.links}>
-    //       <a
-    //         className={styles.link}
-    //         href="https://www.truechoice.io/"
-    //         target="_blank"
-    //         rel="noreferrer"
-    //       >
-    //         © TrueChoice Solutions, Inc.
-    //       </a>{' '}
-    //       |{' '}
-    //       <a
-    //         className={styles.link}
-    //         href="https://www.truechoice.io/privacy-policy"
-    //         target="_blank"
-    //         rel="noreferrer"
-    //       >
-    //         Privacy Policy
-    //       </a>
-    //     </div>
-    //   </Navbar>
-    // </section>
-    <footer className={styles.footer}>
-      <Container>
-        <Row>
-          <Col>
-            <div>Hello world</div>
-          </Col>
-        </Row>
-      </Container>
-      <div style={{ backgroundColor: 'rgba(8, 22, 57, 0.95)' }}>
-        <Container>
-          <div>Hello world again</div>
-        </Container>
-      </div>
-    </footer>
+    // <footer className={styles.footer}>
+    //   <Container>
+    //     <Row>
+    //       <Col>
+    //         <div>Hello world</div>
+    //       </Col>
+    //     </Row>
+    //   </Container>
+    //   <div style={{ backgroundColor: 'rgba(8, 22, 57, 0.95)' }}>
+    //     <Container>
+    //       <div>Hello world again</div>
+    //     </Container>
+    //   </div>
+    // </footer>
+    <div>Footer</div>
   );
 };
 

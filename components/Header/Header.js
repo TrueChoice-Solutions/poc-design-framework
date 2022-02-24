@@ -8,9 +8,6 @@
  */
 
 // dependencies
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 // local files
 import styles from './Header.module.css';
 import Logo from '../shared/Logo';
@@ -22,24 +19,25 @@ import Timeline from '../shared/Timeline';
  */
 const Header = () => {
   return (
-    <section className={styles.header}>
-      <Container>
-        <Row className={`d-flex align-items-center ${styles.row}`}>
-          <Col md={6} xl={8}>
-            <Logo
-              imageSrc="logo.png"
-              altText="TrueChoice Logo"
-              linkSrc="https://www.truechoice.io"
-              imageWidth={200}
-              imageHeight={33.33}
-            />
-          </Col>
-          <Col md={6} xl={4} className="d-flex justify-content-md-end">
-            <Timeline text="Welcome" />
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    // <section className={styles.header}>
+    //   <div className="container">
+    //     <Row className={`d-flex align-items-center ${styles.row}`}>
+    //       <Col md={6} xl={8}>
+    //         <Logo
+    //           imageSrc="logo.png"
+    //           altText="TrueChoice Logo"
+    //           linkSrc="https://www.truechoice.io"
+    //           imageWidth={200}
+    //           imageHeight={33.33}
+    //         />
+    //       </Col>
+    //       <Col md={6} xl={4} className="d-flex justify-content-md-end">
+    //         <Timeline text="Welcome" />
+    //       </Col>
+    //     </Row>
+    //   </Container>
+    // </section>
+    <div>Header</div>
   );
 };
 

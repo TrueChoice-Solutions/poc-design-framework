@@ -8,11 +8,10 @@
  */
 
 // dependencies
-import Container from 'react-bootstrap/Container';
 // local files
 import styles from './welcomePage.module.css';
 import Header from '../components/header/Header';
-import Body from '../components/body/Body';
+import Welcome from '../components/body/Welcome';
 import Footer from '../components/footer/Footer';
 
 /**
@@ -21,13 +20,10 @@ import Footer from '../components/footer/Footer';
  */
 const WelcomePage = () => {
   return (
-    <main className={styles.welcomePage}>
-      <Container>
-        <Header />
-        <Body />
-      </Container>
-      <Footer />
-    </main>
+    <Welcome
+      h1Text="What Matters to You!"
+      h2Text="Share your preferences and perspectives with us."
+    />
   );
 };
 

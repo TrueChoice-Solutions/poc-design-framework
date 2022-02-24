@@ -6,16 +6,3 @@
  * ("Confidential Information").  You shall not disclose such Confidential Information and shall
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
-
-.outer {
-  background-image: linear-gradient(
-      90deg,
-      rgba(9, 9, 121, 0.633473457742472) 35%,
-      rgba(0, 71, 187, 0.35056029247636555) 50%,
-      rgba(33, 0, 70, 0.591456651019783) 92%
-    ),
-    url('../../public/images/nature.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}

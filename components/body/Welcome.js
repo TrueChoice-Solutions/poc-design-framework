@@ -13,7 +13,8 @@ import styles from './Welcome.module.css';
 
 /**
  * @description - returns Welcome component
- * @param {string} props.h1Text - h1
+ * @param {string} props.h1Text - h1 text
+ * @param {string} props.h2Text - h2 text
  * @return {jsx} - the Welcome component to render
  */
 const Welcome = ({ h1Text, h2Text }) => {

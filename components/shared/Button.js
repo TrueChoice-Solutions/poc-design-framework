@@ -6,3 +6,8 @@
  * ("Confidential Information").  You shall not disclose such Confidential Information and shall
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
+
+/**
+ * @description - returns Button component
+ * @return {jsx} - the Button component to render
+ */

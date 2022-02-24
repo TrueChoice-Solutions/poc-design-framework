@@ -54,11 +54,15 @@ const Footer = () => {
     // </section>
     <footer className={styles.footer}>
       <Container>
-        <div>Hello world</div>
+        <Row>
+          <Col>
+            <div>Hello world</div>
+          </Col>
+        </Row>
       </Container>
       <div style={{ backgroundColor: 'rgba(8, 22, 57, 0.95)' }}>
         <Container>
-          <p>Hello world again</p>
+          <div>Hello world again</div>
         </Container>
       </div>
     </footer>

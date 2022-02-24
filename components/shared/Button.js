@@ -12,6 +12,10 @@
 
 /**
  * @description - returns Button component
+ * @param {string} props.text - the button's text
+ * @param {string} props.bgColor - the button's background color
+ * @param {string} props.textColor - the button's font color
+ * @param {string} props.outline - the button's outline color
  * @return {jsx} - the Button component to render
  */
 const Button = ({ text, bgColor, textColor, outline }) => {

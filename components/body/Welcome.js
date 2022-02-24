@@ -10,6 +10,7 @@
 // dependencies
 // local files
 import styles from './Welcome.module.css';
+import Button from '../shared/Button';
 
 /**
  * @description - returns Welcome component
@@ -40,9 +41,7 @@ const Welcome = ({ h1Text, h2Text }) => {
                 </svg>
                 It takes less than 5 minutes
               </div>
-              <button type="button" className="btn btn-danger text-white">
-                Get Started
-              </button>
+              <Button text="Get Started" />
             </div>
           </div>
         </div>

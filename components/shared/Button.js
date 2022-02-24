@@ -7,7 +7,15 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
+// dependencies
+// local files
+
 /**
  * @description - returns Button component
  * @return {jsx} - the Button component to render
  */
+const Button = ({ text }) => {
+  return <button type="button">{text}</button>;
+};
+
+export default Button;

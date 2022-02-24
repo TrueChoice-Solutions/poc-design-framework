@@ -26,6 +26,7 @@ const WelcomePage = () => {
         h1Text="What Matters to You!"
         h2Text="Share your preferences and perspectives with us."
       />
+      <Footer />
     </main>
   );
 };

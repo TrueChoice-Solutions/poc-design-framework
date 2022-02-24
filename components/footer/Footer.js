@@ -32,7 +32,14 @@ const Footer = () => {
     //     </Container>
     //   </div>
     // </footer>
-    <div>Footer</div>
+    <footer className="position-absolute text-white bottom-0 w-100">
+      <div className="border border-secondary">
+        <div className="container">Hello</div>
+      </div>
+      <div className="bg-primary">
+        <div className="container">Hello</div>
+      </div>
+    </footer>
   );
 };
 

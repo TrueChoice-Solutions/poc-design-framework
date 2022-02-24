@@ -20,10 +20,13 @@ import Footer from '../components/footer/Footer';
  */
 const WelcomePage = () => {
   return (
-    <Welcome
-      h1Text="What Matters to You!"
-      h2Text="Share your preferences and perspectives with us."
-    />
+    <main>
+      <Header />
+      <Welcome
+        h1Text="What Matters to You!"
+        h2Text="Share your preferences and perspectives with us."
+      />
+    </main>
   );
 };
 

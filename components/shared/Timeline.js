@@ -19,7 +19,7 @@ import styles from './Timeline.module.css';
 const Timeline = ({ text }) => {
   return (
     <div>
-      <div className={styles.row}>{text}</div>
+      <div>{text}</div>
       <div className="d-flex">
         <span className={styles.longProgressBar}></span>
         <span className={styles.shortProgressBar}></span>

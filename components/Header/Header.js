@@ -9,7 +9,6 @@
 
 // dependencies
 // local files
-import styles from './Header.module.css';
 import Logo from '../shared/Logo';
 import Timeline from '../shared/Timeline';
 
@@ -19,25 +18,24 @@ import Timeline from '../shared/Timeline';
  */
 const Header = () => {
   return (
-    // <section className={styles.header}>
-    //   <div className="container">
-    //     <Row className={`d-flex align-items-center ${styles.row}`}>
-    //       <Col md={6} xl={8}>
-    //         <Logo
-    //           imageSrc="logo.png"
-    //           altText="TrueChoice Logo"
-    //           linkSrc="https://www.truechoice.io"
-    //           imageWidth={200}
-    //           imageHeight={33.33}
-    //         />
-    //       </Col>
-    //       <Col md={6} xl={4} className="d-flex justify-content-md-end">
-    //         <Timeline text="Welcome" />
-    //       </Col>
-    //     </Row>
-    //   </Container>
-    // </section>
-    <div>Header</div>
+    <div className="container-fluid header position-absolute">
+      <div className="container">
+        <div className="row text-light align-items-center">
+          <div className="col-12 col-sm-6">
+            <Logo
+              imageSrc="logo.png"
+              altText="TrueChoice Logo"
+              linkSrc="https://www.truechoice.io"
+              imageWidth={200}
+              imageHeight={33.33}
+            />
+          </div>
+          <div className="col-12 col-sm-6 d-flex justify-content-sm-end">
+            <Timeline text="Welcome" />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

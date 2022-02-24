@@ -41,7 +41,11 @@ const Welcome = ({ h1Text, h2Text }) => {
                 </svg>
                 It takes less than 5 minutes
               </div>
-              <Button text="Get Started" />
+              <Button
+                text="Get Started"
+                bgColor="btn-danger"
+                textColor="text-white"
+              />
             </div>
           </div>
         </div>

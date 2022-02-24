@@ -14,9 +14,10 @@
  * @description - returns Button component
  * @return {jsx} - the Button component to render
  */
-const Button = ({ text, bgColor, textColor }) => {
+const Button = ({ text, bgColor, textColor, outline }) => {
+  // helper functions
   return (
-    <button type="button" className={`btn ${bgColor} ${textColor}`}>
+    <button type="button" className={`btn ${bgColor} ${textColor} ${outline}`}>
       {text}
     </button>
   );

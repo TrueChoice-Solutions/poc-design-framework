@@ -45,6 +45,7 @@ const Welcome = ({ h1Text, h2Text }) => {
                 text="Get Started"
                 bgColor="btn-danger"
                 textColor="text-white"
+                outline="btn-outline-light"
               />
             </div>
           </div>

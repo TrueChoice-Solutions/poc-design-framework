@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div className="container-fluid header position-absolute">
       <div className="container">
-        <div className="row text-light align-items-center border pt-2">
+        <div className="row text-light align-items-center pt-2">
           <div className="col-12 col-sm-6">
             <Logo
               imageSrc="logo.png"

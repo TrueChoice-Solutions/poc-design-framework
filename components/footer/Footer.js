@@ -9,7 +9,6 @@
 
 // dependencies
 // local files
-import styles from './Footer.module.css';
 import Logo from '../shared/Logo';
 
 /**
@@ -30,7 +29,7 @@ const Footer = () => {
       </div>
 
       <div
-        className="container-fluid position-absolute"
+        className="container-fluid position-fixed"
         style={{ bottom: '80px' }}
       >
         <div className="container">

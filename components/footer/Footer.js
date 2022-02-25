@@ -32,12 +32,30 @@ const Footer = () => {
     //     </Container>
     //   </div>
     // </footer>
-    <footer className="position-absolute text-white bottom-0 w-100">
-      <div className="border border-secondary">
-        <div className="container">Hello</div>
-      </div>
-      <div className="bg-primary">
-        <div className="container">Hello</div>
+    <footer>
+      <div className="container-fluid position-fixed bottom-0 bg-primary">
+        <div className="container h-100">
+          <div className="row text-white py-2">
+            <div className="col">
+              <small>How can I help you?</small>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="container-fluid border border-warning position-absolute"
+          style={{ bottom: '80px', left: '0' }}
+        >
+          <div className="container">
+            <div className="row text-white">
+              <div className="col">
+                <small>
+                  Logo © TrueChoice Solutions, Inc. | Privacy Policy
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );

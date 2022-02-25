@@ -18,20 +18,6 @@ import Logo from '../shared/Logo';
  */
 const Footer = () => {
   return (
-    // <footer className={styles.footer}>
-    //   <Container>
-    //     <Row>
-    //       <Col>
-    //         <div>Hello world</div>
-    //       </Col>
-    //     </Row>
-    //   </Container>
-    //   <div style={{ backgroundColor: 'rgba(8, 22, 57, 0.95)' }}>
-    //     <Container>
-    //       <div>Hello world again</div>
-    //     </Container>
-    //   </div>
-    // </footer>
     <footer>
       <div className="container-fluid position-fixed bottom-0 bg-primary">
         <div className="container h-100">
@@ -65,18 +51,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
-
-// <div className="row text-white">
-//   <div className="col d-flex flex-column flex-sm-row">
-//     <Logo
-//       imageSrc="truechoice.png"
-//       altText="Powered by TrueChoice"
-//       linkSrc="https://www.truechoice.io"
-//       imageWidth={110}
-//       imageHeight={124}
-//     />
-//     <small>© TrueChoice Solutions, Inc. | Privacy Policy</small>
-//   </div>
-// </div>;

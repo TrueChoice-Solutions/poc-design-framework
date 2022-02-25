@@ -10,14 +10,13 @@
 // local files
 // dependencies
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './_app.module.css';
 
 /**
  * @description - returns App
  * @return {jsx} - the App to render
  */
 function MyApp({ Component, pageProps }) {
-  return <Component className={styles.myApp} {...pageProps} />;
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

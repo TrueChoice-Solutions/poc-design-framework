@@ -9,7 +9,6 @@
 
 // dependencies
 // local files
-import styles from './welcomePage.module.css';
 import Header from '../components/header/Header';
 import Welcome from '../components/body/Welcome';
 import Footer from '../components/footer/Footer';

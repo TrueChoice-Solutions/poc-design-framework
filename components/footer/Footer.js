@@ -27,24 +27,24 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div
-          className="container-fluid position-absolute"
-          style={{ bottom: '80px', left: '0' }}
-        >
-          <div className="container">
-            <div className="text-white d-flex flex-column flex-sm-row align-items-sm-center">
-              <Logo
-                imageSrc="truechoice.png"
-                altText="Powered by TrueChoice"
-                linkSrc="https://www.truechoice.io"
-                imageWidth={110}
-                imageHeight={24}
-              />
-              <small className="ms-sm-2">
-                © TrueChoice Solutions, Inc. | Privacy Policy
-              </small>
-            </div>
+      <div
+        className="container-fluid position-absolute"
+        style={{ bottom: '80px' }}
+      >
+        <div className="container">
+          <div className="text-white d-flex flex-column flex-sm-row align-items-sm-center">
+            <Logo
+              imageSrc="truechoice.png"
+              altText="Powered by TrueChoice"
+              linkSrc="https://www.truechoice.io"
+              imageWidth={110}
+              imageHeight={24}
+            />
+            <small className="ms-sm-2">
+              © TrueChoice Solutions, Inc. | Privacy Policy
+            </small>
           </div>
         </div>
       </div>

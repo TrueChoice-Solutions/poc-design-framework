@@ -46,15 +46,7 @@ const Footer = () => {
           className="container-fluid border border-warning position-absolute"
           style={{ bottom: '80px', left: '0' }}
         >
-          <div className="container">
-            <div className="row text-white">
-              <div className="col">
-                <small>
-                  Logo © TrueChoice Solutions, Inc. | Privacy Policy
-                </small>
-              </div>
-            </div>
-          </div>
+          <div className="container"></div>
         </div>
       </div>
     </footer>
@@ -62,3 +54,16 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// <div className="row text-white">
+//   <div className="col d-flex flex-column flex-sm-row">
+//     <Logo
+//       imageSrc="truechoice.png"
+//       altText="Powered by TrueChoice"
+//       linkSrc="https://www.truechoice.io"
+//       imageWidth={110}
+//       imageHeight={124}
+//     />
+//     <small>© TrueChoice Solutions, Inc. | Privacy Policy</small>
+//   </div>
+// </div>;

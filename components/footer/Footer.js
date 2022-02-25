@@ -73,7 +73,23 @@ const Footer = () => {
               imageHeight={24}
             />
             <small className="ms-sm-2">
-              © TrueChoice Solutions, Inc. | Privacy Policy
+              <a
+                className="text-decoration-none text-secondary"
+                href="https://www.truechoice.io"
+                target="_blank"
+                rel="noreferrer"
+              >
+                © TrueChoice Solutions, Inc.
+              </a>{' '}
+              |{' '}
+              <a
+                className="text-decoration-none text-secondary"
+                href="https://www.truechoice.io/privacy-policy"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Privacy Policy
+              </a>
             </small>
           </div>
         </div>

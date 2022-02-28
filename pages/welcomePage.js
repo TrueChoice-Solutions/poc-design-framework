@@ -9,8 +9,8 @@
 
 // dependencies
 // local files
-import BackgroundCoverImage from '../components/shared/BackgroundCoverImage';
-import BackgroundOverlayTint from '../components/shared/BackgroundOverlayTint';
+import BackgroundCoverImage from '../components/background/BackgroundCoverImage';
+import BackgroundOverlayTint from '../components/background/BackgroundOverlayTint';
 import Header from '../components/header/Header';
 import Welcome from '../components/body/Welcome';
 import Footer from '../components/footer/Footer';

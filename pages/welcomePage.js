@@ -10,6 +10,7 @@
 // dependencies
 // local files
 import BackgroundCoverImage from '../components/shared/BackgroundCoverImage';
+import BackgroundOverlayTint from '../components/shared/BackgroundOverlayTint';
 import Header from '../components/header/Header';
 import Welcome from '../components/body/Welcome';
 import Footer from '../components/footer/Footer';
@@ -22,6 +23,7 @@ const WelcomePage = () => {
   return (
     <main>
       <BackgroundCoverImage bgImageUrl="https://previews.123rf.com/images/efetova/efetova1506/efetova150600053/41047963-borrosa-multitud-de-gente-que-camina-en-la-ciudad-con-edificios-en-el-fondo-en-blanco-y-negro.jpg" />
+      <BackgroundOverlayTint />
       <Header />
       <Welcome
         h1Text="What Matters to You!"

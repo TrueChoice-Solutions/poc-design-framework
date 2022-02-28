@@ -13,8 +13,7 @@ import styles from './BackgroundCoverImage.module.css';
 
 /**
  * @description - full viewport width/height background image
- * @param {string} props.h1Text - h1 text
- * @param {string} props.h2Text - h2 text
+ * @param {string} props.bgImageUrl - Image url to display
  * @return {jsx} - the Background Cover Image to render
  */
 

@@ -23,7 +23,11 @@ const WelcomePage = () => {
   return (
     <main>
       <BackgroundCoverImage bgImageUrl="https://previews.123rf.com/images/efetova/efetova1506/efetova150600053/41047963-borrosa-multitud-de-gente-que-camina-en-la-ciudad-con-edificios-en-el-fondo-en-blanco-y-negro.jpg" />
-      <BackgroundOverlayTint />
+      <BackgroundOverlayTint
+        direction="131.3deg"
+        startColor="green"
+        endColor="blue"
+      />
       <Header />
       <Welcome
         h1Text="What Matters to You!"

@@ -7,12 +7,14 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-.backgroundCoverImage {
+.backgroundOverlayTint {
   position: fixed;
-  height: 100vh;
+  top: 0;
+  left: 0;
+  border: 5px solid red;
   width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
+  background-blend-mode: saturation;
+  opacity: 0.56;
   z-index: -1;
 }

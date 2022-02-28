@@ -9,6 +9,7 @@
 
 // dependencies
 // local files
+import styles from './BackgroundOverlayTint.module.css';
 
 /**
  * @description - full viewport width/height background gradient
@@ -17,11 +18,14 @@
  * @return {jsx} - the Background Cover Image to render
  */
 
-const BackgroundOverlayTint = () => {
+const BackgroundOverlayTint = ({ direction, startColor, endColor }) => {
   return (
-    <div>
-      <div style={{ border: '1px solid red' }}>Background Overlay Tint</div>
-    </div>
+    <div
+      style={{
+        background: `linear-gradient(${direction}, ${startColor}, ${endColor})`
+      }}
+      className={styles.backgroundOverlayTint}
+    />
   );
 };
 

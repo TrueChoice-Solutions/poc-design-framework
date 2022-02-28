@@ -74,7 +74,7 @@ const Footer = () => {
             />
             <small className="ms-sm-2">
               <a
-                className="text-decoration-none text-secondary"
+                className="text-decoration-none text-white"
                 href="https://www.truechoice.io"
                 target="_blank"
                 rel="noreferrer"
@@ -83,7 +83,7 @@ const Footer = () => {
               </a>{' '}
               |{' '}
               <a
-                className="text-decoration-none text-secondary"
+                className="text-decoration-none text-white"
                 href="https://www.truechoice.io/privacy-policy"
                 target="_blank"
                 rel="noreferrer"

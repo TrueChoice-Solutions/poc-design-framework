@@ -9,7 +9,6 @@
 
 // dependencies
 // local files
-import styles from './Welcome.module.css';
 import Button from '../shared/Button';
 
 /**
@@ -20,7 +19,7 @@ import Button from '../shared/Button';
  */
 const Welcome = ({ h1Text, h2Text }) => {
   return (
-    <div className={`container-fluid ${styles.outer}`}>
+    <div className="container-fluid">
       <div className="container">
         <div className="row vh-100 min-vh-100 align-items-center text-light">
           <div className="col">

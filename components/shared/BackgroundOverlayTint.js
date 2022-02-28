@@ -13,8 +13,9 @@ import styles from './BackgroundOverlayTint.module.css';
 
 /**
  * @description - full viewport width/height background gradient
- * @param {string} props.h1Text - h1 text
- * @param {string} props.h2Text - h2 text
+ * @param {string} props.direction - direction for gradient from start to end
+ * @param {string} props.startColor - starting color for gradient
+ * @param {string} props.endColor - ending color for gradient
  * @return {jsx} - the Background Cover Image to render
  */
 

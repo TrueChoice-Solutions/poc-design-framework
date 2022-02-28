@@ -18,11 +18,11 @@ import styles from './BackgroundCoverImage.module.css';
  * @return {jsx} - the Background Cover Image to render
  */
 
-const BackgroundCoverImage = ({ zoom = false, bgImageUrl }) => {
+const BackgroundCoverImage = ({ bgImageUrl }) => {
   return (
     <div
       style={{ backgroundImage: `url(${bgImageUrl})` }}
-      className={styles.backgroundCoverImage}
+      className={`${styles.backgroundCoverImage}`}
     ></div>
   );
 };

@@ -16,7 +16,6 @@ import styles from './BackgroundImage.module.css';
  * @param {string} props.bgImageUrl - Image url to display
  * @return {jsx} - the Background Cover Image to render
  */
-
 const BackgroundImage = ({ bgImageUrl }) => {
   return (
     <div

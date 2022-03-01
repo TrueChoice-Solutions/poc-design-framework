@@ -9,7 +9,7 @@
 
 // dependencies
 // local files
-import CoverBackgroundImage from '../components/background/CoverBackgroundImage';
+import BackgroundImage from '../components/background/BackgroundImage';
 import BackgroundOverlayTint from '../components/background/BackgroundOverlayTint';
 import Header from '../components/header/Header';
 import Welcome from '../components/body/Welcome';
@@ -22,7 +22,7 @@ import Footer from '../components/footer/Footer';
 const WelcomePage = () => {
   return (
     <main>
-      <CoverBackgroundImage bgImageUrl="https://previews.123rf.com/images/efetova/efetova1506/efetova150600053/41047963-borrosa-multitud-de-gente-que-camina-en-la-ciudad-con-edificios-en-el-fondo-en-blanco-y-negro.jpg" />
+      <BackgroundImage bgImageUrl="https://previews.123rf.com/images/efetova/efetova1506/efetova150600053/41047963-borrosa-multitud-de-gente-que-camina-en-la-ciudad-con-edificios-en-el-fondo-en-blanco-y-negro.jpg" />
       <BackgroundOverlayTint
         direction="131.3deg"
         startColor="green"

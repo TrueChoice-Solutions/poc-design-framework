@@ -9,7 +9,7 @@
 
 // dependencies
 // local files
-import styles from './BackgroundCoverImage.module.css';
+import styles from './CoverBackgroundImage.module.css';
 
 /**
  * @description - full viewport width/height background image
@@ -17,7 +17,7 @@ import styles from './BackgroundCoverImage.module.css';
  * @return {jsx} - the Background Cover Image to render
  */
 
-const BackgroundCoverImage = ({ bgImageUrl }) => {
+const CoverBackgroundImage = ({ bgImageUrl }) => {
   return (
     <div
       style={{ backgroundImage: `url(${bgImageUrl})` }}
@@ -26,4 +26,4 @@ const BackgroundCoverImage = ({ bgImageUrl }) => {
   );
 };
 
-export default BackgroundCoverImage;
+export default CoverBackgroundImage;

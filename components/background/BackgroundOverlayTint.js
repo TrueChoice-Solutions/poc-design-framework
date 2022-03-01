@@ -18,7 +18,6 @@ import styles from './BackgroundOverlayTint.module.css';
  * @param {string} props.endColor - ending color for gradient
  * @return {jsx} - the Background Cover Image to render
  */
-
 const BackgroundOverlayTint = ({ direction, startColor, endColor }) => {
   return (
     <div

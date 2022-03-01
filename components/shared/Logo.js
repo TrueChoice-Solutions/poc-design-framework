@@ -23,16 +23,18 @@ import React from 'react';
  */
 const Logo = ({ imageSrc, altText, linkSrc, imageWidth, imageHeight }) => {
   return (
-    <a href={linkSrc} target="_blank" rel="noreferrer">
-      <Image
-        src={`/images/${imageSrc}`}
-        alt={altText}
-        // change width and height divisor (bottom) to fit accordingly. Keep them the same! E.g. imageWidth / 4, change imageHeight / 4
-        width={`${imageWidth}`}
-        height={`${imageHeight}`}
-        layout="intrinsic"
-      />
-    </a>
+    <div className="pt-2">
+      <a href={linkSrc} target="_blank" rel="noreferrer">
+        <Image
+          src={`/images/${imageSrc}`}
+          alt={altText}
+          // change width and height divisor (bottom) to fit accordingly. Keep them the same! E.g. imageWidth / 4, change imageHeight / 4
+          width={`${imageWidth}`}
+          height={`${imageHeight}`}
+          layout="intrinsic"
+        />
+      </a>
+    </div>
   );
 };
 

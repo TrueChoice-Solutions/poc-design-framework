@@ -13,6 +13,7 @@ import styles from './BackgroundVideo.module.css';
 
 /**
  * @description - full viewport width/height background video
+ * @param {string} props.videoUrl - Video url to display
  * @return {jsx} - the Background Video to render
  */
 const BackgroundVideo = ({

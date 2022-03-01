@@ -23,11 +23,14 @@ const Welcome = ({ h1Text, h2Text }) => {
       <div className="container">
         <div className="row vh-100 min-vh-100 align-items-center text-light">
           <div className="col">
+            {/* component */}
             <h1 className="display-2 fw-bolder">{h1Text}</h1>
             <h2 className="fw-bolder">{h2Text}</h2>
             <hr />
+            {/* ---------- */}
             <div className="d-flex align-items-center justify-content-between">
               <div className="col col-7 col-sm d-flex align-items-center">
+                {/* component */}
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +52,7 @@ const Welcome = ({ h1Text, h2Text }) => {
                 outline="btn-danger"
               />
             </div>
+            {/* ---------- */}
           </div>
         </div>
       </div>

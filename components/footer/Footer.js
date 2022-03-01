@@ -49,7 +49,7 @@ const Footer = () => {
                 }}
               ></span>
               <Button
-                text="Help?"
+                text="How can I help you?"
                 bgColor="btn-dark"
                 textColor="text-white"
                 outline="btn-outline-dark"

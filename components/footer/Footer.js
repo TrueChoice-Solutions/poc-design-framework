@@ -88,7 +88,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Privacy Policy
+                Privacy Policyy
               </a>
             </small>
           </div>

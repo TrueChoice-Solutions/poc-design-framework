@@ -30,7 +30,7 @@ const Welcome = ({ h1Text, h2Text }) => {
             {/* ---------- */}
             <div className="d-flex align-items-center justify-content-between">
               <div className="col col-7 col-sm d-flex align-items-center">
-                {/* component */}
+                {/* component - Andrew separated this into another component */}
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

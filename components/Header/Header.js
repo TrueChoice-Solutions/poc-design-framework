@@ -8,6 +8,9 @@
  */
 
 // dependencies
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // local files
 import Logo from '../shared/Logo';
 import Timeline from '../shared/Timeline';
@@ -18,10 +21,10 @@ import Timeline from '../shared/Timeline';
  */
 const Header = () => {
   return (
-    <div className="container-fluid header position-absolute">
-      <div className="container">
-        <div className="row text-light align-items-center pt-2">
-          <div className="col-12 col-sm-6">
+    <Container fluid className="border position-absolute">
+      <Container>
+        <Row className="text-light align-items-center pt-2">
+          <Col sm={6}>
             <Logo
               imageSrc="logo.png"
               altText="TrueChoice Logo"
@@ -29,13 +32,13 @@ const Header = () => {
               imageWidth={200}
               imageHeight={33.33}
             />
-          </div>
-          <div className="col-12 col-sm-6 d-flex justify-content-sm-end">
+          </Col>
+          <Col sm={6} className="d-flex justify-content-sm-end">
             <Timeline text="Welcome" />
-          </div>
-        </div>
-      </div>
-    </div>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   );
 };
 

@@ -11,7 +11,7 @@
 // local files
 import BackgroundImage from '../components/background/BackgroundImage';
 import BackgroundOverlayTint from '../components/background/BackgroundOverlayTint';
-import BackgroundVideo from '../components/background/BackgroundVideo';
+// import BackgroundVideo from '../components/background/BackgroundVideo';
 import Header from '../components/header/Header';
 import Welcome from '../components/body/Welcome';
 import Footer from '../components/footer/Footer';

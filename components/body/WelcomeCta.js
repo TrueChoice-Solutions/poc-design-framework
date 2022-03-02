@@ -18,7 +18,7 @@ import Button from '../shared/Button';
  * @param {string} props.estimateText - time estimation text
  * @return {jsx} - the Welcome Cta to render
  */
-const WelcomeCta = ({ estimateText }) => {
+const WelcomeCta = ({ estimateText, buttonText }) => {
   return (
     <div className="d-flex align-items-center justify-content-between">
       <Col xs={7} sm className="d-flex align-items-center">
@@ -28,7 +28,7 @@ const WelcomeCta = ({ estimateText }) => {
         <span className="ms-3">{estimateText}</span>
       </Col>
       <Button
-        text="Get Started"
+        text={buttonText}
         bgColor="btn-danger"
         textColor="text-white"
         outline="btn-danger"

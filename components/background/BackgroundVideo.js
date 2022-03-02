@@ -21,7 +21,7 @@ const BackgroundVideo = ({
 }) => {
   return (
     <video
-      className={styles.backgroundVideo}
+      className={`position-absolute vh-100 w-100 ${styles.backgroundVideo}`}
       src={videoUrl}
       autoPlay
       muted

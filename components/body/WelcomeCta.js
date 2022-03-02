@@ -15,6 +15,7 @@ import Button from '../shared/Button';
 
 /**
  * @description - section for icon, time estimation text, and button
+ * @param {string} props.estimateText - time estimation text
  * @return {jsx} - the Welcome Cta to render
  */
 const WelcomeCta = ({ estimateText }) => {

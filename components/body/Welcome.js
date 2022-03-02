@@ -31,7 +31,7 @@ const Welcome = ({ h1Text, h2Text }) => {
             <h2 className="fw-bolder">{h2Text}</h2>
             <hr />
             {/* ---------- */}
-            <div className="d-flex align-items-center justify-content-between">
+            <div className="d-flex border border-info align-items-center justify-content-between">
               <Col xs={7} sm className="border d-flex align-items-center">
                 {/* component - Andrew separated this into another component */}
                 <div>

@@ -21,7 +21,7 @@ import Timeline from '../shared/Timeline';
  */
 const Header = () => {
   return (
-    <Container fluid className="border position-absolute">
+    <Container fluid className="position-absolute">
       <Container>
         <Row className="text-light align-items-center pt-2">
           <Col sm={6}>

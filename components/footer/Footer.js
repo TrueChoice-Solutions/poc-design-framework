@@ -8,6 +8,9 @@
  */
 
 // dependencies
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // local files
 import Logo from '../shared/Logo';
 import Button from '../shared/Button';
@@ -19,11 +22,11 @@ import Button from '../shared/Button';
 const Footer = () => {
   return (
     <footer>
-      <div className="container-fluid position-fixed bottom-0 bg-primary">
-        <div className="container h-100">
-          <div className="row text-white py-2">
+      <Container fluid className="position-fixed bottom-0 bg-primary">
+        <Container className="h-100">
+          <Row className="text-white py-2">
             {/* position relative set on col for triangle */}
-            <div className="col position-relative">
+            <Col className="position-relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -54,16 +57,13 @@ const Footer = () => {
                 textColor="text-white"
                 outline="btn-outline-dark"
               />
-            </div>
-          </div>
-        </div>
-      </div>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
 
-      <div
-        className="container-fluid position-fixed"
-        style={{ bottom: '80px' }}
-      >
-        <div className="container">
+      <Container fluid className="position-fixed" style={{ bottom: '80px' }}>
+        <Container>
           <div className="text-white d-flex flex-column flex-sm-row align-items-sm-center">
             <Logo
               imageSrc="truechoice.png"
@@ -92,8 +92,8 @@ const Footer = () => {
               </a>
             </small>
           </div>
-        </div>
-      </div>
+        </Container>
+      </Container>
     </footer>
   );
 };

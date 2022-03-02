@@ -20,7 +20,7 @@ const BackgroundImage = ({ bgImageUrl }) => {
   return (
     <div
       style={{ backgroundImage: `url(${bgImageUrl})` }}
-      className={`${styles.backgroundCoverImage}`}
+      className={`position-fixed vw-100 vh-100 ${styles.backgroundCoverImage}`}
     ></div>
   );
 };

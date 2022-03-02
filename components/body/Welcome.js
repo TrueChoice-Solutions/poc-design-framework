@@ -8,6 +8,9 @@
  */
 
 // dependencies
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // local files
 import Button from '../shared/Button';
 
@@ -19,17 +22,17 @@ import Button from '../shared/Button';
  */
 const Welcome = ({ h1Text, h2Text }) => {
   return (
-    <div className="container-fluid">
-      <div className="container">
-        <div className="row vh-100 min-vh-100 align-items-center text-light">
-          <div className="col">
+    <Container fluid>
+      <Container>
+        <Row className="vh-100 min-vh-100 align-items-center text-light">
+          <Col>
             {/* component */}
             <h1 className="display-2 fw-bolder">{h1Text}</h1>
             <h2 className="fw-bolder">{h2Text}</h2>
             <hr />
             {/* ---------- */}
             <div className="d-flex align-items-center justify-content-between">
-              <div className="col col-7 col-sm d-flex align-items-center">
+              <Col xs={7} sm className="border d-flex align-items-center">
                 {/* component - Andrew separated this into another component */}
                 <div>
                   <svg
@@ -44,7 +47,7 @@ const Welcome = ({ h1Text, h2Text }) => {
                   </svg>
                 </div>
                 <span className="ms-3">It takes less than 5 minutes</span>
-              </div>
+              </Col>
               <Button
                 text="Get Started"
                 bgColor="btn-danger"
@@ -53,10 +56,10 @@ const Welcome = ({ h1Text, h2Text }) => {
               />
             </div>
             {/* ---------- */}
-          </div>
-        </div>
-      </div>
-    </div>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   );
 };
 

@@ -8,9 +8,6 @@
  */
 
 .backgroundOverlayTint {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
   background-blend-mode: saturation;
   opacity: 0.56;
   z-index: -1;

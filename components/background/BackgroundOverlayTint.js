@@ -24,7 +24,7 @@ const BackgroundOverlayTint = ({ direction, startColor, endColor }) => {
       style={{
         background: `linear-gradient(${direction}, ${startColor}, ${endColor})`
       }}
-      className={styles.backgroundOverlayTint}
+      className={`position-fixed vw-100 vh-100 ${styles.backgroundOverlayTint}`}
     />
   );
 };

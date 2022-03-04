@@ -29,7 +29,7 @@ const Welcome = () => {
           <Col>
             {/* component */}
             <Headline
-              h1="What Matters to You!"
+              h1Text="What Matters to You!"
               h2Text="Share your preferences and perspectives with us."
             />
             {/* ---------- */}

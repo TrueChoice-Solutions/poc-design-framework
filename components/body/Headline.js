@@ -16,11 +16,11 @@
  * @param {string} props.h2Text - h2 text
  * @return {jsx} - the Headline component to render
  */
-const Headline = ({ h1Text, h2Text }) => {
+const Headline = ({ h1Text, children }) => {
   return (
     <div>
       <h1 className="display-2 fw-bolder">{h1Text}</h1>
-      <h2 className="fw-bolder">{h2Text}</h2>
+      {children}
       <hr />
     </div>
   );

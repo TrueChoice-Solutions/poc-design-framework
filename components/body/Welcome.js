@@ -20,18 +20,15 @@ import WelcomeCta from './WelcomeCta';
  * @return {jsx} - the Welcome component to render
  */
 const Welcome = () => {
-  // h1Text="What Matters to You!"
-  // h2Text="Share your preferences and perspectives with us."
   return (
     <Container fluid>
       <Container>
         <Row className="vh-100 min-vh-100 align-items-center text-light">
           <Col>
             {/* component */}
-            <Headline
-              h1Text="What Matters to You!"
-              h2Text="Share your preferences and perspectives with us."
-            />
+            <Headline h1Text="What Matters to You!">
+              <h2>Share your preferences and perspectives with us.</h2>
+            </Headline>
             {/* ---------- */}
             <WelcomeCta estimateText="It takes less than 5 minutes" />
           </Col>

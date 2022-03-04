@@ -31,10 +31,7 @@ const WelcomePage = () => {
       />
       {/* <BackgroundVideo videoUrl="https://athleticgreens.com/prismic-cdn/athletic-greens-new/9801f592-c3f9-418e-949d-c971bd9d67ec_AG_ALT+SCRIPT+30_No_Logo_No_Legal_0817_1215_ProRes_3.mp4" /> */}
       <Header />
-      <Welcome
-        h1Text="What Matters to You!"
-        h2Text="Share your preferences and perspectives with us."
-      />
+      <Welcome />
       <Footer />
     </main>
   );

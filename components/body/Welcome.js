@@ -12,24 +12,26 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // local files
+import Headline from './Headline';
 import WelcomeCta from './WelcomeCta';
 
 /**
  * @description - returns Welcome component
- * @param {string} props.h1Text - h1 text
- * @param {string} props.h2Text - h2 text
  * @return {jsx} - the Welcome component to render
  */
-const Welcome = ({ h1Text, h2Text }) => {
+const Welcome = () => {
+  // h1Text="What Matters to You!"
+  // h2Text="Share your preferences and perspectives with us."
   return (
     <Container fluid>
       <Container>
         <Row className="vh-100 min-vh-100 align-items-center text-light">
           <Col>
             {/* component */}
-            <h1 className="display-2 fw-bolder">{h1Text}</h1>
-            <h2 className="fw-bolder">{h2Text}</h2>
-            <hr />
+            <Headline
+              h1="What Matters to You!"
+              h2Text="Share your preferences and perspectives with us."
+            />
             {/* ---------- */}
             <WelcomeCta estimateText="It takes less than 5 minutes" />
           </Col>

@@ -16,7 +16,7 @@
  * @param {string} props.h2Text - h2 text
  * @return {jsx} - the Headline component to render
  */
-const Headline = ({ h1Text, children }) => {
+const Headline = ({ h1Text = 'What Matters to You!', children }) => {
   return (
     <div>
       <h1 className="display-2 fw-bolder">{h1Text}</h1>

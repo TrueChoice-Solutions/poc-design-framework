@@ -31,10 +31,7 @@ const Welcome = ({ h1Text, h2Text }) => {
             <h2 className="fw-bolder">{h2Text}</h2>
             <hr />
             {/* ---------- */}
-            <WelcomeCta
-              estimateText="It takes less than 5 minutes"
-              buttonText="Get Started"
-            />
+            <WelcomeCta estimateText="It takes less than 5 minutes" />
           </Col>
         </Row>
       </Container>

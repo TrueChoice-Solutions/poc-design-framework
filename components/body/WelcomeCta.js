@@ -19,7 +19,7 @@ import Button from '../shared/Button';
  * @param {string} props.buttonText - button's text
  * @return {jsx} - the Welcome Cta to render
  */
-const WelcomeCta = ({ estimateText, buttonText }) => {
+const WelcomeCta = ({ estimateText, buttonText = 'Get Started' }) => {
   return (
     <div className="d-flex align-items-center justify-content-between">
       <Col xs={7} sm className="d-flex align-items-center">

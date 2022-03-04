@@ -23,9 +23,7 @@ const WelcomeCta = ({ estimateText, buttonText }) => {
   return (
     <div className="d-flex align-items-center justify-content-between">
       <Col xs={7} sm className="d-flex align-items-center">
-        <div>
-          <Clock size={24} />
-        </div>
+        <Clock size={24} />
         <span className="ms-3">{estimateText}</span>
       </Col>
       <Button

@@ -11,9 +11,9 @@
 // local files
 
 /**
- * @description - h1, h2 (optional), and hr line
+ * @description - h1, additional jsx, and hr line
  * @param {string} props.h1Text - h1 text
- * @param {string} props.children - any jsx added following h1Text
+ * @param {string} props.children - any jsx elements
  * @return {jsx} - the Headline component to render
  */
 const Headline = ({ h1Text = 'What Matters to You!', children }) => {

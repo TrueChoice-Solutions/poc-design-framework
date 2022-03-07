@@ -9,7 +9,6 @@
 
 // dependencies
 // local files
-import Logo from '../shared/Logo';
 
 /**
  * @description - returns Footer component

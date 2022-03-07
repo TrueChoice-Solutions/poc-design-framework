@@ -22,9 +22,11 @@ const HelpChat = () => {
       <div className="position-relative bg-dark text-white p-2 ms-3 my-1">
         <CaretLeftFill
           size={35}
-          className="text-dark position-absolute top-50 start-0 translate-middle"
+          className="text-dark position-absolute top-50 start-0 translate-middle cursor-pointer"
         />
-        <span className="d-inline-block mb-1">How can I help you?</span>
+        <span className="d-inline-block mb-1 cursor-pointer">
+          How can I help you?
+        </span>
       </div>
     </div>
   );

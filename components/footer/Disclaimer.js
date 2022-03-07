@@ -18,27 +18,32 @@
  * @param {string} props.privacyLink - Privacy Policy link
  * @return {jsx} - the Footer component to render
  */
-const Disclaimer = () => {
+const Disclaimer = ({
+  copyrightText,
+  copyrightLink,
+  privacyText,
+  privacyLink
+}) => {
   return (
     <menu className="list-unstyled m-0">
       <li>
         <small>
           <a
             className="text-decoration-none text-white"
-            href="https://www.truechoice.io"
+            href={copyrightLink}
             target="_blank"
             rel="noreferrer"
           >
-            © TrueChoice Solutions, Inc.
+            {copyrightText}
           </a>{' '}
           |{' '}
           <a
             className="text-decoration-none text-white"
-            href="https://www.truechoice.io/privacy-policy"
+            href={privacyLink}
             target="_blank"
             rel="noreferrer"
           >
-            Privacy Policy
+            {privacyText}
           </a>
         </small>
       </li>

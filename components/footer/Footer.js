@@ -73,7 +73,12 @@ const Footer = () => {
             imageHeight={24}
           />
           <span className="me-3"></span>
-          <Disclaimer />
+          <Disclaimer
+            copyrightText="© TrueChoice Solutions, Inc."
+            copyrightLink="https://www.truechoice.io"
+            privacyText="Privacy Policy"
+            privacyLink="https://www.truechoice.io/privacy-policy"
+          />
         </Container>
       </Container>
     </footer>

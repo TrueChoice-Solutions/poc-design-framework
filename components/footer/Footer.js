@@ -64,7 +64,6 @@ const Footer = () => {
 
       <Container fluid className="position-fixed" style={{ bottom: '80px' }}>
         <Container>
-          {/* <div className="text-white d-flex flex-column flex-sm-row align-items-sm-center"> */}
           <menu className="d-flex flex-column flex-sm-row align-items-sm-center p-0 m-0 list-unstyled text-white">
             <li>
               <Logo
@@ -75,7 +74,6 @@ const Footer = () => {
                 imageHeight={24}
               />
             </li>
-
             <li className="ms-sm-3">
               <small>
                 <a
@@ -98,7 +96,6 @@ const Footer = () => {
               </small>
             </li>
           </menu>
-          {/* </div> */}
         </Container>
       </Container>
     </footer>

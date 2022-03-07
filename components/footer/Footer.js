@@ -72,25 +72,35 @@ const Footer = () => {
               imageWidth={110}
               imageHeight={24}
             />
-            <small className="ms-sm-2">
-              <a
-                className="text-decoration-none text-white"
-                href="https://www.truechoice.io"
-                target="_blank"
-                rel="noreferrer"
-              >
-                © TrueChoice Solutions, Inc.
-              </a>{' '}
-              |{' '}
-              <a
-                className="text-decoration-none text-white"
-                href="https://www.truechoice.io/privacy-policy"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Privacy Policy
-              </a>
-            </small>
+            <menu className="d-flex p-0 m-0 list-unstyled">
+              <li>
+                <small className="ms-sm-2">
+                  <a
+                    className="text-decoration-none text-white"
+                    href="https://www.truechoice.io"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    © TrueChoice Solutions, Inc.
+                  </a>
+                </small>
+              </li>
+              <li className="px-1">
+                <small>|</small>
+              </li>
+              <li>
+                <small>
+                  <a
+                    className="text-decoration-none text-white"
+                    href="https://www.truechoice.io/privacy-policy"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Privacy Policy
+                  </a>
+                </small>
+              </li>
+            </menu>
           </div>
         </Container>
       </Container>

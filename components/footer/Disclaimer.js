@@ -25,35 +25,27 @@ const Disclaimer = ({
   privacyLink
 }) => {
   return (
-    <menu className="list-unstyled m-0 d-flex">
-      <li>
-        <small>
-          <a
-            className="text-decoration-none text-white"
-            href={copyrightLink}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {copyrightText}
-          </a>
-        </small>
-      </li>
-      <li>
-        <small className="mx-1"> | </small>
-      </li>
-      <li>
-        <small>
-          <a
-            className="text-decoration-none text-white"
-            href={privacyLink}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {privacyText}
-          </a>
-        </small>
-      </li>
-    </menu>
+    <div>
+      <small>
+        <a
+          className="text-decoration-none text-white"
+          href={copyrightLink}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {copyrightText}
+        </a>{' '}
+        |{' '}
+        <a
+          className="text-decoration-none text-white"
+          href={privacyLink}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {privacyText}
+        </a>
+      </small>
+    </div>
   );
 };
 

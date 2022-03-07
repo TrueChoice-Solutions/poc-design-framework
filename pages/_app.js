@@ -10,6 +10,7 @@
 // local files
 // dependencies
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/globals.css';
 
 /**
  * @description - returns App

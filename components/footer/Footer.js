@@ -72,6 +72,7 @@ const Footer = () => {
             imageWidth={110}
             imageHeight={24}
           />
+          <span className="me-3"></span>
           <Disclaimer />
         </Container>
       </Container>

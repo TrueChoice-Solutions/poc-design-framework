@@ -17,7 +17,7 @@
 const Disclaimer = () => {
   return (
     <menu className="list-unstyled m-0">
-      <li className="ms-sm-3">
+      <li>
         <small>
           <a
             className="text-decoration-none text-white"

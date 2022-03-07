@@ -21,7 +21,10 @@ import Disclaimer from './Disclaimer';
 const Footer = () => {
   return (
     <footer>
-      <Container fluid className="position-fixed bottom-0 bg-primary border">
+      <Container
+        fluid
+        className="position-fixed bottom-0 bg-primary border text-white-50"
+      >
         <Container className="h-100">
           <HelpChat />
         </Container>

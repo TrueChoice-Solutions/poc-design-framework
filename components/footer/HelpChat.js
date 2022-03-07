@@ -8,6 +8,7 @@
  */
 
 // dependencies
+import { EmojiLaughing, CaretLeftFill } from 'react-bootstrap-icons';
 // local files
 
 /**
@@ -15,7 +16,18 @@
  * @return {jsx} - the HelpChat component to render
  */
 const HelpChat = () => {
-  return <div>HELLO</div>;
+  return (
+    <div className="d-flex align-items-center">
+      <EmojiLaughing size={24} />
+      <div className="position-relative bg-dark text-white p-2 ms-3 my-1">
+        <CaretLeftFill
+          size={35}
+          className="text-dark position-absolute top-50 start-0 translate-middle"
+        />
+        <span className="d-inline-block mb-1">How can I help you?</span>
+      </div>
+    </div>
+  );
 };
 
 export default HelpChat;

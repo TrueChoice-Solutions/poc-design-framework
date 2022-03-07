@@ -64,44 +64,41 @@ const Footer = () => {
 
       <Container fluid className="position-fixed" style={{ bottom: '80px' }}>
         <Container>
-          <div className="text-white d-flex flex-column flex-sm-row align-items-sm-center">
-            <Logo
-              imageSrc="truechoice.png"
-              altText="Powered by TrueChoice"
-              linkSrc="https://www.truechoice.io"
-              imageWidth={110}
-              imageHeight={24}
-            />
-            <menu className="d-flex p-0 m-0 list-unstyled">
-              <li>
-                <small className="ms-sm-2">
-                  <a
-                    className="text-decoration-none text-white"
-                    href="https://www.truechoice.io"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    © TrueChoice Solutions, Inc.
-                  </a>
-                </small>
-              </li>
-              <li className="px-1">
-                <small>|</small>
-              </li>
-              <li>
-                <small>
-                  <a
-                    className="text-decoration-none text-white"
-                    href="https://www.truechoice.io/privacy-policy"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Privacy Policy
-                  </a>
-                </small>
-              </li>
-            </menu>
-          </div>
+          {/* <div className="text-white d-flex flex-column flex-sm-row align-items-sm-center"> */}
+          <menu className="d-flex flex-column flex-sm-row align-items-sm-center p-0 m-0 list-unstyled text-white">
+            <li>
+              <Logo
+                imageSrc="truechoice.png"
+                altText="Powered by TrueChoice"
+                linkSrc="https://www.truechoice.io"
+                imageWidth={110}
+                imageHeight={24}
+              />
+            </li>
+
+            <li className="ms-sm-3">
+              <small>
+                <a
+                  className="text-decoration-none text-white"
+                  href="https://www.truechoice.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  © TrueChoice Solutions, Inc.
+                </a>{' '}
+                |{' '}
+                <a
+                  className="text-decoration-none text-white"
+                  href="https://www.truechoice.io/privacy-policy"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Privacy Policy
+                </a>
+              </small>
+            </li>
+          </menu>
+          {/* </div> */}
         </Container>
       </Container>
     </footer>

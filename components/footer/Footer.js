@@ -12,8 +12,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // local files
-import Logo from '../shared/Logo';
 import Button from '../shared/Button';
+import Logo from '../shared/Logo';
+import Disclaimer from './Disclaimer';
 
 /**
  * @description - returns Footer component
@@ -63,39 +64,15 @@ const Footer = () => {
       </Container>
 
       <Container fluid className="position-fixed" style={{ bottom: '80px' }}>
-        <Container>
-          <menu className="d-flex flex-column flex-sm-row align-items-sm-center p-0 m-0 list-unstyled text-white">
-            <li>
-              <Logo
-                imageSrc="truechoice.png"
-                altText="Powered by TrueChoice"
-                linkSrc="https://www.truechoice.io"
-                imageWidth={110}
-                imageHeight={24}
-              />
-            </li>
-            <li className="ms-sm-3">
-              <small>
-                <a
-                  className="text-decoration-none text-white"
-                  href="https://www.truechoice.io"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  © TrueChoice Solutions, Inc.
-                </a>{' '}
-                |{' '}
-                <a
-                  className="text-decoration-none text-white"
-                  href="https://www.truechoice.io/privacy-policy"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Privacy Policy
-                </a>
-              </small>
-            </li>
-          </menu>
+        <Container className="d-flex flex-column flex-sm-row align-items-sm-center text-white">
+          <Logo
+            imageSrc="truechoice.png"
+            altText="Powered by TrueChoice"
+            linkSrc="https://www.truechoice.io"
+            imageWidth={110}
+            imageHeight={24}
+          />
+          <Disclaimer />
         </Container>
       </Container>
     </footer>

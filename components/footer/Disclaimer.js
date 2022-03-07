@@ -11,7 +11,11 @@
 // local files
 
 /**
- * @description - returns Footer component
+ * @description - Copyright and Privacy Policy, with respective texts and links
+ * @param {string} props.copyrightText - Copyright text
+ * @param {string} props.copyrightLink - Copyright link
+ * @param {string} props.privacyText - Privacy Policy text
+ * @param {string} props.privacyLink - Privacy Policy link
  * @return {jsx} - the Footer component to render
  */
 const Disclaimer = () => {

@@ -25,7 +25,7 @@ const Disclaimer = ({
   privacyLink
 }) => {
   return (
-    <menu className="list-unstyled m-0">
+    <menu className="list-unstyled m-0 d-flex">
       <li>
         <small>
           <a
@@ -35,8 +35,14 @@ const Disclaimer = ({
             rel="noreferrer"
           >
             {copyrightText}
-          </a>{' '}
-          |{' '}
+          </a>
+        </small>
+      </li>
+      <li>
+        <small className="mx-1"> | </small>
+      </li>
+      <li>
+        <small>
           <a
             className="text-decoration-none text-white"
             href={privacyLink}

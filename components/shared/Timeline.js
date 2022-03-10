@@ -13,6 +13,8 @@
 /**
  * @description - returns Timeline component
  * @param {string} props.text - the text to show which section the user is on
+ * @param {string} props.progressBarClassName - bootstrap class names that can style the progress bar
+ * @param {string} props.progressBarValue - value to set the progress bar percentage
  * @return {jsx} - the Timeline component to render
  */
 const Timeline = ({ text, progressBarClassName, progressBarValue }) => {

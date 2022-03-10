@@ -12,7 +12,8 @@ import { EmojiLaughing, CaretLeftFill } from 'react-bootstrap-icons';
 // local files
 
 /**
- * @description - Help Chat icon and button that opens a chat window on click
+ * @description - Help Chat icon. Opens a chat window on click
+ * @param {string} props.helpChatText - button-like chat text to display
  * @return {jsx} - the HelpChat component to render
  */
 const HelpChat = ({ helpChatText }) => {

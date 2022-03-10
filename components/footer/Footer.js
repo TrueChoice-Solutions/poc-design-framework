@@ -8,7 +8,7 @@
  */
 
 // dependencies
-import Container from 'react-bootstrap/Container';
+import { Container } from 'react-bootstrap';
 // local files
 import HelpChat from './HelpChat';
 import Logo from '../shared/Logo';

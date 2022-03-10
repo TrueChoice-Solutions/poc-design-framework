@@ -8,9 +8,7 @@
  */
 
 // dependencies
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from 'react-bootstrap';
 // local files
 import Logo from '../shared/Logo';
 import Timeline from '../shared/Timeline';

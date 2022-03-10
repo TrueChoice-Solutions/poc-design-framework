@@ -8,7 +8,7 @@
  */
 
 // dependencies
-import Col from 'react-bootstrap/Col';
+import { Col } from 'react-bootstrap';
 import { Clock } from 'react-bootstrap-icons';
 // local files
 import Button from '../shared/Button';

@@ -66,13 +66,13 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
           <FormLabel htmlFor="user-input">
             Can I help you with something else?
             <FormControl
-              className="mt-2"
               id="user-input"
+              className="mt-2"
               type="text"
-              onChange={handleInputChange}
               name="user-input"
-              value={userText}
               placeholder="Your text here..."
+              onChange={handleInputChange}
+              value={userText}
             />
           </FormLabel>
         </Form>

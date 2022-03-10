@@ -8,8 +8,10 @@
  */
 
 // dependencies
+import { useState } from 'react';
 import { EmojiLaughing, CaretLeftFill } from 'react-bootstrap-icons';
 // local files
+import ChatWindow from './ChatWindow';
 
 /**
  * @description - Help Chat icon. Opens a chat window on click
@@ -17,6 +19,21 @@ import { EmojiLaughing, CaretLeftFill } from 'react-bootstrap-icons';
  * @return {jsx} - the HelpChat component to render
  */
 const HelpChat = ({ helpChatText }) => {
+  // state
+  const [open, setOpen] = useState(false);
+
+  // event handlers
+  const toggleChatWindowDisplay = () => {
+    setOpen(!open);
+  };
+
+  // helpers
+  const renderChatWindow = open ? (
+    <ChatWindow open={open} toggleChatWindowDisplay={toggleChatWindowDisplay} />
+  ) : (
+    ''
+  );
+
   return (
     <div className="d-flex align-items-center">
       <EmojiLaughing size={24} />
@@ -25,10 +42,15 @@ const HelpChat = ({ helpChatText }) => {
         <CaretLeftFill
           size={35}
           className="text-dark position-absolute top-50 start-0 translate-middle cursor-pointer"
+          onClick={toggleChatWindowDisplay}
         />
-        <span className="d-inline-block mb-1 cursor-pointer">
+        <span
+          className="d-inline-block mb-1 cursor-pointer"
+          onClick={toggleChatWindowDisplay}
+        >
           {helpChatText}
         </span>
+        {renderChatWindow}
       </div>
     </div>
   );

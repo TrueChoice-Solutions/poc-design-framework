@@ -13,6 +13,7 @@ import { Card } from 'react-bootstrap';
 
 /**
  * @description - Chat Window display w/ user & bot interactions
+ * @param {string} props.cardClassNames - class names for Card bootstrap component
  * @return {jsx} - the ChatWindow component to render
  */
 const ChatWindow = ({ cardClassNames = 'bg-dark' }) => {

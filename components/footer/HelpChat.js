@@ -37,19 +37,15 @@ const HelpChat = ({ helpChatText }) => {
   return (
     <div className="d-flex align-items-center">
       <EmojiLaughing size={24} />
-      {/* Self note - whole div doesn't have a cursor pointer (not clickable) - need to fix */}
-      <div className="position-relative bg-dark text-white p-2 ms-3 my-1">
+      <div className="position-relative bg-dark text-white ms-3 my-1">
+        <div className="p-2 cursor-pointer" onClick={toggleChatWindowDisplay}>
+          <span className="d-inline-block mb-1">{helpChatText}</span>
+        </div>
         <CaretLeftFill
           size={35}
           className="text-dark position-absolute top-50 start-0 translate-middle cursor-pointer"
           onClick={toggleChatWindowDisplay}
         />
-        <span
-          className="d-inline-block mb-1 cursor-pointer"
-          onClick={toggleChatWindowDisplay}
-        >
-          {helpChatText}
-        </span>
         {renderChatWindow}
       </div>
     </div>

@@ -19,3 +19,11 @@ a {
 .chat-window {
   width: 17.1875rem;
 }
+
+.z-index-top {
+  z-index: 1;
+}
+
+.z-index-bottom {
+  z-index: -1;
+}

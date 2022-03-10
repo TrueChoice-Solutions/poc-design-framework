@@ -18,7 +18,7 @@ import { Card } from 'react-bootstrap';
  */
 const ChatWindow = ({ cardClassNames = 'bg-dark' }) => {
   return (
-    <div className="position-absolute bottom-0 start-0 chat-window">
+    <div className="chat-window position-absolute bottom-0 start-0 z-index-top">
       <Card className={cardClassNames}>
         <p>HELLO WORLD</p>
         <p>HELLO WORLD</p>

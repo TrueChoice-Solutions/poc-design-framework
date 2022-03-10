@@ -30,7 +30,11 @@ const Footer = () => {
         </Container>
       </Container>
 
-      <Container fluid className="position-fixed" style={{ bottom: '5rem' }}>
+      <Container
+        fluid
+        className="position-fixed z-index-bottom"
+        style={{ bottom: '5rem' }}
+      >
         <Container className="d-flex flex-column flex-sm-row align-items-sm-center text-white">
           <Logo
             imageSrc="truechoice.png"

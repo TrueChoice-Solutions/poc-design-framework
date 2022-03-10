@@ -16,16 +16,23 @@ import styles from './Timeline.module.css';
  * @param {string} props.text - the text to show which section the user is on
  * @return {jsx} - the Timeline component to render
  */
-const Timeline = ({ text }) => {
+const Timeline = ({ text, progressBarClassName, progressBarValue }) => {
   return (
-    <div>
+    <div className="w-100">
       <div>{text}</div>
-      <div className="d-flex">
-        <span className={styles.longProgressBar}></span>
-        <span className={styles.shortProgressBar}></span>
-        <span className={styles.shortProgressBar}></span>
-        <span className={styles.shortProgressBar}></span>
-        <span className={styles.shortProgressBar}></span>
+      <div className="clearfix">
+        <div
+          className={`progress ${progressBarClassName}`}
+          style={{ height: '0.5rem' }}
+        >
+          <div
+            className={`progress-bar w-${progressBarValue}`}
+            role="progressbar"
+            aria-valuenow={progressBarValue}
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
       </div>
     </div>
   );

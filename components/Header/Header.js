@@ -31,8 +31,12 @@ const Header = () => {
               imageHeight={33.33}
             />
           </Col>
-          <Col sm={6} className="d-flex justify-content-sm-end">
-            <Timeline text="Welcome" />
+          <Col sm={6} className="text-sm-end">
+            <Timeline
+              text="Welcome"
+              progressBarClassName="float-sm-end w-25"
+              progressBarValue="25"
+            />
           </Col>
         </Row>
       </Container>

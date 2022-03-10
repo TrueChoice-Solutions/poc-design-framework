@@ -19,6 +19,7 @@ const HelpChat = () => {
   return (
     <div className="d-flex align-items-center">
       <EmojiLaughing size={24} />
+      {/* Self note - whole div doesn't have a cursor pointer (not clickable) - need to fix */}
       <div className="position-relative bg-dark text-white p-2 ms-3 my-1">
         <CaretLeftFill
           size={35}

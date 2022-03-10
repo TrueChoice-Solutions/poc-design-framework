@@ -29,11 +29,7 @@ const HelpChat = ({ helpChatText }) => {
 
   // conditional renders
   const renderChatWindow = open ? (
-    <ChatWindow
-      cardClassNames="bg-dark text-primary"
-      open={open}
-      toggleChatWindowDisplay={toggleChatWindowDisplay}
-    />
+    <ChatWindow open={open} toggleChatWindowDisplay={toggleChatWindowDisplay} />
   ) : (
     ''
   );

@@ -16,10 +16,10 @@ import { Card } from 'react-bootstrap';
  * @param {string} props.cardClassNames - class names for Card bootstrap component
  * @return {jsx} - the ChatWindow component to render
  */
-const ChatWindow = ({ cardClassNames = 'bg-dark' }) => {
+const ChatWindow = ({ cardClassName = 'bg-dark' }) => {
   return (
     <div className="chat-window position-absolute bottom-0 start-0 z-index-top">
-      <Card className={cardClassNames}>
+      <Card className={cardClassName}>
         <p>HELLO WORLD</p>
         <p>HELLO WORLD</p>
         <p>HELLO WORLD</p>

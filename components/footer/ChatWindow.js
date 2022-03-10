@@ -7,13 +7,20 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
+// dependencies
+import { Card } from 'react-bootstrap';
+// local files
+
+/**
+ * @description - Chat Window display with a label for asking questions
+ * @return {jsx} - the ChatWindow component to render
+ */
 const ChatWindow = () => {
   return (
-    <div
-      className="border position-absolute top-0 start-0"
-      style={{ backgroundColor: 'red' }}
-    >
-      <div>HELLO</div>
+    <div className="position-absolute bottom-0 start-0">
+      <Card>
+        <p>HELLO WORLD</p>
+      </Card>
     </div>
   );
 };

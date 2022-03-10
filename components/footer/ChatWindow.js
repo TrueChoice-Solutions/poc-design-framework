@@ -15,10 +15,10 @@ import { Card } from 'react-bootstrap';
  * @description - Chat Window display w/ user & bot interactions
  * @return {jsx} - the ChatWindow component to render
  */
-const ChatWindow = () => {
+const ChatWindow = ({ cardClassNames = 'bg-dark' }) => {
   return (
     <div className="position-absolute bottom-0 start-0 chat-window">
-      <Card>
+      <Card className={cardClassNames}>
         <p>HELLO WORLD</p>
         <p>HELLO WORLD</p>
         <p>HELLO WORLD</p>

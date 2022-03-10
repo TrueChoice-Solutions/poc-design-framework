@@ -9,7 +9,6 @@
 
 // dependencies
 // local files
-import styles from './Timeline.module.css';
 
 /**
  * @description - returns Timeline component

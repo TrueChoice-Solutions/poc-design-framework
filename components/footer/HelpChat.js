@@ -27,7 +27,7 @@ const HelpChat = ({ helpChatText }) => {
     setOpen(!open);
   };
 
-  // helpers
+  // conditional renders
   const renderChatWindow = open ? (
     <ChatWindow open={open} toggleChatWindowDisplay={toggleChatWindowDisplay} />
   ) : (

@@ -12,7 +12,7 @@ import { Card } from 'react-bootstrap';
 // local files
 
 /**
- * @description - Chat Window display with a label for asking questions
+ * @description - Chat Window display w/ user & bot interactions
  * @return {jsx} - the ChatWindow component to render
  */
 const ChatWindow = () => {

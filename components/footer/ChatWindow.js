@@ -8,6 +8,7 @@
  */
 
 // dependencies
+import { useState } from 'react';
 import { Card, Form, FormLabel, FormControl } from 'react-bootstrap';
 import { X } from 'react-bootstrap-icons';
 // local files
@@ -18,6 +19,21 @@ import { X } from 'react-bootstrap-icons';
  * @return {jsx} - the ChatWindow component to render
  */
 const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
+  // state
+  const [userText, setUserText] = useState('');
+  const [userMessages, setUserMessages] = useState([]);
+
+  // event handlers
+  const handleInputChange = (event) => {
+    setUserText(event.target.value);
+  };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    setUserText('');
+    setUserMessages([...userMessages, userText]);
+  };
+
   return (
     <div className="chat-window position-absolute bottom-0 start-0 z-index-top">
       <Card body className={cardClassName}>
@@ -28,22 +44,32 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
             onClick={toggleChatWindowDisplay}
           />
           <p className="bg-secondary bg-gradient w-75 rounded-2 p-3 mb-2">
-            Please indicate how much you prefer or value each item in relation
-            to the others
+            Hello - How may I help you today?
           </p>
-          <p className="bg-info bg-gradient text-white w-75 rounded-2 p-3 float-end">
+          {/* <p className="bg-info bg-gradient text-white w-75 rounded-2 p-3 float-end">
             You cannot have the same preference value for all the choices shown.
             Can I help you with something else?
-          </p>
+              </p> */}
+          {userMessages.map((userMessage, i) => (
+            <p
+              key={i}
+              className="bg-info bg-gradient text-white w-75 rounded-2 p-3 float-end"
+            >
+              {userMessage}
+            </p>
+          ))}
         </div>
         <hr />
-        <Form>
+        <Form onSubmit={handleFormSubmit}>
           <FormLabel htmlFor="user-input">
             Can I help you with something else?
             <FormControl
               className="mt-2"
               id="user-input"
               type="text"
+              onChange={handleInputChange}
+              name="user-input"
+              value={userText}
               placeholder="Your text here..."
             />
           </FormLabel>

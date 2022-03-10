@@ -35,6 +35,16 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
     setUserMessages([...userMessages, userText]);
   };
 
+  // render content
+  const renderUserMessages = userMessages.map((userMessage, i) => (
+    <p
+      key={i}
+      className="bg-info bg-gradient text-white w-75 rounded-2 p-3 float-end"
+    >
+      {userMessage}
+    </p>
+  ));
+
   return (
     <div className="chat-window position-absolute bottom-0 start-0 z-index-top">
       <Card body className={cardClassName}>
@@ -47,18 +57,7 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
           <p className="bg-secondary bg-gradient w-75 rounded-2 p-3 mb-2">
             Hello - How may I help you today?
           </p>
-          {/* <p className="bg-info bg-gradient text-white w-75 rounded-2 p-3 float-end">
-            You cannot have the same preference value for all the choices shown.
-            Can I help you with something else?
-              </p> */}
-          {userMessages.map((userMessage, i) => (
-            <p
-              key={i}
-              className="bg-info bg-gradient text-white w-75 rounded-2 p-3 float-end"
-            >
-              {userMessage}
-            </p>
-          ))}
+          {renderUserMessages}
         </div>
         <hr />
         <Form onSubmit={handleFormSubmit}>

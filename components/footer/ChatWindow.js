@@ -14,7 +14,7 @@ import { X } from 'react-bootstrap-icons';
 
 /**
  * @description - Chat Window display w/ user & bot interactions
- * @param {string} props.cardClassNames - class names for Card bootstrap component
+ * @param {string} props.cardClassName - class names for Card bootstrap component
  * @return {jsx} - the ChatWindow component to render
  */
 const ChatWindow = ({ cardClassName = 'bg-dark' }) => {
@@ -22,11 +22,12 @@ const ChatWindow = ({ cardClassName = 'bg-dark' }) => {
     <div className="chat-window position-absolute bottom-0 start-0 z-index-top">
       <Card body className={cardClassName}>
         <div className="clearfix">
+          <X size={24} className="float-end cursor-pointer" />
           <p className="border bg-secondary bg-gradient w-75 rounded-2 p-3 mb-2">
             Please indicate how much you prefer or value each item in relation
             to the others
           </p>
-          <p className="border bg-info bg-gradient w-75 rounded-2 float-end">
+          <p className="border bg-info bg-gradient text-white w-75 rounded-2 p-3 float-end">
             You cannot have the same preference value for all the choices shown.
             Can I help you with something else?
           </p>

@@ -29,7 +29,7 @@ const HelpChat = ({ helpChatText }) => {
 
   // conditional renders
   const renderChatWindow = open ? (
-    <ChatWindow open={open} toggleChatWindowDisplay={toggleChatWindowDisplay} />
+    <ChatWindow toggleChatWindowDisplay={toggleChatWindowDisplay} />
   ) : (
     ''
   );

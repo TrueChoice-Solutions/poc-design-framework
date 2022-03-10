@@ -24,6 +24,8 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
   const [userText, setUserText] = useState('');
   const [userMessages, setUserMessages] = useState([]);
 
+  if (userMessages.length > 3) setUserMessages([...userMessages.slice(1)]);
+
   // event handlers
   const handleInputChange = (event) => {
     setUserText(event.target.value);

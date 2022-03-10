@@ -9,19 +9,19 @@
 .longProgressBar,
 .shortProgressBar {
   background-color: #fff;
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 .longProgressBar {
-  width: 190px;
-  height: 8px;
+  width: 11.875rem;
+  height: 0.5rem;
 }
 
 .shortProgressBar {
-  width: 8px;
-  height: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
 }
 
 .shortProgressBar:last-child {
-  margin-right: 0px;
+  margin-right: 0rem;
 }

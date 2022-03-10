@@ -15,3 +15,7 @@ a {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.chat-window {
+  width: 17.1875rem;
+}

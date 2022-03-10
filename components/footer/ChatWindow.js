@@ -17,8 +17,12 @@ import { Card } from 'react-bootstrap';
  */
 const ChatWindow = () => {
   return (
-    <div className="position-absolute bottom-0 start-0">
+    <div className="position-absolute bottom-0 start-0 chat-window">
       <Card>
+        <p>HELLO WORLD</p>
+        <p>HELLO WORLD</p>
+        <p>HELLO WORLD</p>
+        <p>HELLO WORLD</p>
         <p>HELLO WORLD</p>
       </Card>
     </div>

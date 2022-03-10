@@ -15,7 +15,7 @@ import { EmojiLaughing, CaretLeftFill } from 'react-bootstrap-icons';
  * @description - Help Chat icon and button that opens a chat window on click
  * @return {jsx} - the HelpChat component to render
  */
-const HelpChat = () => {
+const HelpChat = ({ helpChatText }) => {
   return (
     <div className="d-flex align-items-center">
       <EmojiLaughing size={24} />
@@ -26,7 +26,7 @@ const HelpChat = () => {
           className="text-dark position-absolute top-50 start-0 translate-middle cursor-pointer"
         />
         <span className="d-inline-block mb-1 cursor-pointer">
-          How can I help you?
+          {helpChatText}
         </span>
       </div>
     </div>

@@ -6,18 +6,22 @@
  * ("Confidential Information").  You shall not disclose such Confidential Information and shall
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
-
-// local files
-// dependencies
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/globals.css';
-
-/**
- * @description - returns App
- * @return {jsx} - the App to render
- */
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+.longProgressBar,
+.shortProgressBar {
+  background-color: #fff;
+  margin-right: 0.9375rem;
 }
 
-export default MyApp;
+.longProgressBar {
+  width: 11.875rem;
+  height: 0.5rem;
+}
+
+.shortProgressBar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.shortProgressBar:last-child {
+  margin-right: 0rem;
+}

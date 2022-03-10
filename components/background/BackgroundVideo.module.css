@@ -7,8 +7,7 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-const HomePage = () => {
-  return <main className="HomePage">Home Page</main>;
-};
-
-export default HomePage;
+.backgroundVideo {
+  object-fit: cover;
+  z-index: -1;
+}

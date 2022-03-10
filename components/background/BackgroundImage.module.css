@@ -7,17 +7,9 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-// local files
-// dependencies
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/globals.css';
-
-/**
- * @description - returns App
- * @return {jsx} - the App to render
- */
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+.backgroundCoverImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
-
-export default MyApp;

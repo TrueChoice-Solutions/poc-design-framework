@@ -27,7 +27,6 @@ const Logo = ({ imageSrc, altText, linkSrc, imageWidth, imageHeight }) => {
         <Image
           src={`/images/${imageSrc}`}
           alt={altText}
-          // change width and height divisor (bottom) to fit accordingly. Keep them the same! E.g. imageWidth / 4, change imageHeight / 4
           width={`${imageWidth}`}
           height={`${imageHeight}`}
           layout="intrinsic"

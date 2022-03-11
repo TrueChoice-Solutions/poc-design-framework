@@ -23,6 +23,10 @@ const HelpChat = ({ helpChatText }) => {
   const [open, setOpen] = useState(false);
 
   // event handlers
+  /**
+   * @description - on click event listener that toggles "open" state between true or false boolean values
+   * @return {undefined} - Nothing to return
+   */
   const toggleChatWindowDisplay = () => {
     setOpen(!open);
   };

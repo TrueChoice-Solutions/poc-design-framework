@@ -42,7 +42,7 @@ const HelpChat = ({ helpChatText, helpChatTextSmallScreen }) => {
 
   return (
     <div className="d-flex align-items-center">
-      <EmojiLaughing size={24} />
+      <EmojiLaughing size={24} className="text-white" />
       <div className="position-relative bg-dark text-white ms-3 my-1">
         <div className="p-2 cursor-pointer" onClick={toggleChatWindowDisplay}>
           <span className={`${styles.bigScreenText} mb-1`}>{helpChatText}</span>

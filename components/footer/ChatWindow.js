@@ -83,10 +83,9 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
           {renderUserMessages}
         </div>
         <Form onSubmit={handleFormSubmit}>
-          <FormLabel htmlFor="user-input">
+          <FormLabel htmlFor="user-input" className="mb-0">
             <FormControl
               id="user-input"
-              className="mt-2"
               type="text"
               name="user-input"
               placeholder="Your text here..."

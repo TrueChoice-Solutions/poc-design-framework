@@ -48,7 +48,7 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
   ));
 
   return (
-    <div className="chat-window position-absolute bottom-0 start-0 z-index-top">
+    <div className="chat-window position-absolute bottom-0 start-0">
       <Card body className={cardClassName}>
         <div className="clearfix">
           <X

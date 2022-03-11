@@ -26,7 +26,10 @@ const Footer = () => {
         className="position-fixed bottom-0 bg-primary text-white-50"
       >
         <Container className="h-100">
-          <HelpChat helpChatText="How can I help you?" />
+          <HelpChat
+            helpChatText="How can I help you?"
+            helpChatTextSmallScreen="Help?"
+          />
         </Container>
       </Container>
 

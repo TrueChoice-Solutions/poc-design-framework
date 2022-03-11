@@ -11,14 +11,16 @@
 import { useState } from 'react';
 import { EmojiLaughing, CaretLeftFill } from 'react-bootstrap-icons';
 // local files
+import styles from './HelpChat.module.css';
 import ChatWindow from './ChatWindow';
 
 /**
  * @description - Help Chat icon. Opens a chat window on click
  * @param {string} props.helpChatText - button-like chat text to display
+ * @param {string} props.helpChatTextSmallScreen - chat text to display on small screens
  * @return {jsx} - the HelpChat component to render
  */
-const HelpChat = ({ helpChatText }) => {
+const HelpChat = ({ helpChatText, helpChatTextSmallScreen }) => {
   // state
   const [open, setOpen] = useState(false);
 
@@ -43,7 +45,10 @@ const HelpChat = ({ helpChatText }) => {
       <EmojiLaughing size={24} />
       <div className="position-relative bg-dark text-white ms-3 my-1">
         <div className="p-2 cursor-pointer" onClick={toggleChatWindowDisplay}>
-          <span className="d-inline-block mb-1">{helpChatText}</span>
+          <span className={`${styles.bigScreenText} mb-1`}>{helpChatText}</span>
+          <span className={`${styles.smallScreenText} mb-1`}>
+            {helpChatTextSmallScreen}
+          </span>
         </div>
         <CaretLeftFill
           size={35}

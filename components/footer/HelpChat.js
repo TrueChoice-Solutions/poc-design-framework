@@ -33,10 +33,8 @@ const HelpChat = ({ helpChatText, helpChatTextSmallScreen }) => {
   };
 
   // conditional renders
-  const renderChatWindow = open ? (
+  const chatWindow = open && (
     <ChatWindow toggleChatWindowDisplay={toggleChatWindowDisplay} />
-  ) : (
-    ''
   );
 
   return (
@@ -54,7 +52,7 @@ const HelpChat = ({ helpChatText, helpChatTextSmallScreen }) => {
           className="text-dark position-absolute top-50 start-0 translate-middle cursor-pointer"
           onClick={toggleChatWindowDisplay}
         />
-        {renderChatWindow}
+        {chatWindow}
       </div>
     </div>
   );

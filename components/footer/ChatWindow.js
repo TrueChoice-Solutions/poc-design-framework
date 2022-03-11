@@ -50,7 +50,7 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
   };
 
   // render content
-  const renderUserMessages = userMessages.map((userMessage, i) => (
+  const userMessagesArray = userMessages.map((userMessage, i) => (
     <p
       key={i}
       className="bg-info bg-gradient text-white w-75 rounded-2 p-2 float-end"
@@ -78,7 +78,7 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
           </p>
           <p className="w-75 mb-3">Can I help you with something else?</p>
 
-          {renderUserMessages}
+          {userMessagesArray}
         </div>
         <Form onSubmit={handleFormSubmit}>
           <FormLabel htmlFor="user-input" className="mb-0">

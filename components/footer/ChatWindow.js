@@ -32,7 +32,6 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
   /**
    * @description - on change event listener that sets "userText" state to user's input value
    * @param {object} event - event object, accessing the event.target.value to get user's text
-   * @return {undefined} - Nothing to return
    */
   const handleInputChange = (event) => {
     setUserText(event.target.value);
@@ -43,7 +42,6 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
    * 2) After submit, sets the text input to blank. 3) Sets "userMessages" state to include
    * previous & current submitted texts
    * @param {object} event - event object, accessing preventDefault method to prevent default page reload
-   * @return {undefined} - Nothing to return
    */
   const handleFormSubmit = (event) => {
     event.preventDefault();

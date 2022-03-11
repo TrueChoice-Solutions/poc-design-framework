@@ -55,7 +55,7 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
   const renderUserMessages = userMessages.map((userMessage, i) => (
     <p
       key={i}
-      className="bg-info bg-gradient text-white w-75 rounded-2 p-3 float-end"
+      className="bg-info bg-gradient text-white w-75 rounded-2 p-2 float-end"
     >
       {userMessage}
     </p>
@@ -72,7 +72,7 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
           />
           <p className="w-75 mb-3">
             Please indicate how much you prefer or value each item in relation
-            to the otehrs. How far you move the slider depends on how strongly
+            to the others. How far you move the slider depends on how strongly
             you feel about the item.
           </p>
           <p className="w-75 mb-3">

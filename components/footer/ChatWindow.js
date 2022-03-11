@@ -70,15 +70,20 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
             className="float-end cursor-pointer"
             onClick={toggleChatWindowDisplay}
           />
-          <p className="bg-secondary bg-gradient w-75 rounded-2 p-3 mb-2">
-            Hello - How may I help you today?
+          <p className="w-75 mb-3">
+            Please indicate how much you prefer or value each item in relation
+            to the otehrs. How far you move the slider depends on how strongly
+            you feel about the item.
           </p>
+          <p className="w-75 mb-3">
+            You cannot have the same preference value for all the choices shown
+          </p>
+          <p className="w-75 mb-3">Can I help you with something else?</p>
+
           {renderUserMessages}
         </div>
-        <hr />
         <Form onSubmit={handleFormSubmit}>
           <FormLabel htmlFor="user-input">
-            Can I help you with something else?
             <FormControl
               id="user-input"
               className="mt-2"

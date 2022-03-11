@@ -23,6 +23,7 @@ import Footer from '../components/footer/Footer';
 const WelcomePage = () => {
   return (
     <main>
+      {/* eslint-disable-next-line max-len */}
       <BackgroundImage bgImageUrl="https://previews.123rf.com/images/efetova/efetova1506/efetova150600053/41047963-borrosa-multitud-de-gente-que-camina-en-la-ciudad-con-edificios-en-el-fondo-en-blanco-y-negro.jpg" />
       <BackgroundOverlayTint
         direction="131.3deg"

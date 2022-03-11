@@ -29,6 +29,11 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
   }
 
   // event handlers
+  /**
+   * @description - on change event listener that sets state "userText" to input value
+   * @param {object} event - event object, accessing the event.target.value to get user's text
+   * @return {undefined} - Nothing to return. Sets "userText" state
+   */
   const handleInputChange = (event) => {
     setUserText(event.target.value);
   };

@@ -17,6 +17,7 @@ import { X } from 'react-bootstrap-icons';
  * @description - Chat Window display w/ user & bot interactions
  * @param {string} props.cardClassName - class names for Card bootstrap component
  * @param {function} props.toggleChatWindowDisplay - toggle "open" state. Functionality: on X icon click, close window
+ * @param {jsx} props.children - chat bot paragraph texts
  * @return {jsx} - the ChatWindow component to render
  */
 const ChatWindow = ({

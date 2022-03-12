@@ -12,7 +12,6 @@ import { useState } from 'react';
 import { Card, Form, FormLabel, FormControl } from 'react-bootstrap';
 import { X } from 'react-bootstrap-icons';
 // local files
-import ChatWindowBotText from './ChatWindowBotText';
 
 /**
  * @description - Chat Window display w/ user & bot interactions
@@ -20,7 +19,11 @@ import ChatWindowBotText from './ChatWindowBotText';
  * @param {function} props.toggleChatWindowDisplay - toggle "open" state. Functionality: on X icon click, close window
  * @return {jsx} - the ChatWindow component to render
  */
-const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
+const ChatWindow = ({
+  cardClassName = 'bg-dark',
+  toggleChatWindowDisplay,
+  children
+}) => {
   // state
   const [userText, setUserText] = useState('');
   const [userMessages, setUserMessages] = useState([]);
@@ -69,20 +72,7 @@ const ChatWindow = ({ cardClassName = 'bg-dark', toggleChatWindowDisplay }) => {
             className="float-end cursor-pointer"
             onClick={toggleChatWindowDisplay}
           />
-          <ChatWindowBotText
-            text="Please indicate how much you prefer or value each item in relation
-          to the others. How far you move the slider depends on how strongly
-          you feel about the item."
-            className="w-75 mb-3"
-          />
-          <ChatWindowBotText
-            text="You cannot have the same preference value for all the choices shown"
-            className="w-75 mb-3"
-          />
-          <ChatWindowBotText
-            text="Can I help you with something else?"
-            className="w-75 mb-3"
-          />
+          {children}
           {userMessagesArray}
         </div>
         <Form onSubmit={handleFormSubmit}>

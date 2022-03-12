@@ -11,10 +11,10 @@
 // local files
 
 /**
- * @description - Chat Window display w/ user & bot interactions
+ * @description - paragraph text
  * @param {string} props.text - paragraph text to display
  * @param {string} props.className - class name styling from Bootstrap
- * @return {jsx} - the ChatWindow component to render
+ * @return {jsx} - the ChatWindowBotText component to render
  */
 const ChatWindowBotText = ({ text, className = '' }) => {
   return <p className={className}>{text}</p>;

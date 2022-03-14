@@ -34,6 +34,10 @@ const HelpChat = ({ helpChatText, helpChatTextSmallScreen, children }) => {
   };
 
   // conditional renders
+  /**
+   * @description - conditionally render ChatWindow component, based on "open" state
+   * @return {jsx} - the ChatWindow component to render
+   */
   const renderChatWindow = () => {
     return (
       open && (

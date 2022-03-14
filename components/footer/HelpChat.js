@@ -34,11 +34,15 @@ const HelpChat = ({ helpChatText, helpChatTextSmallScreen, children }) => {
   };
 
   // conditional renders
-  const chatWindow = open && (
-    <ChatWindow toggleChatWindowDisplay={toggleChatWindowDisplay}>
-      {children}
-    </ChatWindow>
-  );
+  const renderChatWindow = () => {
+    return (
+      open && (
+        <ChatWindow toggleChatWindowDisplay={toggleChatWindowDisplay}>
+          {children}
+        </ChatWindow>
+      )
+    );
+  };
 
   return (
     <div className="d-flex align-items-center">
@@ -55,7 +59,7 @@ const HelpChat = ({ helpChatText, helpChatTextSmallScreen, children }) => {
           className="text-dark position-absolute top-50 start-0 translate-middle cursor-pointer"
           onClick={toggleChatWindowDisplay}
         />
-        {chatWindow}
+        {renderChatWindow()}
       </div>
     </div>
   );

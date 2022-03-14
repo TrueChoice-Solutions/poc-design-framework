@@ -18,6 +18,7 @@ import ChatWindow from './ChatWindow';
  * @description - Help Chat icon. Opens a chat window on click
  * @param {string} props.helpChatText - chat text to display on screens > small (576px)
  * @param {string} props.helpChatTextSmallScreen - chat text to display on screens < small (576px)
+ * @param {jsx} props.children - chat bot paragraph texts
  * @return {jsx} - the HelpChat component to render
  */
 const HelpChat = ({ helpChatText, helpChatTextSmallScreen, children }) => {

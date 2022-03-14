@@ -16,7 +16,7 @@ import Welcome from '../components/body/Welcome';
 import Footer from '../components/footer/Footer';
 
 /**
- * @description - returns Welcome component
+ * @description - returns Welcome Page
  * @return {jsx} - the Welcome Page to render
  */
 const WelcomePage = () => {

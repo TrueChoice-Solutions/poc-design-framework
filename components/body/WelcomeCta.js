@@ -16,7 +16,7 @@ import Button from '../shared/Button';
 /**
  * @description - section for icon, time estimation text, and button
  * @param {string} props.estimateText - time estimation text
- * @param {function} props.icon - Bootstrap icon component name and any additional styling
+ * @param {jsx} props.icon - Bootstrap icon component name and any additional styling
  * @param {string} props.buttonText - button's text
  * @return {jsx} - the Welcome Cta to render
  */

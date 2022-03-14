@@ -20,7 +20,7 @@ import ChatWindow from './ChatWindow';
  * @param {string} props.helpChatTextSmallScreen - chat text to display on screens < small (576px)
  * @return {jsx} - the HelpChat component to render
  */
-const HelpChat = ({ helpChatText, helpChatTextSmallScreen }) => {
+const HelpChat = ({ helpChatText, helpChatTextSmallScreen, children }) => {
   // state
   const [open, setOpen] = useState(false);
 
@@ -35,15 +35,7 @@ const HelpChat = ({ helpChatText, helpChatTextSmallScreen }) => {
   // conditional renders
   const chatWindow = open && (
     <ChatWindow toggleChatWindowDisplay={toggleChatWindowDisplay}>
-      <p className="w-75 mb-3">
-        Please indicate how much you prefer or value each item in relation to
-        the others. How far you move the slider depends on how strongly you feel
-        about the item.
-      </p>
-      <p className="w-75 mb-3">
-        You cannot have the same preference value for all the choices shown
-      </p>
-      <p className="w-75 mb-3">Can I help you with something else?</p>
+      {children}
     </ChatWindow>
   );
 

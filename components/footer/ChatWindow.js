@@ -55,14 +55,16 @@ const ChatWindow = ({
   };
 
   // render content
-  const userMessagesArray = userMessages.map((userMessage, i) => (
-    <p
-      key={i}
-      className="bg-info bg-gradient text-white w-75 rounded-2 p-2 float-end"
-    >
-      {userMessage}
-    </p>
-  ));
+  const renderUserMessages = () => {
+    return userMessages.map((userMessage, i) => (
+      <p
+        key={i}
+        className="bg-info bg-gradient text-white w-75 rounded-2 p-2 float-end"
+      >
+        {userMessage}
+      </p>
+    ));
+  };
 
   return (
     <div className="chat-window position-absolute bottom-0 start-0">
@@ -74,7 +76,7 @@ const ChatWindow = ({
             onClick={toggleChatWindowDisplay}
           />
           {children}
-          {userMessagesArray}
+          {renderUserMessages()}
         </div>
         <Form onSubmit={handleFormSubmit}>
           <FormLabel htmlFor="user-input" className="mb-0">

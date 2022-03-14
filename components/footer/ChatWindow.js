@@ -57,7 +57,7 @@ const ChatWindow = ({
   // render content
   /**
    * @description - maps over user messages and outputs each inside p tag
-   * @return array of mapped user messages wrapped in a paragraph tag
+   * @return {array} - array of mapped user messages
    */
   const renderUserMessages = () => {
     return userMessages.map((userMessage, i) => (

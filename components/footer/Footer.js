@@ -23,14 +23,32 @@ const Footer = () => {
     <footer>
       <Container
         fluid
-        className="position-fixed bottom-0 bg-primary border text-white-50"
+        className="position-fixed bottom-0 bg-primary text-white-50"
       >
         <Container className="h-100">
-          <HelpChat />
+          <HelpChat
+            helpChatText="How can I help you?"
+            helpChatTextSmallScreen="Help?"
+          >
+            <p className="w-75 mb-3">
+              Please indicate how much you prefer or value each item in relation
+              to the others. How far you move the slider depends on how strongly
+              you feel about the item.
+            </p>
+            <p className="w-75 mb-3">
+              You cannot have the same preference value for all the choices
+              shown
+            </p>
+            <p className="w-75 mb-3">Can I help you with something else?</p>
+          </HelpChat>
         </Container>
       </Container>
 
-      <Container fluid className="position-fixed" style={{ bottom: '5rem' }}>
+      <Container
+        fluid
+        className="position-fixed z-index-bottom"
+        style={{ bottom: '5rem' }}
+      >
         <Container className="d-flex flex-column flex-sm-row align-items-sm-center text-white">
           <Logo
             imageSrc="truechoice.png"

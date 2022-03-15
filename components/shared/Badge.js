@@ -7,6 +7,13 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
+// dependencies
+// local files
+
+/**
+ * @description - returns Badge component
+ * @return {jsx} - the Badge component to render
+ */
 const Badge = () => {
   return (
     <div>

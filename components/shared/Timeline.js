@@ -27,7 +27,7 @@ const Timeline = ({ text, progressBarClassName, progressBarValue }) => {
           style={{ height: '0.5rem' }}
         >
           <div
-            className={`progress-bar w-${progressBarValue}`}
+            className={`progress-bar bg-primary w-${progressBarValue}`}
             role="progressbar"
             aria-valuenow={progressBarValue}
             aria-valuemin="0"

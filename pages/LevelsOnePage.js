@@ -9,6 +9,8 @@
 
 // dependencies
 // local files
+import BackgroundImage from '../components/background/BackgroundImage';
+import BackgroundOverlayTint from '../components/background/BackgroundOverlayTint';
 
 /**
  * @description - returns Levels One Page
@@ -17,7 +19,13 @@
 const LevelsOnePage = () => {
   return (
     <main>
-      <div>Levels One Page!</div>
+      {/* eslint-disable-next-line max-len */}
+      <BackgroundImage bgImageUrl="https://previews.123rf.com/images/efetova/efetova1506/efetova150600053/41047963-borrosa-multitud-de-gente-que-camina-en-la-ciudad-con-edificios-en-el-fondo-en-blanco-y-negro.jpg" />
+      <BackgroundOverlayTint
+        direction="131.3deg"
+        startColor="blue"
+        endColor="purple"
+      />
     </main>
   );
 };

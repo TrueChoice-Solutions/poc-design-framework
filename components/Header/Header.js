@@ -17,7 +17,7 @@ import Timeline from '../shared/Timeline';
  * @description - returns Header component
  * @return {jsx} - the Header component to render
  */
-const Header = () => {
+const Header = ({ text, progressBarValue }) => {
   return (
     <Container fluid className="position-absolute">
       <Container>
@@ -33,9 +33,9 @@ const Header = () => {
           </Col>
           <Col sm={6} className="text-sm-end">
             <Timeline
-              text="Welcome"
+              text={text}
               progressBarClassName="float-sm-end w-25"
-              progressBarValue="25"
+              progressBarValue={progressBarValue}
             />
           </Col>
         </Row>

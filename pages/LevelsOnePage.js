@@ -12,6 +12,7 @@
 import BackgroundImage from '../components/background/BackgroundImage';
 import BackgroundOverlayTint from '../components/background/BackgroundOverlayTint';
 import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
 
 /**
  * @description - returns Levels One Page
@@ -28,6 +29,7 @@ const LevelsOnePage = () => {
         endColor="purple"
       />
       <Header text="Learn: 1 of 5" progressBarValue="25" />
+      <Footer />
     </main>
   );
 };

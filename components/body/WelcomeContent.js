@@ -28,7 +28,7 @@ const WelcomeContent = () => {
             </Headline>
             <WelcomeCta
               estimateText="It takes less than 5 minutes"
-              buttonLink="/LevelsOnePage"
+              buttonLink="/levels"
             />
           </Col>
         </Row>

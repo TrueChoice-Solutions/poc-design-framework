@@ -15,6 +15,8 @@ import Timeline from '../shared/Timeline';
 
 /**
  * @description - returns Header component
+ * @param {text} props.text - Timeline text to show which section the user is on
+ * @param {text} props.progressBarValue - Timeline value to set the progress bar percentage
  * @return {jsx} - the Header component to render
  */
 const Header = ({ text, progressBarValue }) => {

@@ -19,7 +19,7 @@ import Footer from '../components/footer/Footer';
  * @description - returns Levels One Page
  * @return {jsx} - the Levels One Page to render
  */
-const LevelsOnePage = () => {
+const Levels = () => {
   return (
     <main>
       {/* eslint-disable-next-line max-len */}
@@ -50,4 +50,4 @@ const LevelsOnePage = () => {
   );
 };
 
-export default LevelsOnePage;
+export default Levels;

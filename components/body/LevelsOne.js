@@ -8,6 +8,7 @@
  */
 
 // dependencies
+import { Container, Row, Col } from 'react-bootstrap';
 // local files
 
 /**
@@ -16,9 +17,15 @@
  */
 const LevelsOne = () => {
   return (
-    <div>
-      <div>Levels One</div>
-    </div>
+    <Container fluid>
+      <Container>
+        <Row className="vh-100 min-vh-100 align-items-center text-light">
+          <Col>
+            <div>HELLO</div>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   );
 };
 

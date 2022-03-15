@@ -17,7 +17,7 @@ import WelcomeCta from './WelcomeCta';
  * @description - returns Welcome main body content
  * @return {jsx} - the Welcome component to render
  */
-const Welcome = () => {
+const WelcomeContent = () => {
   return (
     <Container fluid>
       <Container>
@@ -37,4 +37,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default WelcomeContent;

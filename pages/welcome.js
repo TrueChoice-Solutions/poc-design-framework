@@ -12,14 +12,14 @@
 import BackgroundImage from '../components/background/BackgroundImage';
 import BackgroundOverlayTint from '../components/background/BackgroundOverlayTint';
 import Header from '../components/header/Header';
-import Welcome from '../components/body/Welcome';
+import WelcomeContent from '../components/body/WelcomeContent';
 import Footer from '../components/footer/Footer';
 
 /**
  * @description - returns Welcome Page
  * @return {jsx} - the Welcome Page to render
  */
-const WelcomePage = () => {
+const Welcome = () => {
   return (
     <main>
       {/* eslint-disable-next-line max-len */}
@@ -30,7 +30,7 @@ const WelcomePage = () => {
         endColor="blue"
       />
       <Header text="Welcome" progressBarValue="25" />
-      <Welcome />
+      <WelcomeContent />
       <Footer>
         <p className="w-75 mb-3">
           Please indicate how much you prefer or value each item in relation to
@@ -46,4 +46,4 @@ const WelcomePage = () => {
   );
 };
 
-export default WelcomePage;
+export default Welcome;

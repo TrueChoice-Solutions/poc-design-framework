@@ -12,6 +12,7 @@
 import BackgroundImage from '../components/background/BackgroundImage';
 import BackgroundOverlayTint from '../components/background/BackgroundOverlayTint';
 import Header from '../components/header/Header';
+import LevelsOne from '../components/body/LevelsOne';
 import Footer from '../components/footer/Footer';
 
 /**
@@ -29,6 +30,7 @@ const LevelsOnePage = () => {
         endColor="purple"
       />
       <Header text="Learn: 1 of 5" progressBarValue="25" />
+      <LevelsOne />
       <Footer>
         <p className="w-75 mb-3">
           This question is asking you to state your preferences across a range

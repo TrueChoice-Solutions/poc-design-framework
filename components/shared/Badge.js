@@ -14,10 +14,13 @@
  * @description - returns Badge component
  * @return {jsx} - the Badge component to render
  */
-const Badge = () => {
+const Badge = ({
+  className = 'bg-primary rounded-pill d-inline-block',
+  text = 'Badge'
+}) => {
   return (
     <div>
-      <div>Badge</div>
+      <div className={className}>{text}</div>
     </div>
   );
 };

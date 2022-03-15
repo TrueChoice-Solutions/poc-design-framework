@@ -22,7 +22,7 @@ const LevelsOne = () => {
       <Container>
         <Row className="vh-100 min-vh-100 align-items-center text-light">
           <Col>
-            <Badge />
+            <Badge text="Category Label" />
           </Col>
         </Row>
       </Container>

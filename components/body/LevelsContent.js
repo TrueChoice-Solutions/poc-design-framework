@@ -16,7 +16,7 @@ import Badge from '../shared/Badge';
  * @description - returns Level One main body content
  * @return {jsx} - the Levels One component to render
  */
-const LevelsOne = () => {
+const LevelsContent = () => {
   return (
     <Container fluid>
       <Container>
@@ -30,4 +30,4 @@ const LevelsOne = () => {
   );
 };
 
-export default LevelsOne;
+export default LevelsContent;

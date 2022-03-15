@@ -14,7 +14,7 @@ import Headline from './Headline';
 import WelcomeCta from './WelcomeCta';
 
 /**
- * @description - returns Welcome component
+ * @description - returns Welcome main body content
  * @return {jsx} - the Welcome component to render
  */
 const Welcome = () => {

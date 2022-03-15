@@ -7,6 +7,13 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
+// dependencies
+// local files
+
+/**
+ * @description - returns Level One main body content
+ * @return {jsx} - the Levels One component to render
+ */
 const LevelsOne = () => {
   return (
     <div>

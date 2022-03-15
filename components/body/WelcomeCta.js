@@ -30,7 +30,11 @@ const WelcomeCta = ({
 }) => {
   // userRouter
   const router = useRouter();
-  // event handlers //
+
+  // event handlers
+  /**
+   * @description - Button on click event handler, takes user to link
+   */
   const handleButtonClick = () => {
     router.push(`${buttonLink}`);
   };

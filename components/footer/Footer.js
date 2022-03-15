@@ -16,6 +16,7 @@ import Disclaimer from './Disclaimer';
 
 /**
  * @description - returns Footer component
+ * @param {jsx} props.children - chat bot paragraph texts
  * @return {jsx} - the Footer component to render
  */
 const Footer = ({ children }) => {

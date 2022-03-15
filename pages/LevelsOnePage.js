@@ -27,40 +27,7 @@ const LevelsOnePage = () => {
         startColor="blue"
         endColor="purple"
       />
-      {/*
-      <Header logo={<Logo
-        imageSrc="logo.png"
-        altText="TrueChoice Logo"
-        linkSrc="https://www.truechoice.io"
-        imageWidth={200}
-        imageHeight={33.33}
-      />} timeline={<Timeline
-        text="Welcome"
-        progressBarClassName="float-sm-end w-25"
-        progressBarValue="25"
-      />} />
-
-
-      {/* pass as children
-      <Header>
-      <Col sm={6}>
-      <Logo
-        imageSrc="logo.png"
-        altText="TrueChoice Logo"
-        linkSrc="https://www.truechoice.io"
-        imageWidth={200}
-        imageHeight={33.33}
-      />
-    </Col>
-    <Col sm={6} className="text-sm-end">
-      <Timeline
-        text="Welcome"
-        progressBarClassName="float-sm-end w-25"
-        progressBarValue="25"
-      />
-    </Col>
-      </Header>
-  */}
+      <Header text="Learn: 1 of 5" progressBarValue="25" />
     </main>
   );
 };

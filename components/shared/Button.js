@@ -18,10 +18,14 @@
  * @param {string} props.outline - the button's outline color
  * @return {jsx} - the Button component to render
  */
-const Button = ({ text, bgColor, textColor, outline }) => {
+const Button = ({ text, bgColor, textColor, outline, onClick }) => {
   // helper functions
   return (
-    <button type="button" className={`btn ${bgColor} ${textColor} ${outline}`}>
+    <button
+      type="button"
+      className={`btn ${bgColor} ${textColor} ${outline}`}
+      onClick={onClick}
+    >
       {text}
     </button>
   );

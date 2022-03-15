@@ -26,7 +26,10 @@ const Welcome = () => {
             <Headline h1Text="What Matters to You!">
               <h2>Share your preferences and perspectives with us.</h2>
             </Headline>
-            <WelcomeCta estimateText="It takes less than 5 minutes" />
+            <WelcomeCta
+              estimateText="It takes less than 5 minutes"
+              buttonLink="/LevelsOnePage"
+            />
           </Col>
         </Row>
       </Container>

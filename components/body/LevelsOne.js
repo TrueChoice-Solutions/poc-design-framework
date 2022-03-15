@@ -10,6 +10,7 @@
 // dependencies
 import { Container, Row, Col } from 'react-bootstrap';
 // local files
+import Badge from '../shared/Badge';
 
 /**
  * @description - returns Level One main body content
@@ -21,7 +22,7 @@ const LevelsOne = () => {
       <Container>
         <Row className="vh-100 min-vh-100 align-items-center text-light">
           <Col>
-            <div>HELLO</div>
+            <Badge />
           </Col>
         </Row>
       </Container>

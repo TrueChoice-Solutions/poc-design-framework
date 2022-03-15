@@ -28,7 +28,7 @@ const WelcomeCta = ({
   buttonText = 'Get Started',
   buttonLink
 }) => {
-  // userRouter
+  // useRouter
   const router = useRouter();
 
   // event handlers

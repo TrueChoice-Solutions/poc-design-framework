@@ -16,9 +16,10 @@ import Disclaimer from './Disclaimer';
 
 /**
  * @description - returns Footer component
+ * @param {jsx} props.children - chat bot paragraph texts
  * @return {jsx} - the Footer component to render
  */
-const Footer = () => {
+const Footer = ({ children }) => {
   return (
     <footer>
       <Container
@@ -30,16 +31,7 @@ const Footer = () => {
             helpChatText="How can I help you?"
             helpChatTextSmallScreen="Help?"
           >
-            <p className="w-75 mb-3">
-              Please indicate how much you prefer or value each item in relation
-              to the others. How far you move the slider depends on how strongly
-              you feel about the item.
-            </p>
-            <p className="w-75 mb-3">
-              You cannot have the same preference value for all the choices
-              shown
-            </p>
-            <p className="w-75 mb-3">Can I help you with something else?</p>
+            {children}
           </HelpChat>
         </Container>
       </Container>

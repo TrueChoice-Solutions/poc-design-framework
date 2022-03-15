@@ -16,12 +16,17 @@
  * @param {string} props.bgColor - the button's background color
  * @param {string} props.textColor - the button's font color
  * @param {string} props.outline - the button's outline color
+ * @param {function} props.onClick - on click event handler to run after button is clicked
  * @return {jsx} - the Button component to render
  */
-const Button = ({ text, bgColor, textColor, outline }) => {
+const Button = ({ text, bgColor, textColor, outline, onClick }) => {
   // helper functions
   return (
-    <button type="button" className={`btn ${bgColor} ${textColor} ${outline}`}>
+    <button
+      type="button"
+      className={`btn ${bgColor} ${textColor} ${outline}`}
+      onClick={onClick}
+    >
       {text}
     </button>
   );

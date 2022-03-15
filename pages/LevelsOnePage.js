@@ -29,7 +29,21 @@ const LevelsOnePage = () => {
         endColor="purple"
       />
       <Header text="Learn: 1 of 5" progressBarValue="25" />
-      <Footer />
+      <Footer>
+        <p className="w-75 mb-3">
+          This question is asking you to state your preferences across a range
+          of options.
+        </p>
+        <p className="w-75 mb-3">
+          Please indicate how much you prefer or value each option - in relation
+          to the others - by moving the slider to a GREATER or LESSER preference
+          or value. How far you move the slider depends on how strongly you feel
+          about the option.
+        </p>
+        <p className="w-75 mb-3">
+          You cannot have the same preference value for all the options shown.
+        </p>
+      </Footer>
     </main>
   );
 };

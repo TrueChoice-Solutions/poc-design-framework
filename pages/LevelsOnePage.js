@@ -11,6 +11,7 @@
 // local files
 import BackgroundImage from '../components/background/BackgroundImage';
 import BackgroundOverlayTint from '../components/background/BackgroundOverlayTint';
+import Header from '../components/header/Header';
 
 /**
  * @description - returns Levels One Page
@@ -26,6 +27,7 @@ const LevelsOnePage = () => {
         startColor="blue"
         endColor="purple"
       />
+      <Header />
     </main>
   );
 };

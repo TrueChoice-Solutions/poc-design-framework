@@ -41,7 +41,6 @@ const Tooltip = ({ contentClassName }) => {
           <CaretUpFill
             className="text-dark"
             size={30}
-            // style={{ top: '1.5625rem', left: '0' }}
             style={{
               position: 'absolute',
               top: '0.625rem',

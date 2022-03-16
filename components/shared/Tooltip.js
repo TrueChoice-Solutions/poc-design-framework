@@ -32,24 +32,32 @@ const Tooltip = () => {
   const renderTooltipContent = () => {
     return (
       open && (
-        <CaretUpFill
-          className="text-dark position-absolute"
-          size={30}
-          style={{ top: '1.5625rem', left: '0' }}
-        />
+        <div className="position-relative">
+          <CaretUpFill
+            className="text-dark"
+            size={30}
+            // style={{ top: '1.5625rem', left: '0' }}
+            style={{
+              position: 'absolute',
+              top: '0.625rem',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              margin: 'auto'
+            }}
+          />
+        </div>
       )
     );
   };
 
   return (
-    <div className="d-inline-block position-relative">
-      <div>
-        <InfoCircle
-          size={24}
-          className="bg-info rounded-circle border cursor-pointer"
-          onClick={toggleTooltipContent}
-        />
-      </div>
+    <div className="d-inline-block">
+      <InfoCircle
+        size={24}
+        className="bg-info rounded-circle cursor-pointer"
+        onClick={toggleTooltipContent}
+      />
+
       {renderTooltipContent()}
     </div>
   );

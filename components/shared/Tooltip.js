@@ -29,6 +29,10 @@ const Tooltip = () => {
   };
 
   // helper functions
+  /**
+   * @description - renders tooltip content based on 'open' state
+   * @return {jsx} - caret and content to show
+   */
   const renderTooltipContent = () => {
     return (
       open && (

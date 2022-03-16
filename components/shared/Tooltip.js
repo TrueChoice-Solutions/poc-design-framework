@@ -17,7 +17,7 @@ import { InfoCircle, CaretUpFill } from 'react-bootstrap-icons';
  * @param {string} props.contentClassName - Tooltip content's bootstrap classes for styling
  * @returns {jsx} - the Tooltip component to render
  */
-const Tooltip = ({ contentClassName }) => {
+const Tooltip = ({ contentClassName, contentPosition = 'middle' }) => {
   // state
   const [open, setOpen] = useState(false);
 
@@ -28,6 +28,30 @@ const Tooltip = ({ contentClassName }) => {
   const toggleTooltipContent = () => {
     setOpen(!open);
   };
+
+  // helper functions
+  let contentAdjustor;
+  if (contentPosition === 'left') {
+    contentAdjustor = {
+      top: '1rem',
+      left: '0',
+      width: '12.5rem'
+    };
+  } else if (contentPosition === 'middle') {
+    contentAdjustor = {
+      top: '1rem',
+      left: '50%',
+      transform: 'translate(-50%)',
+      margin: 'auto',
+      width: '12.5rem'
+    };
+  } else {
+    contentAdjustor = {
+      top: '1rem',
+      right: '0',
+      width: '12.5rem'
+    };
+  }
 
   // render content
   /**
@@ -40,7 +64,7 @@ const Tooltip = ({ contentClassName }) => {
         <div className="position-relative">
           <CaretUpFill
             className="text-dark"
-            size={30}
+            size={24}
             style={{
               position: 'absolute',
               top: '0.625rem',
@@ -51,13 +75,7 @@ const Tooltip = ({ contentClassName }) => {
           />
           <div
             className={`${contentClassName} position-absolute border`}
-            style={{
-              top: '1rem',
-              left: '50%',
-              transform: 'translate(-50%)',
-              margin: 'auto',
-              width: '12.5rem'
-            }}
+            style={contentAdjustor}
           >
             <p>Again</p>
             Hello

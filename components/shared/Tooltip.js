@@ -14,6 +14,7 @@ import { InfoCircle, CaretUpFill } from 'react-bootstrap-icons';
 
 /**
  * @description - Tooltip icon. On click, opens a little text window
+ * @param {string} props.contentClassName - Tooltip content's bootstrap classes for styling
  * @returns {jsx} - the Tooltip component to render
  */
 const Tooltip = ({ contentClassName }) => {

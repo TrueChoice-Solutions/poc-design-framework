@@ -16,7 +16,7 @@ import { InfoCircle, CaretUpFill } from 'react-bootstrap-icons';
  * @description - Tooltip icon. On click, opens a little text window
  * @returns {jsx} - the Tooltip component to render
  */
-const Tooltip = () => {
+const Tooltip = ({ contentClassName }) => {
   // state
   const [open, setOpen] = useState(false);
 
@@ -50,7 +50,7 @@ const Tooltip = () => {
             }}
           />
           <div
-            className="position-absolute border"
+            className={`${contentClassName} position-absolute border`}
             style={{
               top: '1.775rem',
               left: '50%',

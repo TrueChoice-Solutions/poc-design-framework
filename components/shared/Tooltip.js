@@ -29,7 +29,7 @@ const Tooltip = ({ contentClassName }) => {
     setOpen(!open);
   };
 
-  // helper functions
+  // render content
   /**
    * @description - renders tooltip content based on 'open' state
    * @return {jsx} - caret and content to show
@@ -81,6 +81,7 @@ const Tooltip = ({ contentClassName }) => {
 
 export default Tooltip;
 
-/* takes in children, which can be image / video, or p tags (different than codesandbox! Let children take in p tags!)
- * if time, set up so on left most, box will go to right and vice versa. On middle, should be straight down middle
+/* if time, set up so on left most, box will go to right and vice versa. On middle, should be straight down middle
+ * takes in children, which can be image / video, or p tags (different than codesandbox! Let children take in p tags!)
+ *
  */

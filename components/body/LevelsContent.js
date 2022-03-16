@@ -22,7 +22,7 @@ const LevelsContent = () => {
     <Container fluid>
       <Container>
         <Row className="vh-100 min-vh-100 align-items-center text-light">
-          <Col className="border d-flex align-items-center">
+          <Col className="d-flex align-items-center">
             <Tooltip />
             <Badge
               className="bg-primary d-inline-block rounded-pill px-2 ms-3"

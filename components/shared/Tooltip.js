@@ -45,7 +45,7 @@ const Tooltip = () => {
     <div className="d-inline-block position-relative">
       <div>
         <InfoCircle
-          size={32}
+          size={24}
           className="bg-info rounded-circle border cursor-pointer"
           onClick={toggleTooltipContent}
         />

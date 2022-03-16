@@ -22,9 +22,12 @@ const LevelsContent = () => {
     <Container fluid>
       <Container>
         <Row className="vh-100 min-vh-100 align-items-center text-light">
-          <Col>
+          <Col className="border d-flex">
             <Tooltip />
-            <Badge text="Category Label" />
+            <Badge
+              className="bg-primary d-inline-block rounded-pill px-2 ms-3"
+              text="Category Label"
+            />
           </Col>
         </Row>
       </Container>

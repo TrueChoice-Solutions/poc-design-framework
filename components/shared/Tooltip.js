@@ -21,9 +21,11 @@ const Tooltip = () => {
   const [open, setOpen] = useState(false);
 
   // event handlers
+  /**
+   * @description - on click event listener, toggles 'open' state between true & false
+   */
   const toggleTooltipText = () => {
     setOpen(!open);
-    console.log('clicked!');
   };
 
   // helper functions

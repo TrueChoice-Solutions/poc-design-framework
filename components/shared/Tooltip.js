@@ -8,6 +8,7 @@
  */
 
 // dependencies
+import { useState } from 'react';
 import { InfoCircle } from 'react-bootstrap-icons';
 // local files
 
@@ -16,12 +17,22 @@ import { InfoCircle } from 'react-bootstrap-icons';
  * @returns {jsx} - the Tooltip component to render
  */
 const Tooltip = () => {
+  // state
+  const [open, setOpen] = useState(false);
+
+  // event handlers
+  const toggleTooltipText = () => {
+    setOpen(!open);
+    console.log('clicked!');
+  };
+
   return (
     <div className="d-inline-block position-relative">
       <div>
         <InfoCircle
           size={32}
           className="bg-info rounded-circle border cursor-pointer"
+          onClick={toggleTooltipText}
         />
       </div>
     </div>
@@ -32,7 +43,7 @@ export default Tooltip;
 
 /* add dependencies/local files X
  * add @description for Tooltip component X
- * Tooltip icon (pass as props or default icon?) Prob default for now, may change later.
+ * Tooltip icon (pass as props or default icon?) Prob default for now, may change later. X
  * setup onClick handler to toggle window (same as helpchat)
  * takes in children, which can be image / video, or p tags (different than codesandbox! Let children take in p tags!)
  * if time, set up so on left most, box will go to right and vice versa. On middle, should be straight down middle

@@ -9,7 +9,7 @@
 
 // dependencies
 import { useState } from 'react';
-import { InfoCircle } from 'react-bootstrap-icons';
+import { InfoCircle, CaretUpFill } from 'react-bootstrap-icons';
 // local files
 
 /**
@@ -26,6 +26,19 @@ const Tooltip = () => {
     console.log('clicked!');
   };
 
+  // helper functions
+  const renderTooltipContent = () => {
+    return (
+      open && (
+        <CaretUpFill
+          className="text-dark position-absolute"
+          size={30}
+          style={{ top: '1.5625rem', left: '0' }}
+        />
+      )
+    );
+  };
+
   return (
     <div className="d-inline-block position-relative">
       <div>
@@ -35,16 +48,15 @@ const Tooltip = () => {
           onClick={toggleTooltipText}
         />
       </div>
+      {renderTooltipContent()}
     </div>
   );
 };
 
 export default Tooltip;
 
-/* add dependencies/local files X
- * add @description for Tooltip component X
- * Tooltip icon (pass as props or default icon?) Prob default for now, may change later. X
- * setup onClick handler to toggle window (same as helpchat)
+/* add description for event handler
+ * add description for helper function
  * takes in children, which can be image / video, or p tags (different than codesandbox! Let children take in p tags!)
  * if time, set up so on left most, box will go to right and vice versa. On middle, should be straight down middle
  */

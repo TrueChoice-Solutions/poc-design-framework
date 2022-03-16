@@ -52,14 +52,17 @@ const Tooltip = ({ contentClassName }) => {
           <div
             className={`${contentClassName} position-absolute border`}
             style={{
-              top: '1.775rem',
+              top: '1rem',
               left: '50%',
-              transform: 'translate(-50%, -50%)',
+              transform: 'translate(-50%)',
               margin: 'auto',
               width: '12.5rem'
             }}
           >
+            <p>Again</p>
             Hello
+            <p>Hello</p>
+            <p>There</p>
           </div>
         </div>
       )
@@ -83,5 +86,9 @@ export default Tooltip;
 
 /* if time, set up so on left most, box will go to right and vice versa. On middle, should be straight down middle
  * takes in children, which can be image / video, or p tags (different than codesandbox! Let children take in p tags!)
- *
+ * style={{
+              top: '15px',
+              left: '0',
+              width: '12.5rem'
+            }}
  */

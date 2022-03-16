@@ -17,9 +17,12 @@ import { InfoCircle } from 'react-bootstrap-icons';
  */
 const Tooltip = () => {
   return (
-    <div className="border">
+    <div className="d-inline-block position-relative">
       <div>
-        <InfoCircle size={32} />
+        <InfoCircle
+          size={32}
+          className="bg-info rounded-circle border cursor-pointer"
+        />
       </div>
     </div>
   );

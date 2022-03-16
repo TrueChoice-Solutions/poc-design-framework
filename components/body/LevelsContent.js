@@ -10,6 +10,7 @@
 // dependencies
 import { Container, Row, Col } from 'react-bootstrap';
 // local files
+import Tooltip from '../shared/Tooltip';
 import Badge from '../shared/Badge';
 
 /**
@@ -22,6 +23,7 @@ const LevelsContent = () => {
       <Container>
         <Row className="vh-100 min-vh-100 align-items-center text-light">
           <Col>
+            <Tooltip />
             <Badge text="Category Label" />
           </Col>
         </Row>

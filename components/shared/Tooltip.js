@@ -36,28 +36,34 @@ const Tooltip = ({
   };
 
   // helper functions
-  let contentAdjustor;
-  if (contentAbsoluteStartingPosition === 'left') {
-    contentAdjustor = {
-      top: '0.85rem',
-      left: '0.2rem',
-      width: '12.5rem'
-    };
-  } else if (contentAbsoluteStartingPosition === 'right') {
-    contentAdjustor = {
-      top: '0.85rem',
-      right: '0.2rem',
-      width: '12.5rem'
-    };
-  } else {
-    contentAdjustor = {
-      top: '0.85em',
-      left: '50%',
-      transform: 'translate(-50%)',
-      margin: 'auto',
-      width: '12.5rem'
-    };
-  }
+  const setContentStartPosition = () => {
+    let contentStyles;
+
+    if (contentAbsoluteStartingPosition === 'left') {
+      contentStyles = {
+        top: '0.85rem',
+        left: '0.2rem',
+        width: '12.5rem'
+      };
+    } else if (contentAbsoluteStartingPosition === 'right') {
+      contentStyles = {
+        top: '0.85rem',
+        right: '0.2rem',
+        width: '12.5rem'
+      };
+      // if content is set to anything else (need for catch-all, default set at top if prop isn't passed)
+    } else {
+      contentStyles = {
+        top: '0.85em',
+        left: '50%',
+        transform: 'translate(-50%)',
+        margin: 'auto',
+        width: '12.5rem'
+      };
+    }
+
+    return contentStyles;
+  };
 
   // render content
   /**
@@ -81,7 +87,7 @@ const Tooltip = ({
           />
           <div
             className={`${contentClassName} position-absolute`}
-            style={contentAdjustor}
+            style={setContentStartPosition()}
           >
             {children}
           </div>
@@ -106,7 +112,7 @@ export default Tooltip;
 
 /*
  *
- * properly pass as props from LevelsContent
+ *
  * refactor helper functions section, make an actual function
  * if using function, make sure to properly document (add desc)
  */

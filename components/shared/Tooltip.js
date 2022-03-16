@@ -38,19 +38,19 @@ const Tooltip = ({
   let contentAdjustor;
   if (contentAbsoluteStartingPosition === 'left') {
     contentAdjustor = {
-      top: '1rem',
-      left: '0',
+      top: '0.85rem',
+      left: '0.2rem',
       width: '12.5rem'
     };
   } else if (contentAbsoluteStartingPosition === 'right') {
     contentAdjustor = {
-      top: '1rem',
-      right: '0',
+      top: '0.85rem',
+      right: '0.2rem',
       width: '12.5rem'
     };
   } else {
     contentAdjustor = {
-      top: '1rem',
+      top: '0.85em',
       left: '50%',
       transform: 'translate(-50%)',
       margin: 'auto',

@@ -16,3 +16,11 @@ const Tooltip = () => {
 };
 
 export default Tooltip;
+
+/* add dependencies/local files
+ * add @description for Tooltip component
+ * Tooltip icon (pass as props or default icon?)
+ * setup onClick handler to toggle window (same as helpchat)
+ * takes in children, which can be image / video, or p tags (different than codesandbox! Let children take in p tags!)
+ * if time, set up so on left most, box will go to right and vice versa. On middle, should be straight down middle
+ */

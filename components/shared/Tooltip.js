@@ -24,7 +24,7 @@ const Tooltip = () => {
   /**
    * @description - on click event listener, toggles 'open' state between true & false
    */
-  const toggleTooltipText = () => {
+  const toggleTooltipContent = () => {
     setOpen(!open);
   };
 
@@ -47,7 +47,7 @@ const Tooltip = () => {
         <InfoCircle
           size={32}
           className="bg-info rounded-circle border cursor-pointer"
-          onClick={toggleTooltipText}
+          onClick={toggleTooltipContent}
         />
       </div>
       {renderTooltipContent()}

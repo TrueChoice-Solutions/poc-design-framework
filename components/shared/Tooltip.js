@@ -17,7 +17,10 @@ import { InfoCircle, CaretUpFill } from 'react-bootstrap-icons';
  * @param {string} props.contentClassName - Tooltip content's bootstrap classes for styling
  * @returns {jsx} - the Tooltip component to render
  */
-const Tooltip = ({ contentClassName, contentPosition = 'middle' }) => {
+const Tooltip = ({
+  contentClassName,
+  contentAbsoluteStartingPosition = 'center'
+}) => {
   // state
   const [open, setOpen] = useState(false);
 
@@ -31,24 +34,24 @@ const Tooltip = ({ contentClassName, contentPosition = 'middle' }) => {
 
   // helper functions
   let contentAdjustor;
-  if (contentPosition === 'left') {
+  if (contentAbsoluteStartingPosition === 'left') {
     contentAdjustor = {
       top: '1rem',
       left: '0',
       width: '12.5rem'
     };
-  } else if (contentPosition === 'middle') {
+  } else if (contentAbsoluteStartingPosition === 'right') {
     contentAdjustor = {
       top: '1rem',
-      left: '50%',
-      transform: 'translate(-50%)',
-      margin: 'auto',
+      right: '0',
       width: '12.5rem'
     };
   } else {
     contentAdjustor = {
       top: '1rem',
-      right: '0',
+      left: '50%',
+      transform: 'translate(-50%)',
+      margin: 'auto',
       width: '12.5rem'
     };
   }

@@ -36,6 +36,10 @@ const Tooltip = ({
   };
 
   // helper functions
+  /**
+   * @description - sets position absolute starting point for content, based on contentAbsoluteStartingPosition prop
+   * @returns {object} - content styling stored in object to be used as inline-styling
+   */
   const setContentStartPosition = () => {
     let contentStyles;
 
@@ -109,10 +113,3 @@ const Tooltip = ({
 };
 
 export default Tooltip;
-
-/*
- *
- *
- * refactor helper functions section, make an actual function
- * if using function, make sure to properly document (add desc)
- */

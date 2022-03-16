@@ -49,6 +49,18 @@ const Tooltip = () => {
               margin: 'auto'
             }}
           />
+          <div
+            className="position-absolute border"
+            style={{
+              top: '1.775rem',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              margin: 'auto',
+              width: '12.5rem'
+            }}
+          >
+            Hello
+          </div>
         </div>
       )
     );
@@ -69,8 +81,6 @@ const Tooltip = () => {
 
 export default Tooltip;
 
-/* add description for event handler
- * add description for helper function
- * takes in children, which can be image / video, or p tags (different than codesandbox! Let children take in p tags!)
+/* takes in children, which can be image / video, or p tags (different than codesandbox! Let children take in p tags!)
  * if time, set up so on left most, box will go to right and vice versa. On middle, should be straight down middle
  */

@@ -16,6 +16,7 @@ import { InfoCircle, CaretUpFill } from 'react-bootstrap-icons';
  * @description - Tooltip icon. On click, opens a little text window
  * @param {string} props.contentClassName - Tooltip content's bootstrap classes for styling
  * @param {string} props.contentAbsoluteStartingPosition - absolute starting (left, right, middle) position for content
+ * @param {jsx} props.children - additional jsx added, such as images/videos/paragraphs
  * @returns {jsx} - the Tooltip component to render
  */
 const Tooltip = ({
@@ -104,8 +105,8 @@ const Tooltip = ({
 
 export default Tooltip;
 
-/* set up to use children, not dummy text
- * add params for children
+/*
+ *
  * properly pass as props from LevelsContent
  * refactor helper functions section, make an actual function
  * if using function, make sure to properly document (add desc)

@@ -7,6 +7,13 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
+// dependencies
+// local files
+
+/**
+ * @description - Tooltip icon. On click, opens a little text window
+ * @returns {jsx} - the Tooltip component to render
+ */
 const Tooltip = () => {
   return (
     <div>

@@ -80,12 +80,7 @@ const Tooltip = ({
           <div
             className={`${contentClassName} position-absolute border`}
             style={contentAdjustor}
-          >
-            <p>Again</p>
-            Hello
-            <p>Hello</p>
-            <p>There</p>
-          </div>
+          ></div>
         </div>
       )
     );
@@ -106,11 +101,9 @@ const Tooltip = ({
 
 export default Tooltip;
 
-/* if time, set up so on left most, box will go to right and vice versa. On middle, should be straight down middle
- * takes in children, which can be image / video, or p tags (different than codesandbox! Let children take in p tags!)
- * style={{
-              top: '15px',
-              left: '0',
-              width: '12.5rem'
-            }}
+/* set up to use children, not dummy text
+ * add params for children
+ * properly pass as props from LevelsContent
+ * refactor helper functions section, make an actual function
+ * if using function, make sure to properly document (add desc)
  */

@@ -24,9 +24,11 @@ const LevelsContent = () => {
         <Row className="vh-100 min-vh-100 align-items-center text-light">
           <Col className="d-flex align-items-center">
             <Tooltip
-              contentClassName="bg-dark"
+              contentClassName="bg-dark p-3 text-center"
               contentAbsoluteStartingPosition="left"
-            />
+            >
+              <p className="mb-0">This is a text only tooltip.</p>
+            </Tooltip>
             <Badge
               className="bg-primary d-inline-block rounded-pill px-2 ms-3"
               text="Category Label"

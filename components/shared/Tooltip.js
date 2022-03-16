@@ -20,7 +20,8 @@ import { InfoCircle, CaretUpFill } from 'react-bootstrap-icons';
  */
 const Tooltip = ({
   contentClassName,
-  contentAbsoluteStartingPosition = 'center'
+  contentAbsoluteStartingPosition = 'center',
+  children
 }) => {
   // state
   const [open, setOpen] = useState(false);
@@ -78,9 +79,11 @@ const Tooltip = ({
             }}
           />
           <div
-            className={`${contentClassName} position-absolute border`}
+            className={`${contentClassName} position-absolute`}
             style={contentAdjustor}
-          ></div>
+          >
+            {children}
+          </div>
         </div>
       )
     );

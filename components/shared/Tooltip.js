@@ -97,7 +97,6 @@ const Tooltip = ({
         className="bg-info rounded-circle cursor-pointer"
         onClick={toggleTooltipContent}
       />
-
       {renderTooltipContent()}
     </div>
   );

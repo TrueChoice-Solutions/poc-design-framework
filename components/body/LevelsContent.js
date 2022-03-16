@@ -27,14 +27,6 @@ const LevelsContent = () => {
               contentClassName="bg-dark p-3 text-center"
               contentAbsoluteStartingPosition="left"
             >
-              <video
-                width="100%"
-                height="100%"
-                muted
-                controls
-                // eslint-disable-next-line max-len
-                src="https://static.videezy.com/system/resources/previews/000/038/595/original/alb_lightfx2072_1080p.mp4"
-              ></video>
               <p className="mb-0">This is a text only tooltip.</p>
             </Tooltip>
             <Badge

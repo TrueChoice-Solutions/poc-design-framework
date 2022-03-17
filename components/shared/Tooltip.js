@@ -41,29 +41,20 @@ const Tooltip = ({
    * @returns {object} - content styling stored in object to be used as inline-styling
    */
   const getContentStartPosition = () => {
-    let contentStyles;
+    const contentStyles = {
+      top: '0.85rem',
+      width: '12.5rem'
+    };
 
-    if (contentAbsoluteStartingPosition === 'left') {
-      contentStyles = {
-        top: '0.85rem',
-        left: '0.2rem',
-        width: '12.5rem'
-      };
-    } else if (contentAbsoluteStartingPosition === 'right') {
-      contentStyles = {
-        top: '0.85rem',
-        right: '0.2rem',
-        width: '12.5rem'
-      };
-      // if content is set to anything else (need for catch-all, default set at top if prop isn't passed)
+    if (
+      contentAbsoluteStartingPosition === 'left' ||
+      contentAbsoluteStartingPosition === 'right'
+    ) {
+      contentStyles[contentAbsoluteStartingPosition] = '0.2rem';
     } else {
-      contentStyles = {
-        top: '0.85em',
-        left: '50%',
-        transform: 'translate(-50%)',
-        margin: 'auto',
-        width: '12.5rem'
-      };
+      contentStyles.left = '50%';
+      contentStyles.transform = 'translate(-50%)';
+      contentStyles.margin = 'auto';
     }
 
     return contentStyles;

@@ -40,15 +40,18 @@ const LevelsContent = () => {
                 text="Work / Life Balance"
               />
             </div>
-            <Headline
-              h1Text="Which of these work / life balance factors matters most to you?"
-              h1ClassName="fw-bolder"
-            >
-              <p className="mb-0">
-                For each of the categories below, rate the item from 0-10 to
-                tell us how important that category is, compared to the others.
-              </p>
-            </Headline>
+            <div className="mt-3">
+              <Headline
+                h1Text="Which of these work / life balance factors matters most to you?"
+                h1ClassName="fw-bolder"
+              >
+                <p className="mb-0 pt-2">
+                  For each of the categories below, rate the item from 0-10 to
+                  tell us how important that category is, compared to the
+                  others.
+                </p>
+              </Headline>
+            </div>
           </Col>
         </Row>
       </Container>

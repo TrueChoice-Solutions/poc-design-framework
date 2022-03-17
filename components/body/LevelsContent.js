@@ -10,7 +10,6 @@
 
 // dependencies
 import { Container, Row, Col } from 'react-bootstrap';
-import Image from 'next/image';
 // local files
 import Tooltip from '../shared/Tooltip';
 import Badge from '../shared/Badge';

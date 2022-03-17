@@ -31,7 +31,7 @@ const LevelsContent = () => {
             </Tooltip>
             <Badge
               className="bg-primary d-inline-block rounded-pill px-2 ms-3"
-              text="Category Label"
+              text="Work / Life Balance"
             />
           </Col>
         </Row>

@@ -20,14 +20,14 @@ import Tooltip from '../shared/Tooltip';
  */
 const Level = ({ icon, text }) => {
   return (
-    <div className="">
+    <div>
       {/* screen < 576px display ONLY small screen content */}
-      <div className={`${styles.smallScreenContent} border`}>
-        <div>
+      <div className={`${styles.smallScreenContent} border p-2`}>
+        <div className="border border-primary d-flex align-items-center">
           <Tooltip />
-          <span>{text}</span>
+          <span className="ms-2">{text}</span>
         </div>
-        <div>Slider component goes here SMALL</div>
+        Slider component goes here SMALL
       </div>
       {/* screen > 576px display ONLY big screen content */}
       <div className={styles.regularScreenContent}>

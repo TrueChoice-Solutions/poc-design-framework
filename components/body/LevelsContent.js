@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 /*
  * Copyright (c) 2006-present TrueChoice IP Holding Company, Inc.
  * All rights reserved.

@@ -25,7 +25,7 @@ const LevelsContent = () => {
       <Container>
         <Row className="vh-100 min-vh-100 align-items-center text-light">
           <Col>
-            <div className="d-flex align-items-center border">
+            <div className="d-flex align-items-center">
               <Tooltip
                 contentClassName="bg-dark p-3 text-center"
                 contentAbsoluteStartingPosition="left"
@@ -40,14 +40,6 @@ const LevelsContent = () => {
                 text="Work / Life Balance"
               />
             </div>
-            <div>Hello</div>
-            <div>Hello2</div>
-            <div>Hello3</div>
-            <div>Hello4</div>
-            <div>Hello</div>
-            <div>Hello</div>
-            <div>Hello</div>
-            <div>Hello</div>
           </Col>
         </Row>
       </Container>

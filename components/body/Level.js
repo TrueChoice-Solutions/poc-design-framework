@@ -14,11 +14,11 @@
  * @description - returns icon, tooltip, text, and range slider
  * @return {jsx} - the Level component to render
  */
-const Level = ({ icon }) => {
+const Level = ({ icon, text }) => {
   return (
     <div className="border">
       <div className="icon">{icon}</div>
-      <div>Level</div>
+      <div>{text}</div>
       <div>Slider component goes here</div>
     </div>
   );

@@ -32,7 +32,9 @@ const LevelsContent = () => {
     <Container fluid>
       <Container>
         <Row
-          style={{ top: '9.375rem' }}
+          style={{
+            top: '9.375rem'
+          }}
           className="position-relative w-100 h-100 align-items-center text-light"
         >
           <Col>
@@ -65,16 +67,30 @@ const LevelsContent = () => {
             </div>
             <div className="d-flex flex-column flex-sm-row">
               <Level
+                icon={<PersonCheck size={30} />}
+                text="Employee assistance programs"
+              />
+              <Level
+                icon={<Basket size={30} />}
+                text="Absence management and occupational health"
+              />
+              <Level icon={<Diagram3 size={30} />} text="Child care" />
+              <Level icon={<HeartHalf size={30} />} text="Stress management" />
+              <Level
                 icon={
-                  <PersonCheck size={30} text="Employee assistance programs" />
+                  <PersonWorkspace
+                    size={30}
+                    text="Flexible and remote working"
+                  />
                 }
               />
-              <Level icon={<Basket size={30} />} />
-              <Level icon={<Diagram3 size={30} />} />
-              <Level icon={<HeartHalf size={30} />} />
-              <Level icon={<PersonWorkspace size={30} />} />
-              <Level icon={<HddNetwork size={30} />} />
+              <Level
+                icon={<HddNetwork size={30} />}
+                text="Workstation assessments"
+              />
             </div>
+
+            <div style={{ marginTop: '200px' }}></div>
           </Col>
         </Row>
       </Container>

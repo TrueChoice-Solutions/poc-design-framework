@@ -37,10 +37,10 @@ const Tooltip = ({
 
   // helper functions
   /**
-   * @description - sets position absolute starting point for content, based on contentAbsoluteStartingPosition prop
+   * @description - position absolute starting point for content, based on contentAbsoluteStartingPosition prop
    * @returns {object} - content styling stored in object to be used as inline-styling
    */
-  const setContentStartPosition = () => {
+  const getContentStartPosition = () => {
     let contentStyles;
 
     if (contentAbsoluteStartingPosition === 'left') {
@@ -91,7 +91,7 @@ const Tooltip = ({
           />
           <div
             className={`${contentClassName} position-absolute`}
-            style={setContentStartPosition()}
+            style={getContentStartPosition()}
           >
             {children}
           </div>

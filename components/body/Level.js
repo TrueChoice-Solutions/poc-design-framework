@@ -19,8 +19,14 @@ const Level = ({ icon }) => {
     <div className="border">
       <div className="icon">{icon}</div>
       <div>Level</div>
+      <div>Slider component goes here</div>
     </div>
   );
 };
 
 export default Level;
+
+/* pass in text as props
+ * add text & icon params to description
+ * work on layout - mobile vs desktop (mobile-first!)
+ */

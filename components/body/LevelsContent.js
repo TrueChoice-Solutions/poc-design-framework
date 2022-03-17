@@ -27,7 +27,10 @@ const LevelsContent = () => {
               contentClassName="bg-dark p-3 text-center"
               contentAbsoluteStartingPosition="left"
             >
-              <p className="mb-0">This is a text only tooltip.</p>
+              <p className="mb-0">
+                Benefits that help support achieving a more optimal balance
+                between work obligations and your other needs / obligations.
+              </p>
             </Tooltip>
             <Badge
               className="bg-primary d-inline-block rounded-pill px-2 ms-3"

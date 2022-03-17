@@ -17,7 +17,7 @@
  * @return {jsx} - the Badge component to render
  */
 const Badge = ({
-  className = 'bg-primary rounded-pill d-inline-block px-2',
+  className = 'bg-primary d-inline-block px-2',
   text = 'Badge'
 }) => {
   return (

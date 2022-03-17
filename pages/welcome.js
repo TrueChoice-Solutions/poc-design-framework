@@ -29,7 +29,7 @@ const Welcome = () => {
         startColor="green"
         endColor="blue"
       />
-      <Header text="Welcome" progressBarValue="25" />
+      <Header text="Welcome" progressBarValue="0" />
       <WelcomeContent />
       <Footer>
         <p className="w-75 mb-3">

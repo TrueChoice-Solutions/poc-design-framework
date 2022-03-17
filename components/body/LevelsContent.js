@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /*
  * Copyright (c) 2006-present TrueChoice IP Holding Company, Inc.
  * All rights reserved.
@@ -10,6 +11,7 @@
 // dependencies
 import { Container, Row, Col } from 'react-bootstrap';
 // local files
+import Tooltip from '../shared/Tooltip';
 import Badge from '../shared/Badge';
 
 /**
@@ -22,7 +24,21 @@ const LevelsContent = () => {
       <Container>
         <Row className="vh-100 min-vh-100 align-items-center text-light">
           <Col>
-            <Badge text="Category Label" />
+            <div className="d-flex align-items-center">
+              <Tooltip
+                contentClassName="bg-dark p-3 text-center"
+                contentAbsoluteStartingPosition="left"
+              >
+                <p className="mb-0">
+                  Benefits that help support achieving a more optimal balance
+                  between work obligations and your other needs / obligations.
+                </p>
+              </Tooltip>
+              <Badge
+                className="bg-primary d-inline-block rounded-pill px-2 ms-3"
+                text="Work / Life Balance"
+              />
+            </div>
           </Col>
         </Row>
       </Container>

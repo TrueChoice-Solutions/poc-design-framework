@@ -33,7 +33,7 @@ const LevelsContent = () => {
       <Container>
         <Row
           style={{
-            top: '9.375rem'
+            top: '8rem'
           }}
           className="position-relative w-100 h-100 align-items-center text-light"
         >
@@ -90,7 +90,7 @@ const LevelsContent = () => {
               />
             </div>
 
-            <div style={{ marginTop: '200px' }}></div>
+            <div style={{ marginTop: '10rem' }}></div>
           </Col>
         </Row>
       </Container>

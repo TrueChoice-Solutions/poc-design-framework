@@ -90,6 +90,9 @@ const LevelsContent = () => {
               />
             </div>
 
+            {/* Added div here to so main content
+             * isn't blocked by footer, has space to scroll to view all body content
+             */}
             <div style={{ marginTop: '10rem' }}></div>
           </Col>
         </Row>

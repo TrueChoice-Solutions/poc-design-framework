@@ -30,22 +30,6 @@ const LevelsContent = () => {
                 contentClassName="bg-dark p-3 text-center"
                 contentAbsoluteStartingPosition="left"
               >
-                <Image
-                  className="mb-3"
-                  src="https://media.istockphoto.com/photos/torn-paper-with-word-are-you-covered-picture-id1327364098?s=612x612"
-                  alt="random"
-                  layout="responsive"
-                  width="100"
-                  height="100"
-                />
-                <video
-                  className="mb-3"
-                  width="100%"
-                  height="100%"
-                  muted
-                  controls
-                  src="https://static.videezy.com/system/resources/previews/000/038/595/original/alb_lightfx2072_1080p.mp4"
-                ></video>
                 <p className="mb-0">
                   Benefits that help support achieving a more optimal balance
                   between work obligations and your other needs / obligations.
@@ -56,6 +40,14 @@ const LevelsContent = () => {
                 text="Work / Life Balance"
               />
             </div>
+            <div>Hello</div>
+            <div>Hello2</div>
+            <div>Hello3</div>
+            <div>Hello4</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
           </Col>
         </Row>
       </Container>

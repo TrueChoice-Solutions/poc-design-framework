@@ -19,9 +19,11 @@
 const Level = ({ icon, text }) => {
   return (
     <div className="border">
+      {/* screen < 576px */}
       <div className="icon">{icon}</div>
       <div>{text}</div>
       <div>Slider component goes here</div>
+      {/* screen > 576px */}
     </div>
   );
 };

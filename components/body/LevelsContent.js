@@ -13,6 +13,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 // local files
 import Tooltip from '../shared/Tooltip';
 import Badge from '../shared/Badge';
+import Headline from './Headline';
 
 /**
  * @description - returns Level One main body content
@@ -39,6 +40,10 @@ const LevelsContent = () => {
                 text="Work / Life Balance"
               />
             </div>
+            <Headline
+              h1Text="Which of these work / life balance factors matters most to you?"
+              h1ClassName="fw-bolder"
+            />
           </Col>
         </Row>
       </Container>

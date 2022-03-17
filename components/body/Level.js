@@ -24,7 +24,9 @@ const Level = ({ icon, text }) => {
       {/* screen < 576px display ONLY small screen content */}
       <div className={`${styles.smallScreenContent} border p-2`}>
         <div className="border border-primary d-flex align-items-center">
-          <Tooltip />
+          <Tooltip>
+            <p>Employee assistance program tooltip</p>
+          </Tooltip>
           <span className="ms-2">{text}</span>
         </div>
         Slider component goes here SMALL

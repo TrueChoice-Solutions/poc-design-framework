@@ -20,7 +20,7 @@ import { InfoCircle, CaretUpFill } from 'react-bootstrap-icons';
  * @returns {jsx} - the Tooltip component to render
  */
 const Tooltip = ({
-  contentClassName,
+  contentClassName = 'bg-dark',
   contentAbsoluteStartingPosition = 'center',
   children
 }) => {

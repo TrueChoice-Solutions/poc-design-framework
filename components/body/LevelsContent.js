@@ -18,6 +18,7 @@ import {
   HddNetwork
 } from 'react-bootstrap-icons';
 // local files
+import styles from './LevelsContent.module.css';
 import Tooltip from '../shared/Tooltip';
 import Badge from '../shared/Badge';
 import Headline from './Headline';
@@ -32,10 +33,7 @@ const LevelsContent = () => {
     <Container fluid>
       <Container>
         <Row
-          style={{
-            top: '8rem'
-          }}
-          className="position-relative w-100 h-100 align-items-center text-light"
+          className={`position-relative w-100 h-100 align-items-center text-light ${styles.row}`}
         >
           <Col>
             <div className="d-flex align-items-center">
@@ -93,7 +91,7 @@ const LevelsContent = () => {
             {/* Added div here to so main content
              * isn't blocked by footer, has space to scroll to view all body content
              */}
-            <div style={{ marginTop: '10rem' }}></div>
+            <div className={styles.marginDiv}></div>
           </Col>
         </Row>
       </Container>

@@ -16,7 +16,7 @@ import Tooltip from '../shared/Tooltip';
  * @description - returns icon, tooltip, text, and range slider
  * @param {jsx} props.icon - Bootstrap icon
  * @param {string} props.text - text to display
- * @param {jsx} props.tooltip - Tooltip component
+ * @param {jsx} props.tooltipContent - Tooltip content to display
  * @return {jsx} - the Level component to render
  */
 const Level = ({ icon, text, tooltipContent }) => {

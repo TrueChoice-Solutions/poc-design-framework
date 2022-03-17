@@ -27,6 +27,15 @@ const LevelsContent = () => {
               contentClassName="bg-dark p-3 text-center"
               contentAbsoluteStartingPosition="left"
             >
+              <video
+                className="mb-3"
+                width="100%"
+                height="100%"
+                muted
+                controls
+                // eslint-disable-next-line max-len
+                src="https://static.videezy.com/system/resources/previews/000/038/595/original/alb_lightfx2072_1080p.mp4"
+              ></video>
               <p className="mb-0">
                 Benefits that help support achieving a more optimal balance
                 between work obligations and your other needs / obligations.

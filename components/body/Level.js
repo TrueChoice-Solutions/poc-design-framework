@@ -8,6 +8,7 @@
  */
 
 // dependencies
+import { Row, Col } from 'react-bootstrap';
 // local files
 import styles from './Level.module.css';
 import Tooltip from '../shared/Tooltip';
@@ -36,10 +37,9 @@ const Level = ({ icon, text, tooltipContent }) => {
         Slider component goes here SMALL
       </div>
       {/* screen > 576px display ONLY big screen content */}
-      <div className={styles.regularScreenContent}>
-        <div className="icon">{icon}</div>
+      <div className={`${styles.regularScreenContent} p-2 text-center`}>
+        <div>{icon}</div>
         <div>{text}</div>
-        <div>Slider component goes here BIG</div>
       </div>
     </div>
   );
@@ -48,7 +48,6 @@ const Level = ({ icon, text, tooltipContent }) => {
 export default Level;
 
 /*
- * add tooltip content for other 5 levels, refactor. Not dry. Update description to tooltipContent
  * work on regular screen content
  * create a range slider for each level
  */

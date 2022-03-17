@@ -63,40 +63,53 @@ const LevelsContent = () => {
                 </p>
               </Headline>
             </div>
-            <div className="d-flex flex-column flex-md-row">
-              <Level
-                icon={<PersonCheck size={30} />}
-                text="Employee assistance programs"
-                tooltipContent={<p>Employee assistance programs tooltip!</p>}
-              />
-              <Level
-                icon={<Basket size={30} />}
-                text="Absence management and occupational health"
-                tooltipContent={
-                  <p>Absence management and occupational health tooltip!</p>
-                }
-              />
-              <Level
-                icon={<Diagram3 size={30} />}
-                text="Child care"
-                tooltipContent={<p>Child care tooltip!</p>}
-              />
-              <Level
-                icon={<HeartHalf size={30} />}
-                text="Stress management"
-                tooltipContent={<p>Stress management tooltip!</p>}
-              />
-              <Level
-                icon={<PersonWorkspace size={30} />}
-                text="Flexible and remote working"
-                tooltipContent={<p>Flexible and remote working tooltip!</p>}
-              />
-              <Level
-                icon={<HddNetwork size={30} />}
-                text="Workstation assessments"
-                tooltipContent={<p>Workstation assessments tooltip!</p>}
-              />
-            </div>
+
+            <Row>
+              <Col md={2}>
+                <Level
+                  icon={<PersonCheck size={30} />}
+                  text="Employee assistance programs"
+                  tooltipContent={<p>Employee assistance programs tooltip!</p>}
+                />
+              </Col>
+              <Col md={2}>
+                <Level
+                  icon={<Basket size={30} />}
+                  text="Absence management and occupational health"
+                  tooltipContent={
+                    <p>Absence management and occupational health tooltip!</p>
+                  }
+                />
+              </Col>
+              <Col md={2}>
+                <Level
+                  icon={<Diagram3 size={30} />}
+                  text="Child care"
+                  tooltipContent={<p>Child care tooltip!</p>}
+                />
+              </Col>
+              <Col md={2}>
+                <Level
+                  icon={<HeartHalf size={30} />}
+                  text="Stress management"
+                  tooltipContent={<p>Stress management tooltip!</p>}
+                />
+              </Col>
+              <Col md={2}>
+                <Level
+                  icon={<PersonWorkspace size={30} />}
+                  text="Flexible and remote working"
+                  tooltipContent={<p>Flexible and remote working tooltip!</p>}
+                />
+              </Col>
+              <Col md={2}>
+                <Level
+                  icon={<HddNetwork size={30} />}
+                  text="Workstation assessments"
+                  tooltipContent={<p>Workstation assessments tooltip!</p>}
+                />
+              </Col>
+            </Row>
 
             {/* Added div here to so main content
              * isn't blocked by footer, has space to scroll to view all body content

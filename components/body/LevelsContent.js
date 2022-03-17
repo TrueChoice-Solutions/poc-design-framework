@@ -43,7 +43,12 @@ const LevelsContent = () => {
             <Headline
               h1Text="Which of these work / life balance factors matters most to you?"
               h1ClassName="fw-bolder"
-            />
+            >
+              <p className="mb-0">
+                For each of the categories below, rate the item from 0-10 to
+                tell us how important that category is, compared to the others.
+              </p>
+            </Headline>
           </Col>
         </Row>
       </Container>

@@ -14,6 +14,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Tooltip from '../shared/Tooltip';
 import Badge from '../shared/Badge';
 import Headline from './Headline';
+import Level from './Level';
 
 /**
  * @description - returns Level One main body content
@@ -51,6 +52,9 @@ const LevelsContent = () => {
                   others.
                 </p>
               </Headline>
+            </div>
+            <div>
+              <Level />
             </div>
           </Col>
         </Row>

@@ -25,7 +25,7 @@ const Disclaimer = ({
   privacyLink
 }) => {
   return (
-    <div>
+    <div className="text-white-50">
       <small>
         <a
           className="text-white-50"

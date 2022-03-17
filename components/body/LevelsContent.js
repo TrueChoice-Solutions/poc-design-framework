@@ -63,7 +63,7 @@ const LevelsContent = () => {
                 </p>
               </Headline>
             </div>
-            <div className="d-flex flex-column flex-sm-row">
+            <div className="d-flex flex-column flex-md-row">
               <Level
                 icon={<PersonCheck size={30} />}
                 text="Employee assistance programs"

@@ -32,8 +32,8 @@ const LevelsContent = () => {
     <Container fluid>
       <Container>
         <Row
-          style={{ top: '150px' }}
-          className="border position-relative w-100 h-100 align-items-center text-light"
+          style={{ top: '9.375rem' }}
+          className="position-relative w-100 h-100 align-items-center text-light"
         >
           <Col>
             <div className="d-flex align-items-center">

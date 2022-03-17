@@ -55,6 +55,8 @@ const LevelsContent = () => {
             </div>
             <div>
               <Level />
+              <Level />
+              <Level />
             </div>
           </Col>
         </Row>

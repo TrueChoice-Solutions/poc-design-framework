@@ -12,6 +12,8 @@
 
 /**
  * @description - returns icon, tooltip, text, and range slider
+ * @param {jsx} props.icon - Bootstrap icon
+ * @param {string} props.text - text to display
  * @return {jsx} - the Level component to render
  */
 const Level = ({ icon, text }) => {
@@ -26,7 +28,6 @@ const Level = ({ icon, text }) => {
 
 export default Level;
 
-/* pass in text as props
- * add text & icon params to description
+/*
  * work on layout - mobile vs desktop (mobile-first!)
  */

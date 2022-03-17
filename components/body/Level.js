@@ -7,6 +7,13 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
+// dependencies
+// local files
+
+/**
+ * @description - returns icon, tooltip, text, and range slider
+ * @return {jsx} - the Level component to render
+ */
 const Level = ({ icon }) => {
   return (
     <div className="border">

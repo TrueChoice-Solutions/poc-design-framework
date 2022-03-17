@@ -10,6 +10,7 @@
 // dependencies
 // local files
 import styles from './Level.module.css';
+import Tooltip from '../shared/Tooltip';
 
 /**
  * @description - returns icon, tooltip, text, and range slider
@@ -18,13 +19,18 @@ import styles from './Level.module.css';
  * @param {jsx} props.tooltip - Tooltip component
  * @return {jsx} - the Level component to render
  */
-const Level = ({ icon, text, tooltip }) => {
+const Level = ({ icon, text, tooltipContent }) => {
   return (
     <div>
       {/* screen < 576px display ONLY small screen content */}
       <div className={`${styles.smallScreenContent} border p-2`}>
         <div className="border border-primary d-flex align-items-center">
-          {tooltip}
+          <Tooltip
+            contentClassName="bg-dark p-3 text-center"
+            contentAbsoluteStartingPosition="left"
+          >
+            {tooltipContent}
+          </Tooltip>
           <span className="ms-2">{text}</span>
         </div>
         Slider component goes here SMALL
@@ -42,7 +48,7 @@ const Level = ({ icon, text, tooltip }) => {
 export default Level;
 
 /*
- * add tooltip content for other 5 levels, refactor. Not dry
+ * add tooltip content for other 5 levels, refactor. Not dry. Update description to tooltipContent
  * work on regular screen content
  * create a range slider for each level
  */

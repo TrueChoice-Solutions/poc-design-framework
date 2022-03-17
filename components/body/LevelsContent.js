@@ -67,74 +67,34 @@ const LevelsContent = () => {
               <Level
                 icon={<PersonCheck size={30} />}
                 text="Employee assistance programs"
-                tooltip={
-                  <Tooltip
-                    contentClassName="bg-dark p-3 text-center"
-                    contentAbsoluteStartingPosition="left"
-                  >
-                    <p>Employee assistance programs tooltip!</p>
-                  </Tooltip>
-                }
+                tooltipContent={<p>Employee assistance programs tooltip!</p>}
               />
               <Level
                 icon={<Basket size={30} />}
                 text="Absence management and occupational health"
-                tooltip={
-                  <Tooltip
-                    contentClassName="bg-dark p-3 text-center"
-                    contentAbsoluteStartingPosition="left"
-                  >
-                    <p>Absence management and occupational health tooltip!</p>
-                  </Tooltip>
+                tooltipContent={
+                  <p>Absence management and occupational health tooltip!</p>
                 }
               />
               <Level
                 icon={<Diagram3 size={30} />}
                 text="Child care"
-                tooltip={
-                  <Tooltip
-                    contentClassName="bg-dark p-3 text-center"
-                    contentAbsoluteStartingPosition="left"
-                  >
-                    <p>Child care tooltip!</p>
-                  </Tooltip>
-                }
+                tooltipContent={<p>Child care tooltip!</p>}
               />
               <Level
                 icon={<HeartHalf size={30} />}
                 text="Stress management"
-                tooltip={
-                  <Tooltip
-                    contentClassName="bg-dark p-3 text-center"
-                    contentAbsoluteStartingPosition="left"
-                  >
-                    <p>Stress management tooltip!</p>
-                  </Tooltip>
-                }
+                tooltipContent={<p>Stress management tooltip!</p>}
               />
               <Level
                 icon={<PersonWorkspace size={30} />}
                 text="Flexible and remote working"
-                tooltip={
-                  <Tooltip
-                    contentClassName="bg-dark p-3 text-center"
-                    contentAbsoluteStartingPosition="left"
-                  >
-                    <p>Flexible and remote working tooltip!</p>
-                  </Tooltip>
-                }
+                tooltipContent={<p>Flexible and remote working tooltip!</p>}
               />
               <Level
                 icon={<HddNetwork size={30} />}
                 text="Workstation assessments"
-                tooltip={
-                  <Tooltip
-                    contentClassName="bg-dark p-3 text-center"
-                    contentAbsoluteStartingPosition="left"
-                  >
-                    <p>Workstation assessments tooltip!</p>
-                  </Tooltip>
-                }
+                tooltipContent={<p>Workstation assessments tooltip!</p>}
               />
             </div>
 

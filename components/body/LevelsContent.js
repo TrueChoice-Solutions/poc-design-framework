@@ -10,7 +10,14 @@
 
 // dependencies
 import { Container, Row, Col } from 'react-bootstrap';
-import { PersonCheck, Basket } from 'react-bootstrap-icons';
+import {
+  PersonCheck,
+  Basket,
+  Diagram3,
+  HeartHalf,
+  PersonWorkspace,
+  HddNetwork
+} from 'react-bootstrap-icons';
 // local files
 import Tooltip from '../shared/Tooltip';
 import Badge from '../shared/Badge';
@@ -57,7 +64,10 @@ const LevelsContent = () => {
             <div className="d-flex flex-column flex-sm-row">
               <Level icon={<PersonCheck size={30} />} />
               <Level icon={<Basket size={30} />} />
-              <Level />
+              <Level icon={<Diagram3 size={30} />} />
+              <Level icon={<HeartHalf size={30} />} />
+              <Level icon={<PersonWorkspace size={30} />} />
+              <Level icon={<HddNetwork size={30} />} />
             </div>
           </Col>
         </Row>

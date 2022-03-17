@@ -1,4 +1,7 @@
 module.exports = {
+  images: {
+    domains: ['media.istockphoto.com']
+  },
   async redirects() {
     return [
       {

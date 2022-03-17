@@ -67,6 +67,14 @@ const LevelsContent = () => {
               <Level
                 icon={<PersonCheck size={30} />}
                 text="Employee assistance programs"
+                tooltip={
+                  <Tooltip
+                    contentClassName="bg-dark p-3 text-center"
+                    contentAbsoluteStartingPosition="left"
+                  >
+                    <p>Employee assistance programs tooltip!</p>
+                  </Tooltip>
+                }
               />
               <Level
                 icon={<Basket size={30} />}

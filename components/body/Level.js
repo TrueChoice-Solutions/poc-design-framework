@@ -10,7 +10,6 @@
 // dependencies
 // local files
 import styles from './Level.module.css';
-import Tooltip from '../shared/Tooltip';
 
 /**
  * @description - returns icon, tooltip, text, and range slider
@@ -18,15 +17,13 @@ import Tooltip from '../shared/Tooltip';
  * @param {string} props.text - text to display
  * @return {jsx} - the Level component to render
  */
-const Level = ({ icon, text }) => {
+const Level = ({ icon, text, tooltip }) => {
   return (
     <div>
       {/* screen < 576px display ONLY small screen content */}
       <div className={`${styles.smallScreenContent} border p-2`}>
         <div className="border border-primary d-flex align-items-center">
-          <Tooltip>
-            <p>Employee assistance program tooltip</p>
-          </Tooltip>
+          {tooltip}
           <span className="ms-2">{text}</span>
         </div>
         Slider component goes here SMALL

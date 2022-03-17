@@ -28,7 +28,7 @@ const Disclaimer = ({
     <div>
       <small>
         <a
-          className="text-white"
+          className="text-white-50"
           href={copyrightLink}
           target="_blank"
           rel="noreferrer"
@@ -37,7 +37,7 @@ const Disclaimer = ({
         </a>{' '}
         |{' '}
         <a
-          className="text-white"
+          className="text-white-50"
           href={privacyLink}
           target="_blank"
           rel="noreferrer"

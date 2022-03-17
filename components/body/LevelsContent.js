@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /*
  * Copyright (c) 2006-present TrueChoice IP Holding Company, Inc.
  * All rights reserved.
@@ -9,6 +10,7 @@
 
 // dependencies
 import { Container, Row, Col } from 'react-bootstrap';
+import Image from 'next/image';
 // local files
 import Tooltip from '../shared/Tooltip';
 import Badge from '../shared/Badge';
@@ -27,13 +29,20 @@ const LevelsContent = () => {
               contentClassName="bg-dark p-3 text-center"
               contentAbsoluteStartingPosition="left"
             >
+              <Image
+                className="mb-3"
+                src="https://media.istockphoto.com/photos/torn-paper-with-word-are-you-covered-picture-id1327364098?s=612x612"
+                alt="random"
+                layout="responsive"
+                width="100"
+                height="100"
+              />
               <video
                 className="mb-3"
                 width="100%"
                 height="100%"
                 muted
                 controls
-                // eslint-disable-next-line max-len
                 src="https://static.videezy.com/system/resources/previews/000/038/595/original/alb_lightfx2072_1080p.mp4"
               ></video>
               <p className="mb-0">

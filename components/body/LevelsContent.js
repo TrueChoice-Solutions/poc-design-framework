@@ -79,20 +79,62 @@ const LevelsContent = () => {
               <Level
                 icon={<Basket size={30} />}
                 text="Absence management and occupational health"
+                tooltip={
+                  <Tooltip
+                    contentClassName="bg-dark p-3 text-center"
+                    contentAbsoluteStartingPosition="left"
+                  >
+                    <p>Absence management and occupational health tooltip!</p>
+                  </Tooltip>
+                }
               />
-              <Level icon={<Diagram3 size={30} />} text="Child care" />
-              <Level icon={<HeartHalf size={30} />} text="Stress management" />
               <Level
-                icon={
-                  <PersonWorkspace
-                    size={30}
-                    text="Flexible and remote working"
-                  />
+                icon={<Diagram3 size={30} />}
+                text="Child care"
+                tooltip={
+                  <Tooltip
+                    contentClassName="bg-dark p-3 text-center"
+                    contentAbsoluteStartingPosition="left"
+                  >
+                    <p>Child care tooltip!</p>
+                  </Tooltip>
+                }
+              />
+              <Level
+                icon={<HeartHalf size={30} />}
+                text="Stress management"
+                tooltip={
+                  <Tooltip
+                    contentClassName="bg-dark p-3 text-center"
+                    contentAbsoluteStartingPosition="left"
+                  >
+                    <p>Stress management tooltip!</p>
+                  </Tooltip>
+                }
+              />
+              <Level
+                icon={<PersonWorkspace size={30} />}
+                text="Flexible and remote working"
+                tooltip={
+                  <Tooltip
+                    contentClassName="bg-dark p-3 text-center"
+                    contentAbsoluteStartingPosition="left"
+                  >
+                    <p>Flexible and remote working tooltip!</p>
+                  </Tooltip>
                 }
               />
               <Level
                 icon={<HddNetwork size={30} />}
                 text="Workstation assessments"
+                tooltip={
+                  <Tooltip
+                    contentClassName="bg-dark p-3 text-center"
+                    contentAbsoluteStartingPosition="left"
+                  >
+                    <p>Workstation assessments tooltip!</p>
+                  </Tooltip>
+                }
               />
             </div>
 

@@ -42,7 +42,7 @@ const Level = ({ icon, text, tooltip }) => {
 export default Level;
 
 /*
- * add tooltip content for other 5 levels
+ * add tooltip content for other 5 levels, refactor. Not dry
  * work on regular screen content
  * create a range slider for each level
  */

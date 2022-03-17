@@ -31,7 +31,10 @@ const LevelsContent = () => {
   return (
     <Container fluid>
       <Container>
-        <Row className="vh-100 min-vh-100 align-items-center text-light">
+        <Row
+          style={{ top: '150px' }}
+          className="border position-relative w-100 h-100 align-items-center text-light"
+        >
           <Col>
             <div className="d-flex align-items-center">
               <Tooltip
@@ -61,7 +64,11 @@ const LevelsContent = () => {
               </Headline>
             </div>
             <div className="d-flex flex-column flex-sm-row">
-              <Level icon={<PersonCheck size={30} />} />
+              <Level
+                icon={
+                  <PersonCheck size={30} text="Employee assistance programs" />
+                }
+              />
               <Level icon={<Basket size={30} />} />
               <Level icon={<Diagram3 size={30} />} />
               <Level icon={<HeartHalf size={30} />} />

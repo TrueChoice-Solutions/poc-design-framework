@@ -42,5 +42,7 @@ const Level = ({ icon, text, tooltip }) => {
 export default Level;
 
 /*
- * work on layout - mobile vs desktop (mobile-first!)
+ * add tooltip content for other 5 levels
+ * work on regular screen content
+ * create a range slider for each level
  */

@@ -27,8 +27,8 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
   return (
     <div>
       {/* screen < 576px display ONLY small screen content */}
-      <div className={`${styles.smallScreenContent} border p-2`}>
-        <div className="border border-primary d-flex align-items-center">
+      <div className={`${styles.smallScreenContent} p-2`}>
+        <div className="d-flex align-items-center">
           <Tooltip
             contentClassName="bg-dark p-3 text-center"
             contentAbsoluteStartingPosition="left"
@@ -58,10 +58,19 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
           </div>
         </div>
 
-        <div className="mt-3 border" style={{ height: `${textBoxHeightRem}` }}>
+        <div className="mt-3" style={{ height: `${textBoxHeightRem}` }}>
           {text}
         </div>
-        <div>{'Slider component goes here >= 768px'}</div>
+        <div className="mt-3">
+          <input
+            orient="vertical"
+            type="range"
+            min="1"
+            max="10"
+            onChange={handleInputChange}
+            className={`w-100 ${styles.inputRange}`}
+          />
+        </div>
       </div>
     </div>
   );

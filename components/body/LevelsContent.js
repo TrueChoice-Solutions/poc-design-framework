@@ -80,6 +80,7 @@ const LevelsContent = () => {
                   tooltipContent={
                     <p>Absence management and occupational health tooltip!</p>
                   }
+                  textBoxHeightRem="7.6rem"
                 />
               </Col>
               <Col md={2}>

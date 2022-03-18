@@ -39,10 +39,7 @@ const Level = ({ icon, text, tooltipContent }) => {
       <div className={`${styles.regularScreenContent} p-2 text-center`}>
         <div className="position-relative d-inline-block">
           {icon}
-          <div
-            className="position-absolute top-100 start-100 translate-middle ms-3"
-            style={{ zIndex: '1' }}
-          >
+          <div className="position-absolute border top-100 start-100 translate-middle ms-3">
             <Tooltip contentClassName="bg-dark p-3 text-center">
               {tooltipContent}
             </Tooltip>

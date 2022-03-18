@@ -70,12 +70,10 @@ const Tooltip = ({
     return (
       open && (
         <div className="position-relative">
-          <div>
-            <CaretUpFill
-              className={`text-dark position-absolute ${styles.caretUpFill}`}
-              size={24}
-            />
-          </div>
+          <CaretUpFill
+            className={`text-dark position-absolute ${styles.caretUpFill}`}
+            size={24}
+          />
           <div
             className={`${contentClassName} position-absolute`}
             style={getContentStartPosition()}

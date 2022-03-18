@@ -33,10 +33,10 @@ const LevelsContent = () => {
     <Container fluid>
       <Container>
         <Row
-          className={`position-relative w-100 h-100 align-items-center text-light ${styles.row}`}
+          className={`position-relative border align-items-center text-light ${styles.row}`}
         >
           <Col>
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center position-relative z-index-top">
               <Tooltip
                 contentClassName="bg-dark p-3 text-center"
                 contentAbsoluteStartingPosition="left"

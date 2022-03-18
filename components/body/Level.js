@@ -39,7 +39,7 @@ const Level = ({ icon, text, tooltipContent }) => {
       <div className={`${styles.regularScreenContent} p-2 text-center`}>
         <div className="position-relative d-inline-block">
           {icon}
-          <div className="position-absolute border top-100 start-100 translate-middle ms-3">
+          <div className="position-absolute top-100 start-100 translate-middle ms-3">
             <Tooltip contentClassName="bg-dark p-3 text-center">
               {tooltipContent}
             </Tooltip>
@@ -56,7 +56,6 @@ const Level = ({ icon, text, tooltipContent }) => {
 export default Level;
 
 /*
- * fix tooltip, try to refactor: top tooltip and hr conflicting
  * make text equal height on medium+ screens
  * create a range slider for each level
  */

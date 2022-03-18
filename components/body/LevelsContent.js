@@ -33,7 +33,7 @@ const LevelsContent = () => {
     <Container fluid>
       <Container>
         <Row
-          className={`position-relative border align-items-center text-light ${styles.row}`}
+          className={`position-relative align-items-center text-light ${styles.row}`}
         >
           <Col>
             <div className="d-flex align-items-center position-relative z-index-top">

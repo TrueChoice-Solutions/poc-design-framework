@@ -59,6 +59,7 @@ const Level = ({ icon, text, tooltipContent }) => {
 export default Level;
 
 /*
+ * fix tooltip, try to refactor: top tooltip and hr conflicting
  * make text equal height on medium+ screens
  * create a range slider for each level
  */

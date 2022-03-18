@@ -11,6 +11,7 @@
 import { useState } from 'react';
 import { InfoCircle, CaretUpFill } from 'react-bootstrap-icons';
 // local files
+import styles from './Tooltip.module.css';
 
 /**
  * @description - Tooltip icon. On click, opens a little text window
@@ -69,17 +70,12 @@ const Tooltip = ({
     return (
       open && (
         <div className="position-relative">
-          <CaretUpFill
-            className="text-dark"
-            size={24}
-            style={{
-              position: 'absolute',
-              top: '0.625rem',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              margin: 'auto'
-            }}
-          />
+          <div>
+            <CaretUpFill
+              className={`text-dark position-absolute ${styles.caretUpFill}`}
+              size={24}
+            />
+          </div>
           <div
             className={`${contentClassName} position-absolute`}
             style={getContentStartPosition()}

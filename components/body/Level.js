@@ -79,6 +79,6 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
 export default Level;
 
 /*
- * make text equal height on medium+ screens
- * create a range slider for each level
+ *
+ * style range slider so it's consistent across all browsers (difficult...)
  */

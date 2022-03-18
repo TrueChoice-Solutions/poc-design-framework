@@ -37,8 +37,19 @@ const Level = ({ icon, text, tooltipContent }) => {
       </div>
       {/* screen > 576px display ONLY big screen content */}
       <div className={`${styles.regularScreenContent} p-2 text-center`}>
-        <div>{icon}</div>
-        <div>{text}</div>
+        <div className="position-relative d-inline-block">
+          {icon}
+          <div
+            className="position-absolute top-100 start-100 translate-middle ms-3"
+            style={{ zIndex: '1' }}
+          >
+            <Tooltip contentClassName="bg-dark p-3 text-center">
+              {tooltipContent}
+            </Tooltip>
+          </div>
+        </div>
+
+        <div className="mt-3 border">{text}</div>
         {'Slider component goes here >= 768px'}
       </div>
     </div>
@@ -48,6 +59,6 @@ const Level = ({ icon, text, tooltipContent }) => {
 export default Level;
 
 /*
- * work on regular screen content - implement tooltip on larger screen
+ * make text equal height on medium+ screens
  * create a range slider for each level
  */

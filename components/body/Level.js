@@ -20,10 +20,6 @@ import Tooltip from '../shared/Tooltip';
  * @return {jsx} - the Level component to render
  */
 const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
-  const handleInputChange = (event) => {
-    console.log(event.target.value);
-  };
-
   return (
     <div>
       {/* screen < 576px display ONLY small screen content */}
@@ -38,13 +34,7 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
           <span className="ms-2">{text}</span>
         </div>
         <div className="mt-3">
-          <input
-            type="range"
-            min="1"
-            max="10"
-            onChange={handleInputChange}
-            className={`w-100 ${styles.inputRange}`}
-          />
+          <input type="range" min="1" max="10" className="w-100" />
         </div>
       </div>
       {/* screen > 576px display ONLY big screen content */}
@@ -64,11 +54,10 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
         <div className="mt-3">
           <input
             orient="vertical"
+            className="w-100"
             type="range"
             min="1"
             max="10"
-            onChange={handleInputChange}
-            className={`w-100 ${styles.inputRange}`}
           />
         </div>
       </div>

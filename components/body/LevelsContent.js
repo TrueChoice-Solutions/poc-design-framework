@@ -70,6 +70,7 @@ const LevelsContent = () => {
                   icon={<PersonCheck size={30} />}
                   text="Employee assistance programs"
                   tooltipContent={<p>Employee assistance programs tooltip!</p>}
+                  textBoxHeightRem="7.6rem"
                 />
               </Col>
               <Col md={2}>
@@ -86,6 +87,7 @@ const LevelsContent = () => {
                   icon={<Diagram3 size={30} />}
                   text="Child care"
                   tooltipContent={<p>Child care tooltip!</p>}
+                  textBoxHeightRem="7.6rem"
                 />
               </Col>
               <Col md={2}>
@@ -93,6 +95,7 @@ const LevelsContent = () => {
                   icon={<HeartHalf size={30} />}
                   text="Stress management"
                   tooltipContent={<p>Stress management tooltip!</p>}
+                  textBoxHeightRem="7.6rem"
                 />
               </Col>
               <Col md={2}>
@@ -100,6 +103,7 @@ const LevelsContent = () => {
                   icon={<PersonWorkspace size={30} />}
                   text="Flexible and remote working"
                   tooltipContent={<p>Flexible and remote working tooltip!</p>}
+                  textBoxHeightRem="7.6rem"
                 />
               </Col>
               <Col md={2}>
@@ -107,6 +111,7 @@ const LevelsContent = () => {
                   icon={<HddNetwork size={30} />}
                   text="Workstation assessments"
                   tooltipContent={<p>Workstation assessments tooltip!</p>}
+                  textBoxHeightRem="7.6rem"
                 />
               </Col>
             </Row>

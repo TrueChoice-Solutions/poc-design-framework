@@ -19,7 +19,7 @@ import Tooltip from '../shared/Tooltip';
  * @param {jsx} props.tooltipContent - Tooltip content to display
  * @return {jsx} - the Level component to render
  */
-const Level = ({ icon, text, tooltipContent }) => {
+const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
   return (
     <div>
       {/* screen < 576px display ONLY small screen content */}
@@ -46,8 +46,10 @@ const Level = ({ icon, text, tooltipContent }) => {
           </div>
         </div>
 
-        <div className="mt-3 border">{text}</div>
-        {'Slider component goes here >= 768px'}
+        <div className="mt-3 border" style={{ height: `${textBoxHeightRem}` }}>
+          {text}
+        </div>
+        <div>{'Slider component goes here >= 768px'}</div>
       </div>
     </div>
   );

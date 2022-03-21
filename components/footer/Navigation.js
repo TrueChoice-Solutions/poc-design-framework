@@ -7,6 +7,13 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
+// dependencies
+// local files
+
+/**
+ * @description - Stores a back and forward button, used to navigate pages
+ * @return {jsx} - the Navigation component to render
+ */
 const Navigation = () => {
   return (
     <div>

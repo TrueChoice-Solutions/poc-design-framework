@@ -28,7 +28,9 @@ import Level from './Level';
  * @description - returns Level One main body content
  * @return {jsx} - the Levels One component to render
  */
-const LevelsContent = () => {
+const LevelsContent = ({ attribute }) => {
+  console.log(attribute);
+
   return (
     <Container fluid>
       <Container>

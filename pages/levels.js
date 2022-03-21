@@ -14,12 +14,17 @@ import BackgroundOverlayTint from '../components/background/BackgroundOverlayTin
 import Header from '../components/header/Header';
 import LevelsContent from '../components/body/LevelsContent';
 import Footer from '../components/footer/Footer';
+import applicationData from '../data/application.json';
 
 /**
  * @description - returns Levels One Page
  * @return {jsx} - the Levels One Page to render
  */
 const Levels = () => {
+  const attribute = applicationData.attributes[0];
+
+  console.log(attribute);
+
   return (
     <main>
       {/* eslint-disable-next-line max-len */}

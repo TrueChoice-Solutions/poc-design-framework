@@ -11,6 +11,7 @@
 import { Container } from 'react-bootstrap';
 // local files
 import HelpChat from './HelpChat';
+import Navigation from './Navigation';
 import Logo from '../shared/Logo';
 import Disclaimer from './Disclaimer';
 
@@ -26,13 +27,18 @@ const Footer = ({ children }) => {
         fluid
         className="position-fixed bottom-0 bg-primary text-white-50"
       >
-        <Container className="h-100">
-          <HelpChat
-            helpChatText="How can I help you?"
-            helpChatTextSmallScreen="Help?"
-          >
-            {children}
-          </HelpChat>
+        <Container className="h-100 border">
+          <div>
+            <HelpChat
+              helpChatText="How can I help you?"
+              helpChatTextSmallScreen="Help?"
+            >
+              {children}
+            </HelpChat>
+          </div>
+          <div>
+            <Navigation />
+          </div>
         </Container>
       </Container>
 

@@ -21,9 +21,8 @@ import applicationData from '../data/application.json';
  * @return {jsx} - the Levels One Page to render
  */
 const Levels = () => {
+  // retrieve first attribute data
   const attribute = applicationData.attributes[0];
-
-  console.log(attribute);
 
   return (
     <main>

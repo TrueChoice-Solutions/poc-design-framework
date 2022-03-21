@@ -24,7 +24,7 @@ const Header = ({ text, progressBarValue }) => {
     <Container fluid className="position-absolute">
       <Container>
         <Row className="text-light align-items-center pt-2">
-          <Col sm={6}>
+          <Col md={6}>
             <Logo
               imageSrc="logo.png"
               altText="TrueChoice Logo"
@@ -33,10 +33,10 @@ const Header = ({ text, progressBarValue }) => {
               imageHeight={33.33}
             />
           </Col>
-          <Col sm={6} className="text-sm-end">
+          <Col md={6} className="text-md-end">
             <Timeline
               text={text}
-              progressBarClassName="float-sm-end w-25"
+              progressBarClassName="float-md-end w-25"
               progressBarValue={progressBarValue}
             />
           </Col>

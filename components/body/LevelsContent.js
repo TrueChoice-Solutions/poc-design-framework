@@ -26,6 +26,7 @@ import Level from './Level';
 
 /**
  * @description - returns Level One main body content
+ * @param {object} props.attribute - JSON properties containing specific attribute data
  * @return {jsx} - the Levels One component to render
  */
 const LevelsContent = ({ attribute }) => {

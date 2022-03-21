@@ -30,8 +30,6 @@ import Level from './Level';
  * @return {jsx} - the Levels One component to render
  */
 const LevelsContent = ({ attribute }) => {
-  console.log(attribute);
-
   return (
     <Container fluid>
       <Container>
@@ -55,10 +53,7 @@ const LevelsContent = ({ attribute }) => {
               />
             </div>
             <div className="mt-3">
-              <Headline
-                h1Text="Which of these work / life balance factors matters most to you?"
-                h1ClassName="fw-bolder"
-              >
+              <Headline h1Text={attribute.displayName} h1ClassName="fw-bolder">
                 <p className="mb-0 pt-2">
                   For each of the categories below, rate the item from 0-10 to
                   tell us how important that category is, compared to the

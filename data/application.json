@@ -3,7 +3,7 @@
     {
       "name": "Work / Life Balance",
       "tooltipText": "Benefits that help support achieving a more optimal balance between work obligations and your other needs / obligations.",
-      "displayName": "Which of these work / life balance factors matters most to you",
+      "displayName": "Which of these work / life balance factors matters most to you?",
       "instructions": "For each of the categories below, rate the item from 0-10 to tell us how important that category is, compared to the others.",
       "levels": [
         {

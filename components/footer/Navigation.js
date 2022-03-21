@@ -8,6 +8,8 @@
  */
 
 // dependencies
+import { Button } from 'react-bootstrap';
+import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
 // local files
 
 /**
@@ -17,7 +19,12 @@
 const Navigation = () => {
   return (
     <div>
-      <div>Navigation</div>
+      <Button>
+        <ChevronLeft />
+      </Button>
+      <Button>
+        <ChevronRight />
+      </Button>
     </div>
   );
 };

@@ -27,7 +27,7 @@ const Footer = ({ children }) => {
         fluid
         className="position-fixed bottom-0 bg-primary text-white-50"
       >
-        <Container className="h-100 border d-flex align-items-center justify-content-between">
+        <Container className="h-100 d-flex align-items-center justify-content-between">
           <div>
             <HelpChat
               helpChatText="How can I help you?"

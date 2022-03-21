@@ -46,7 +46,7 @@ const LevelsContent = ({ attribute }) => {
               </Tooltip>
               <Badge
                 className="bg-primary d-inline-block rounded-pill px-2 ms-3"
-                text="Work / Life Balance"
+                text={attribute.name}
               />
             </div>
             <div className="mt-3">

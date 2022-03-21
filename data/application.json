@@ -8,7 +8,7 @@
       "levels": [
         {
           "name": "Employee assistance programs",
-          "tooltip": "Employee assitance programs tooltip!",
+          "tooltipText": "Employee assitance programs tooltip!",
           "icon": "PersonCheck"
         }
       ]

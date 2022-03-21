@@ -37,7 +37,7 @@ const Footer = ({ children }) => {
             </HelpChat>
           </div>
           <div>
-            <Navigation />
+            <Navigation forwardButtonText="Next" />
           </div>
         </Container>
       </Container>

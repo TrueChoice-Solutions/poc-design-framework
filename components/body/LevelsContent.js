@@ -40,6 +40,10 @@ const LevelsContent = ({ attribute }) => {
   };
 
   // render content
+  /**
+   * @description - maps over each level and displays the icon, text, & tooltip content
+   * @return {jsx} - Level component wrapped in Bootstrap Column
+   */
   const renderLevels = () => {
     return attribute.levels.map((level) => {
       let BootstrapIcon = iconMap[level.icon];

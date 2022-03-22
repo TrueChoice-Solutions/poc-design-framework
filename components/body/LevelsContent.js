@@ -30,20 +30,31 @@ import Level from './Level';
  * @return {jsx} - the Levels One component to render
  */
 const LevelsContent = ({ attribute }) => {
+  const iconMap = {
+    Diagram3: <Diagram3 size={30} />,
+    Basket: <Basket size={30} />,
+    PersonCheck: <PersonCheck size={30} />,
+    HeartHalf: <HeartHalf size={30} />,
+    HddNetwork: <HddNetwork size={30} />,
+    PersonWorkspace: <PersonWorkspace size={30} />
+  };
+
   // render content
   const renderLevels = () => {
-    const mappedLevels = attribute.levels.map((level) => (
-      <Col key={level.name} md={2}>
-        <Level
-          icon={<level.icon size={30} />}
-          text={level.name}
-          tooltipContent={<p>{level.tooltipText}</p>}
-          textBoxHeightRem="7.6rem"
-        />
-      </Col>
-    ));
+    return attribute.levels.map((level) => {
+      let BootstrapIcon = iconMap[level.icon];
 
-    return mappedLevels;
+      return (
+        <Col key={level.name} md={2}>
+          <Level
+            icon={BootstrapIcon}
+            text={level.name}
+            tooltipContent={<p>{level.tooltipText}</p>}
+            textBoxHeightRem="7.6rem"
+          />
+        </Col>
+      );
+    });
   };
 
   return (

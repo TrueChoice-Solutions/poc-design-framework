@@ -10,6 +10,31 @@
           "name": "Employee assistance programs",
           "tooltipText": "Employee assitance programs tooltip!",
           "icon": "PersonCheck"
+        },
+        {
+          "name": "Absence management and occupational health",
+          "tooltipText": "Absence management and occupational health tooltip!",
+          "icon": "Basket"
+        },
+        {
+          "name": "Child care",
+          "tooltipText": "Child care tooltip!",
+          "icon": "Diagram3"
+        },
+        {
+          "name": "Stress management",
+          "tooltipText": "Stress management tooltip",
+          "icon": "HeartHalf"
+        },
+        {
+          "name": "Flexible and remote working",
+          "tooltipText": "Flexible and remote working tooltip!",
+          "icon": "PersonWorkspace"
+        },
+        {
+          "name": "Workstation assessments",
+          "tooltipText": "Workstation assessments tooltip!",
+          "icon": "HddNetwork"
         }
       ]
     }

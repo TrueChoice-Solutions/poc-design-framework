@@ -9,14 +9,7 @@
 
 // dependencies
 import { Container, Row, Col } from 'react-bootstrap';
-import {
-  PersonCheck,
-  Basket,
-  Diagram3,
-  HeartHalf,
-  PersonWorkspace,
-  HddNetwork
-} from 'react-bootstrap-icons';
+import * as Icons from 'react-bootstrap-icons';
 // local files
 import styles from './LevelsContent.module.css';
 import Tooltip from '../shared/Tooltip';
@@ -30,15 +23,6 @@ import Level from './Level';
  * @return {jsx} - the Levels One component to render
  */
 const LevelsContent = ({ attribute }) => {
-  const iconMap = {
-    Diagram3: <Diagram3 size={30} />,
-    Basket: <Basket size={30} />,
-    PersonCheck: <PersonCheck size={30} />,
-    HeartHalf: <HeartHalf size={30} />,
-    HddNetwork: <HddNetwork size={30} />,
-    PersonWorkspace: <PersonWorkspace size={30} />
-  };
-
   // render content
   /**
    * @description - maps over each level and displays the icon, text, & tooltip content
@@ -46,12 +30,13 @@ const LevelsContent = ({ attribute }) => {
    */
   const renderLevels = () => {
     return attribute.levels.map((level) => {
-      let BootstrapIcon = iconMap[level.icon];
+      // Icons is object with nested bootstrap icon name objects. Gets object matching level.icon name
+      const Icon = Icons[level.icon];
 
       return (
         <Col key={level.levelId} md={2}>
           <Level
-            icon={BootstrapIcon}
+            icon={<Icon size={30} />}
             text={level.name}
             tooltipContent={<p>{level.tooltipText}</p>}
             textBoxHeightRem="7.6rem"

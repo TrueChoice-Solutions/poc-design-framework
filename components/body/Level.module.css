@@ -7,31 +7,16 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
-a {
-  color: inherit;
-  text-decoration: none;
+.regularScreenContent {
+  display: none;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
+@media (min-width: 768px) {
+  .smallScreenContent {
+    display: none;
+  }
 
-.chat-window {
-  width: 17.1875rem;
-}
-
-.z-index-top {
-  z-index: 1;
-}
-
-.z-index-bottom {
-  z-index: -1;
-}
-
-input[type='range'][orient='vertical'] {
-  writing-mode: bt-lr; /* IE */
-  -webkit-appearance: slider-vertical; /* Chromium */
-  width: 0.5rem;
-  height: 10.9375rem;
-  padding: 0 0.3125rem;
+  .regularScreenContent {
+    display: block;
+  }
 }

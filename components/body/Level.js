@@ -25,6 +25,10 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
   const [inputValue, setInputValue] = useState('5');
 
   // event handler
+  /**
+   * @description - stores input range value into 'inputValue' state
+   * @param {object} event - get user's value from interacting with range slider
+   */
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };

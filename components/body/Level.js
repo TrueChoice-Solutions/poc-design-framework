@@ -42,8 +42,17 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
           </Tooltip>
           <span className="ms-2">{text}</span>
         </div>
-        <div className="mt-3">
-          <input type="range" min="1" max="10" className="w-100" />
+        <div className="mt-3 d-flex align-items-center">
+          <input
+            type="range"
+            min="1"
+            max="10"
+            className="w-75"
+            name="input-number"
+            onChange={handleInputChange}
+            value={inputValue}
+          />
+          <span className="ms-4">{inputValue}</span>
         </div>
       </div>
       {/* screen > 576px display ONLY big screen content */}

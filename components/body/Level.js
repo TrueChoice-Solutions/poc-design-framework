@@ -8,6 +8,7 @@
  */
 
 // dependencies
+import { useState } from 'react';
 // local files
 import styles from './Level.module.css';
 import Tooltip from '../shared/Tooltip';
@@ -20,6 +21,14 @@ import Tooltip from '../shared/Tooltip';
  * @return {jsx} - the Level component to render
  */
 const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
+  // state
+  const [inputValue, setInputValue] = useState('5');
+
+  // event handler
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
   return (
     <div>
       {/* screen < 576px display ONLY small screen content */}
@@ -58,7 +67,11 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
             type="range"
             min="1"
             max="10"
+            name="input-number"
+            onChange={handleInputChange}
+            value={inputValue}
           />
+          <div>{inputValue}</div>
         </div>
       </div>
     </div>

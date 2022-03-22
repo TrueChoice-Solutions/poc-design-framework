@@ -30,6 +30,22 @@ import Level from './Level';
  * @return {jsx} - the Levels One component to render
  */
 const LevelsContent = ({ attribute }) => {
+  // render content
+  const renderLevels = () => {
+    const mappedLevels = attribute.levels.map((level) => (
+      <Col key={level.name} md={2}>
+        <Level
+          icon={<level.icon size={30} />}
+          text={level.name}
+          tooltipContent={<p>{level.tooltipText}</p>}
+          textBoxHeightRem="7.6rem"
+        />
+      </Col>
+    ));
+
+    return mappedLevels;
+  };
+
   return (
     <Container fluid>
       <Container>
@@ -55,58 +71,7 @@ const LevelsContent = ({ attribute }) => {
               </Headline>
             </div>
 
-            <Row>
-              <Col md={2}>
-                <Level
-                  icon={<PersonCheck size={30} />}
-                  text="Employee assistance programs"
-                  tooltipContent={<p>Employee assistance programs tooltip!</p>}
-                  textBoxHeightRem="7.6rem"
-                />
-              </Col>
-              <Col md={2}>
-                <Level
-                  icon={<Basket size={30} />}
-                  text="Absence management and occupational health"
-                  tooltipContent={
-                    <p>Absence management and occupational health tooltip!</p>
-                  }
-                  textBoxHeightRem="7.6rem"
-                />
-              </Col>
-              <Col md={2}>
-                <Level
-                  icon={<Diagram3 size={30} />}
-                  text="Child care"
-                  tooltipContent={<p>Child care tooltip!</p>}
-                  textBoxHeightRem="7.6rem"
-                />
-              </Col>
-              <Col md={2}>
-                <Level
-                  icon={<HeartHalf size={30} />}
-                  text="Stress management"
-                  tooltipContent={<p>Stress management tooltip!</p>}
-                  textBoxHeightRem="7.6rem"
-                />
-              </Col>
-              <Col md={2}>
-                <Level
-                  icon={<PersonWorkspace size={30} />}
-                  text="Flexible and remote working"
-                  tooltipContent={<p>Flexible and remote working tooltip!</p>}
-                  textBoxHeightRem="7.6rem"
-                />
-              </Col>
-              <Col md={2}>
-                <Level
-                  icon={<HddNetwork size={30} />}
-                  text="Workstation assessments"
-                  tooltipContent={<p>Workstation assessments tooltip!</p>}
-                  textBoxHeightRem="7.6rem"
-                />
-              </Col>
-            </Row>
+            <Row>{renderLevels()}</Row>
 
             {/* Added div here to so main content
              * isn't blocked by footer, has space to scroll to view all body content

@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 /*
  * Copyright (c) 2006-present TrueChoice IP Holding Company, Inc.
  * All rights reserved.
@@ -10,35 +9,76 @@
 
 // dependencies
 import { Container, Row, Col } from 'react-bootstrap';
+import * as Icons from 'react-bootstrap-icons';
 // local files
+import styles from './LevelsContent.module.css';
 import Tooltip from '../shared/Tooltip';
 import Badge from '../shared/Badge';
+import Headline from './Headline';
+import Level from './Level';
 
 /**
  * @description - returns Level One main body content
+ * @param {object} props.attribute - JSON properties containing specific attribute data
  * @return {jsx} - the Levels One component to render
  */
-const LevelsContent = () => {
+const LevelsContent = ({ attribute }) => {
+  // render content
+  /**
+   * @description - maps over each level and displays the icon, text, & tooltip content
+   * @return {jsx} - Level component wrapped in Bootstrap Column
+   */
+  const renderLevels = () => {
+    return attribute.levels.map((level) => {
+      /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
+       * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />
+       */
+      const Icon = Icons[level.icon];
+
+      return (
+        <Col key={level.levelId} md={2}>
+          <Level
+            icon={<Icon size={30} />}
+            text={level.name}
+            tooltipContent={<p>{level.tooltipText}</p>}
+            textBoxHeightRem="7.6rem"
+          />
+        </Col>
+      );
+    });
+  };
+
   return (
     <Container fluid>
       <Container>
-        <Row className="vh-100 min-vh-100 align-items-center text-light">
+        <Row
+          className={`position-relative align-items-center text-light ${styles.row}`}
+        >
           <Col>
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center position-relative z-index-top">
               <Tooltip
                 contentClassName="bg-dark p-3 text-center"
                 contentAbsoluteStartingPosition="left"
               >
-                <p className="mb-0">
-                  Benefits that help support achieving a more optimal balance
-                  between work obligations and your other needs / obligations.
-                </p>
+                <p className="mb-0">{attribute.tooltipText}</p>
               </Tooltip>
               <Badge
                 className="bg-primary d-inline-block rounded-pill px-2 ms-3"
-                text="Work / Life Balance"
+                text={attribute.name}
               />
             </div>
+            <div className="mt-3">
+              <Headline h1Text={attribute.displayName} h1ClassName="fw-bolder">
+                <p className="mb-0 pt-2">{attribute.instructions}</p>
+              </Headline>
+            </div>
+
+            <Row>{renderLevels()}</Row>
+
+            {/* Added div here so main content
+             * isn't blocked by footer, has space to scroll to view all body content
+             */}
+            <div className={styles.marginDiv}></div>
           </Col>
         </Row>
       </Container>

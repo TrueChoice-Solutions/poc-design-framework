@@ -14,12 +14,16 @@ import BackgroundOverlayTint from '../components/background/BackgroundOverlayTin
 import Header from '../components/header/Header';
 import LevelsContent from '../components/body/LevelsContent';
 import Footer from '../components/footer/Footer';
+import applicationData from '../data/application.json';
 
 /**
  * @description - returns Levels One Page
  * @return {jsx} - the Levels One Page to render
  */
 const Levels = () => {
+  // retrieve first attribute data
+  const attribute = applicationData.attributes[0];
+
   return (
     <main>
       {/* eslint-disable-next-line max-len */}
@@ -30,7 +34,7 @@ const Levels = () => {
         endColor="purple"
       />
       <Header text="Learn: 1 of 5" progressBarValue="25" />
-      <LevelsContent />
+      <LevelsContent attribute={attribute} />
       <Footer>
         <p className="w-75 mb-3">
           This question is asking you to state your preferences across a range

@@ -16,10 +16,14 @@
  * @param {string} props.children - any jsx elements
  * @return {jsx} - the Headline component to render
  */
-const Headline = ({ h1Text = 'What Matters to You!', children }) => {
+const Headline = ({
+  h1Text = 'What Matters to You!',
+  h1ClassName = 'display-2 fw-bolder',
+  children
+}) => {
   return (
     <div>
-      <h1 className="display-2 fw-bolder">{h1Text}</h1>
+      <h1 className={h1ClassName}>{h1Text}</h1>
       {children}
       <hr />
     </div>

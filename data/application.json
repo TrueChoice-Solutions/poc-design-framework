@@ -7,31 +7,37 @@
       "instructions": "For each of the categories below, rate the item from 0-10 to tell us how important that category is, compared to the others.",
       "levels": [
         {
+          "levelId": 1,
           "name": "Employee assistance programs",
           "tooltipText": "Employee assitance programs tooltip!",
           "icon": "PersonCheck"
         },
         {
+          "levelId": 2,
           "name": "Absence management and occupational health",
           "tooltipText": "Absence management and occupational health tooltip!",
           "icon": "Basket"
         },
         {
+          "levelId": 3,
           "name": "Child care",
           "tooltipText": "Child care tooltip!",
           "icon": "Diagram3"
         },
         {
+          "levelId": 4,
           "name": "Stress management",
           "tooltipText": "Stress management tooltip",
           "icon": "HeartHalf"
         },
         {
+          "levelId": 5,
           "name": "Flexible and remote working",
           "tooltipText": "Flexible and remote working tooltip!",
           "icon": "PersonWorkspace"
         },
         {
+          "levelId": 6,
           "name": "Workstation assessments",
           "tooltipText": "Workstation assessments tooltip!",
           "icon": "HddNetwork"

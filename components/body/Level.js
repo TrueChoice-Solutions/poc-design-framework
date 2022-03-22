@@ -11,6 +11,7 @@
 import { useState } from 'react';
 // local files
 import styles from './Level.module.css';
+import LevelInfo from './LevelInfo';
 import Tooltip from '../shared/Tooltip';
 
 /**
@@ -38,6 +39,7 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
       {/* screen < 576px display ONLY small screen content */}
       <div className={`${styles.smallScreenContent} p-2`}>
         <div className="d-flex align-items-center">
+          <LevelInfo />
           <Tooltip
             contentClassName="bg-dark p-3 text-center"
             contentAbsoluteStartingPosition="left"

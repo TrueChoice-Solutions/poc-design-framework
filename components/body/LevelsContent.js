@@ -30,7 +30,9 @@ const LevelsContent = ({ attribute }) => {
    */
   const renderLevels = () => {
     return attribute.levels.map((level) => {
-      // Icons is object with nested bootstrap icon name objects. Gets object matching level.icon name
+      /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
+       * Rendering React components, so Icon variable must be capitalized.
+       */
       const Icon = Icons[level.icon];
 
       return (

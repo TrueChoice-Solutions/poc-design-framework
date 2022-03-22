@@ -31,7 +31,7 @@ const LevelsContent = ({ attribute }) => {
   const renderLevels = () => {
     return attribute.levels.map((level) => {
       /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
-       * Rendering React components, so Icon variable must be capitalized.
+       * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />
        */
       const Icon = Icons[level.icon];
 
@@ -75,7 +75,7 @@ const LevelsContent = ({ attribute }) => {
 
             <Row>{renderLevels()}</Row>
 
-            {/* Added div here to so main content
+            {/* Added div here so main content
              * isn't blocked by footer, has space to scroll to view all body content
              */}
             <div className={styles.marginDiv}></div>

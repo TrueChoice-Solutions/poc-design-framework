@@ -49,7 +49,7 @@ const LevelsContent = ({ attribute }) => {
       let BootstrapIcon = iconMap[level.icon];
 
       return (
-        <Col key={level.id} md={2}>
+        <Col key={level.levelId} md={2}>
           <Level
             icon={BootstrapIcon}
             text={level.name}

@@ -18,6 +18,7 @@
  * @param {string} props.value - what the slider is currently on
  * @param {string} props.minValue - slider value lowest point
  * @param {string} props.maxValue - slider value highest point
+ * @param {string} props.orient - sets slider to vertical position
  * @return {jsx} - the Slider component to render
  */
 const Slider = ({

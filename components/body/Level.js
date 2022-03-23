@@ -17,14 +17,15 @@ import Tooltip from '../shared/Tooltip';
 
 /**
  * @description - returns icon, tooltip, text, and range slider
- * @param {object} - level data containing levelId, name, tooltipText, icon name
+ * @param {object} props.levelData - level data containing levelId, name, tooltipText, icon name
+ * @param {string} props.levelTextBoxHeightRem - level text box height in rems for consistent height across each level
  * @return {jsx} - the Level component to render
  */
-const Level = ({ level, levelTextBoxHeightRem = '100%' }) => {
+const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
   /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
    * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />
    */
-  const Icon = Icons[level.icon];
+  const Icon = Icons[levelData.icon];
 
   // state
   const [inputValue, setInputValue] = useState('5');
@@ -44,9 +45,9 @@ const Level = ({ level, levelTextBoxHeightRem = '100%' }) => {
       <div className={`${styles.smallScreenContent} p-2`}>
         <div className="d-flex align-items-center">
           <LevelInfo
-            tooltipContent={<p className="mb-0">{level.tooltipText}</p>}
+            tooltipContent={<p className="mb-0">{levelData.tooltipText}</p>}
           />
-          <span className="ms-2">{level.name}</span>
+          <span className="ms-2">{levelData.name}</span>
         </div>
         <div className="mt-3 d-flex align-items-center">
           <input
@@ -67,13 +68,13 @@ const Level = ({ level, levelTextBoxHeightRem = '100%' }) => {
           <Icon size={30} />
           <div className="position-absolute top-100 start-100 translate-middle ms-3">
             <Tooltip contentClassName="bg-dark p-3 text-center">
-              {level.tooltipText}
+              {levelData.tooltipText}
             </Tooltip>
           </div>
         </div>
 
         <div className="mt-3" style={{ height: `${levelTextBoxHeightRem}` }}>
-          {level.name}
+          {levelData.name}
         </div>
         <div className="mt-3">
           <input

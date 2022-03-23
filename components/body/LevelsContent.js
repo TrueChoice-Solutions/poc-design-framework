@@ -30,7 +30,7 @@ const LevelsContent = ({ attribute }) => {
   const renderLevels = () => {
     return attribute.levels.map((level) => (
       <Col key={level.levelId} md={2}>
-        <Level level={level} levelTextBoxHeightRem="7.6rem" />
+        <Level levelData={level} levelTextBoxHeightRem="7.6rem" />
       </Col>
     ));
   };

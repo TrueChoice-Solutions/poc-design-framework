@@ -22,6 +22,7 @@ const Slider = ({
   handleInputChange,
   minValue,
   maxValue,
+  name,
   value
 }) => {
   return (
@@ -35,7 +36,7 @@ const Slider = ({
         type="range"
         min={minValue}
         max={maxValue}
-        name="input-number"
+        name={name}
         onChange={handleInputChange}
         value={value}
       />

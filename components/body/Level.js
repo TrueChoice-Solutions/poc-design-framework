@@ -49,9 +49,11 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
           <span className="ms-2">{levelData.name}</span>
         </div>
         <div className="mt-3 d-flex align-items-center">
-          <span className="ms-4 w-75">
-            <Slider handleInputChange={handleInputChange} value={inputValue} />
-          </span>
+          <Slider
+            className="w-75"
+            handleInputChange={handleInputChange}
+            value={inputValue}
+          />
           <span className="ms-4">{inputValue}</span>
         </div>
       </div>

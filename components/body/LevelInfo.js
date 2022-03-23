@@ -15,6 +15,11 @@ import Tooltip from '../shared/Tooltip';
 /**
  * @description - returns icon, tooltip and text
  * @param {string} props.levelData - level data containing levelId, name, tooltipText, icon name
+ * @param {string} props.className - bootstrap class names to style outermost div
+ * @param {string} props.heightRem - height in rems for outermost div - used on style attribute
+ * @param {string} props.iconClassName - bootstrap class names to style icon
+ * @param {string} props.tooltipClassName - bootstrap class names for Tooltip (mainly used for absolute positioning)
+ * @param {string} props.textClassName - bootstrap class names to style level text
  * @return {jsx} - the LevelInfo component to render
  */
 const LevelInfo = ({

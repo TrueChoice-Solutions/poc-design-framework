@@ -15,10 +15,15 @@ import Tooltip from '../shared/Tooltip';
  * @description - returns icon, tooltip and text
  * @return {jsx} - the LevelInfo component to render
  */
-const LevelInfo = () => {
+const LevelInfo = ({ tooltipContent }) => {
   return (
     <div>
-      <Tooltip></Tooltip>
+      <Tooltip
+        contentClassName="bg-dark p-3 text-center"
+        contentAbsoluteStartingPosition="left"
+      >
+        {tooltipContent}
+      </Tooltip>
     </div>
   );
 };

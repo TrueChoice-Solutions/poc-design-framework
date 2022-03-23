@@ -9,6 +9,7 @@
 
 // dependencies
 import { useState } from 'react';
+import * as Icons from 'react-bootstrap-icons';
 // local files
 import styles from './Level.module.css';
 import LevelInfo from './LevelInfo';
@@ -18,10 +19,14 @@ import Tooltip from '../shared/Tooltip';
  * @description - returns icon, tooltip, text, and range slider
  * @param {jsx} props.icon - Bootstrap icon
  * @param {string} props.text - text to display
- * @param {jsx} props.tooltipContent - Tooltip content to display
+ * @param {jsx} props.tooltip - Tooltip content to display
  * @return {jsx} - the Level component to render
  */
-const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
+const Level = ({ level, levelTextBoxHeightRem }) => {
+  /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
+   * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />
+   */
+  const Icon = Icons[level.icon];
   // state
   const [inputValue, setInputValue] = useState('5');
 
@@ -39,14 +44,8 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
       {/* screen < 576px display ONLY small screen content */}
       <div className={`${styles.smallScreenContent} p-2`}>
         <div className="d-flex align-items-center">
-          <LevelInfo />
-          <Tooltip
-            contentClassName="bg-dark p-3 text-center"
-            contentAbsoluteStartingPosition="left"
-          >
-            {tooltipContent}
-          </Tooltip>
-          <span className="ms-2">{text}</span>
+          <LevelInfo tooltipContent={level.tooltipText} />
+          <span className="ms-2">{level.name}</span>
         </div>
         <div className="mt-3 d-flex align-items-center">
           <input
@@ -64,16 +63,16 @@ const Level = ({ icon, text, tooltipContent, textBoxHeightRem = '100%' }) => {
       {/* screen > 576px display ONLY big screen content */}
       <div className={`${styles.regularScreenContent} p-2 text-center`}>
         <div className="position-relative d-inline-block">
-          {icon}
+          <Icon size={30} />
           <div className="position-absolute top-100 start-100 translate-middle ms-3">
             <Tooltip contentClassName="bg-dark p-3 text-center">
-              {tooltipContent}
+              {level.tooltipText}
             </Tooltip>
           </div>
         </div>
 
-        <div className="mt-3" style={{ height: `${textBoxHeightRem}` }}>
-          {text}
+        <div className="mt-3" style={{ height: `${levelTextBoxHeightRem}` }}>
+          {level.name}
         </div>
         <div className="mt-3">
           <input

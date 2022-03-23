@@ -44,7 +44,7 @@ const Slider = ({
         value={value}
         min={minValue}
         max={maxValue}
-        /* if orient is set, add value 'vertical' */
+        /* if orient is set to any truthy value, add 'vertical' */
         orient={orient && 'vertical'}
       />
       <div>{value}</div>

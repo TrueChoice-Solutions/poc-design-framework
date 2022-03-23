@@ -71,8 +71,16 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
         <div className="mt-3" style={{ height: `${levelTextBoxHeightRem}` }}>
           {levelData.name}
         </div>
-        <div className="mt-3">
-          {/* <input
+        <Slider
+          sliderClassName="mt-3"
+          handleInputChange={handleInputChange}
+          name="range-slider"
+          value={inputValue}
+          min="1"
+          max="10"
+          orient="vertical"
+        />
+        {/* <input
             orient="vertical"
             className="w-100"
             type="range"
@@ -83,7 +91,6 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
             value={inputValue}
           />
   <div>{inputValue}</div> */}
-        </div>
       </div>
     </div>
   );

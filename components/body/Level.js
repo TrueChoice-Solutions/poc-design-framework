@@ -86,8 +86,3 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
 };
 
 export default Level;
-
-/*
- *
- * style range slider so it's consistent across all browsers (difficult...)
- */

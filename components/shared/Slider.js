@@ -32,8 +32,8 @@ const Slider = ({
 }) => {
   return (
     /*
-     * storing input & input value display here for now - Later will delete
-     * the display value, since we'll have it display on the range's thumb
+     * storing input & input value display here for now - Later will refactor to only be input.
+     * Also, delete display value in future => will be on range's thumb
      */
     <div className={sliderClassName}>
       <input

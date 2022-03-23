@@ -12,7 +12,8 @@
 
 /**
  * @description - returns input slider
- * @param {string} props.sliderClassName - bootstrap class names for slider
+ * @param {string} props.sliderClassName - bootstrap class names for general slider layout
+ * @param {string} props.displayValueClassName - bootstrap class names for display value
  * @param {function} props.handleInputChange - on change event handler
  * @param {string} props.name - name to group the inputs into a category
  * @param {string} props.value - what the slider is currently on

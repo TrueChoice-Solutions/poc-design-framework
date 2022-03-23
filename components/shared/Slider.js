@@ -18,22 +18,29 @@
  * @return {jsx} - the Slider component to render
  */
 const Slider = ({
-  className = 'w-100',
+  sliderClassName,
   handleInputChange,
   minValue,
   maxValue,
   value
 }) => {
   return (
-    <input
-      type="range"
-      min={minValue}
-      max={maxValue}
-      className={className}
-      name="input-number"
-      onChange={handleInputChange}
-      value={value}
-    />
+    /*
+     * storing input & input value display here for now - Later will delete
+     * the display value, since we'll have it display on the range's thumb
+     */
+    <div className={sliderClassName}>
+      <input
+        className="w-75"
+        type="range"
+        min={minValue}
+        max={maxValue}
+        name="input-number"
+        onChange={handleInputChange}
+        value={value}
+      />
+      <div className="ms-4">{value}</div>
+    </div>
   );
 };
 

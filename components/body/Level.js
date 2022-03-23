@@ -48,16 +48,13 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
           <LevelInfo levelData={levelData} />
           <span className="ms-2">{levelData.name}</span>
         </div>
-        <div className="mt-3 d-flex align-items-center">
-          <Slider
-            className="w-75"
-            handleInputChange={handleInputChange}
-            value={inputValue}
-            minValue="1"
-            maxValue="10"
-          />
-          <span className="ms-4">{inputValue}</span>
-        </div>
+        <Slider
+          sliderClassName="mt-3 d-flex align-items-center"
+          handleInputChange={handleInputChange}
+          value={inputValue}
+          minValue="1"
+          maxValue="10"
+        />
       </div>
       {/* screen > 576px display ONLY big screen content */}
       <div className={`${styles.regularScreenContent} p-2 text-center`}>

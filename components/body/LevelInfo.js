@@ -7,3 +7,10 @@ const LevelInfo = () => {
 };
 
 export default LevelInfo;
+
+/* add copyright info at top
+ * add description info for LevelInfo func
+ * add icon, tooltip, text here. (maybe use children..?)
+ * update description with props
+ * move onto LevelSlider component
+ */

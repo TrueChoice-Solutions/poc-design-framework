@@ -17,12 +17,18 @@
  * @param {string} props.value - what the slider is currently on
  * @return {jsx} - the Slider component to render
  */
-const Slider = ({ className = 'w-100', handleInputChange, value }) => {
+const Slider = ({
+  className = 'w-100',
+  handleInputChange,
+  minValue,
+  maxValue,
+  value
+}) => {
   return (
     <input
       type="range"
-      min="1"
-      max="10"
+      min={minValue}
+      max={maxValue}
       className={className}
       name="input-number"
       onChange={handleInputChange}

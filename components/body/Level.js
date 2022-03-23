@@ -53,6 +53,8 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
             className="w-75"
             handleInputChange={handleInputChange}
             value={inputValue}
+            minValue="1"
+            maxValue="10"
           />
           <span className="ms-4">{inputValue}</span>
         </div>

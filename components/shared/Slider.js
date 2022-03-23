@@ -14,16 +14,19 @@
  * @description - returns input slider
  * @param {string} props.sliderClassName - bootstrap class names for slider
  * @param {function} props.handleInputChange - on change event handler
+ * @param {string} props.name - name to group the inputs into a category
  * @param {string} props.value - what the slider is currently on
+ * @param {string} props.minValue - slider value lowest point
+ * @param {string} props.maxValue - slider value highest point
  * @return {jsx} - the Slider component to render
  */
 const Slider = ({
   sliderClassName,
   handleInputChange,
-  minValue,
-  maxValue,
   name,
-  value
+  value,
+  minValue,
+  maxValue
 }) => {
   return (
     /*
@@ -34,11 +37,11 @@ const Slider = ({
       <input
         className="w-75"
         type="range"
+        onChange={handleInputChange}
+        name={name}
+        value={value}
         min={minValue}
         max={maxValue}
-        name={name}
-        onChange={handleInputChange}
-        value={value}
       />
       <div className="ms-4">{value}</div>
     </div>

@@ -12,7 +12,7 @@
 
 /**
  * @description - returns input slider
- * @param {string} props.className - bootstrap class names to style range input
+ * @param {string} props.sliderClassName - bootstrap class names for slider
  * @param {function} props.handleInputChange - on change event handler
  * @param {string} props.value - what the slider is currently on
  * @return {jsx} - the Slider component to render

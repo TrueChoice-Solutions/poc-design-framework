@@ -20,8 +20,7 @@ import Tooltip from '../shared/Tooltip';
  * @param {object} - level data containing levelId, name, tooltipText, icon name
  * @return {jsx} - the Level component to render
  */
-const Level = ({ level, levelTextBoxHeightRem }) => {
-  console.log(level);
+const Level = ({ level, levelTextBoxHeightRem = '100%' }) => {
   /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
    * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />
    */

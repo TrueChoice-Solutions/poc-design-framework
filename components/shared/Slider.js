@@ -47,7 +47,7 @@ const Slider = ({
         /* if orient is set, add value 'vertical' */
         orient={orient && 'vertical'}
       />
-      <div className="ms-4">{value}</div>
+      <div>{value}</div>
     </div>
   );
 };

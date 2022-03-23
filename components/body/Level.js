@@ -76,21 +76,10 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
           handleInputChange={handleInputChange}
           name="range-slider"
           value={inputValue}
-          min="1"
-          max="10"
+          minValue="1"
+          maxValue="10"
           orient="vertical"
         />
-        {/* <input
-            orient="vertical"
-            className="w-100"
-            type="range"
-            min="1"
-            max="10"
-            name="input-number"
-            onChange={handleInputChange}
-            value={inputValue}
-          />
-  <div>{inputValue}</div> */}
       </div>
     </div>
   );

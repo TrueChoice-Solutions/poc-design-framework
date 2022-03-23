@@ -36,6 +36,7 @@ const LevelInfo = ({
         <div className={iconClassName}>
           <Icon size={30} />
         </div>
+        {/* can set to position absolute if needed, remember it's relative to icon! */}
         <div className={tooltipClassName}>
           <Tooltip
             contentClassName="bg-dark p-3 text-center"
@@ -52,9 +53,3 @@ const LevelInfo = ({
 };
 
 export default LevelInfo;
-
-/*
- * add icon, tooltip, text here. (maybe use children..?)
- * update description with props
- * move onto LevelSlider component
- */

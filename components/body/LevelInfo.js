@@ -13,17 +13,17 @@ import Tooltip from '../shared/Tooltip';
 
 /**
  * @description - returns icon, tooltip and text
- * @param {string} props.tooltipContent - tooltip content
+ * @param {string} props.levelData - level data containing levelId, name, tooltipText, icon name
  * @return {jsx} - the LevelInfo component to render
  */
-const LevelInfo = ({ tooltipContent }) => {
+const LevelInfo = ({ levelData }) => {
   return (
     <div>
       <Tooltip
         contentClassName="bg-dark p-3 text-center"
         contentAbsoluteStartingPosition="left"
       >
-        {tooltipContent}
+        {levelData.tooltipText}
       </Tooltip>
     </div>
   );

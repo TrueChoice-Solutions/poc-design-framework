@@ -13,7 +13,6 @@ import { useState } from 'react';
 import styles from './Level.module.css';
 import LevelInfo from './LevelInfo';
 import Slider from '../shared/Slider';
-import Tooltip from '../shared/Tooltip';
 
 /**
  * @description - returns icon, tooltip, text, and range slider

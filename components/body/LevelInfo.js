@@ -13,6 +13,7 @@ import Tooltip from '../shared/Tooltip';
 
 /**
  * @description - returns icon, tooltip and text
+ * @param {string} props.tooltipContent - tooltip content
  * @return {jsx} - the LevelInfo component to render
  */
 const LevelInfo = ({ tooltipContent }) => {

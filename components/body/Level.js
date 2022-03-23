@@ -43,7 +43,9 @@ const Level = ({ level, levelTextBoxHeightRem = '100%' }) => {
       {/* screen < 576px display ONLY small screen content */}
       <div className={`${styles.smallScreenContent} p-2`}>
         <div className="d-flex align-items-center">
-          <LevelInfo tooltipContent={level.tooltipText} />
+          <LevelInfo
+            tooltipContent={<p className="mb-0">{level.tooltipText}</p>}
+          />
           <span className="ms-2">{level.name}</span>
         </div>
         <div className="mt-3 d-flex align-items-center">

@@ -13,6 +13,7 @@ import * as Icons from 'react-bootstrap-icons';
 // local files
 import styles from './Level.module.css';
 import LevelInfo from './LevelInfo';
+import Slider from '../shared/Slider';
 import Tooltip from '../shared/Tooltip';
 
 /**
@@ -48,6 +49,7 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
           <span className="ms-2">{levelData.name}</span>
         </div>
         <div className="mt-3 d-flex align-items-center">
+          <Slider />
           <input
             type="range"
             min="1"

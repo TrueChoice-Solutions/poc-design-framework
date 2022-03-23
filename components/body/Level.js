@@ -23,11 +23,6 @@ import Tooltip from '../shared/Tooltip';
  * @return {jsx} - the Level component to render
  */
 const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
-  /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
-   * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />
-   */
-  const Icon = Icons[levelData.icon];
-
   // state
   const [inputValue, setInputValue] = useState('5');
 
@@ -40,6 +35,11 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
     setInputValue(event.target.value);
   };
 
+  /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
+   * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />
+   */
+  const Icon = Icons[levelData.icon];
+
   return (
     <div>
       {/* screen < 576px display ONLY small screen content */}
@@ -49,16 +49,9 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
           <span className="ms-2">{levelData.name}</span>
         </div>
         <div className="mt-3 d-flex align-items-center">
-          <Slider />
-          <input
-            type="range"
-            min="1"
-            max="10"
-            className="w-75"
-            name="input-number"
-            onChange={handleInputChange}
-            value={inputValue}
-          />
+          <span className="ms-4 w-75">
+            <Slider handleInputChange={handleInputChange} value={inputValue} />
+          </span>
           <span className="ms-4">{inputValue}</span>
         </div>
       </div>
@@ -77,7 +70,7 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
           {levelData.name}
         </div>
         <div className="mt-3">
-          <input
+          {/* <input
             orient="vertical"
             className="w-100"
             type="range"
@@ -87,7 +80,7 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
             onChange={handleInputChange}
             value={inputValue}
           />
-          <div>{inputValue}</div>
+  <div>{inputValue}</div> */}
         </div>
       </div>
     </div>

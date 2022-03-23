@@ -9,7 +9,6 @@
 
 // dependencies
 import { useState } from 'react';
-import * as Icons from 'react-bootstrap-icons';
 // local files
 import styles from './Level.module.css';
 import LevelInfo from './LevelInfo';
@@ -19,10 +18,9 @@ import Tooltip from '../shared/Tooltip';
 /**
  * @description - returns icon, tooltip, text, and range slider
  * @param {object} props.levelData - level data containing levelId, name, tooltipText, icon name
- * @param {string} props.levelTextBoxHeightRem - level text box height in rems for consistent height across each level
  * @return {jsx} - the Level component to render
  */
-const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
+const Level = ({ levelData }) => {
   // state
   const [inputValue, setInputValue] = useState('5');
 
@@ -35,19 +33,17 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
     setInputValue(event.target.value);
   };
 
-  /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
-   * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />
-   */
-  const Icon = Icons[levelData.icon];
-
   return (
     <div>
       {/* screen < 576px display ONLY small screen content */}
       <div className={`${styles.smallScreenContent} p-2`}>
-        <div className="d-flex align-items-center">
-          <LevelInfo levelData={levelData} />
-          <span className="ms-2">{levelData.name}</span>
-        </div>
+        <LevelInfo
+          levelData={levelData}
+          className="d-flex align-items-center"
+          iconClassName="d-none"
+          textClassName="ms-2"
+        />
+
         <Slider
           sliderClassName="mt-3 d-flex align-items-center"
           displayValueClassName="ms-3"
@@ -60,18 +56,13 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
       </div>
       {/* screen > 576px display ONLY big screen content */}
       <div className={`${styles.regularScreenContent} p-2 text-center`}>
-        <div className="position-relative d-inline-block">
-          <Icon size={30} />
-          <div className="position-absolute top-100 start-100 translate-middle ms-3">
-            <Tooltip contentClassName="bg-dark p-3 text-center">
-              {levelData.tooltipText}
-            </Tooltip>
-          </div>
-        </div>
-
-        <div className="mt-3" style={{ height: `${levelTextBoxHeightRem}` }}>
-          {levelData.name}
-        </div>
+        <LevelInfo
+          levelData={levelData}
+          heightRem="12.5rem"
+          className="d-flex flex-column align-items-center"
+          tooltipClassName="position-absolute top-100 start-100 translate-middle ms-3"
+          textClassName="d-block mt-3"
+        />
         <Slider
           sliderClassName="mt-3"
           handleInputChange={handleInputChange}

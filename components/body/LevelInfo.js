@@ -8,6 +8,7 @@
  */
 
 // dependencies
+import * as Icons from 'react-bootstrap-icons';
 // local files
 import Tooltip from '../shared/Tooltip';
 
@@ -16,15 +17,36 @@ import Tooltip from '../shared/Tooltip';
  * @param {string} props.levelData - level data containing levelId, name, tooltipText, icon name
  * @return {jsx} - the LevelInfo component to render
  */
-const LevelInfo = ({ levelData }) => {
+const LevelInfo = ({
+  levelData,
+  className,
+  heightRem,
+  iconClassName,
+  tooltipClassName,
+  textClassName
+}) => {
+  /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
+   * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />
+   */
+  const Icon = Icons[levelData.icon];
+
   return (
-    <div>
-      <Tooltip
-        contentClassName="bg-dark p-3 text-center"
-        contentAbsoluteStartingPosition="left"
-      >
-        {levelData.tooltipText}
-      </Tooltip>
+    <div className={className} style={{ height: `${heightRem}` }}>
+      <div className="position-relative">
+        <div className={iconClassName}>
+          <Icon size={30} />
+        </div>
+        <div className={tooltipClassName}>
+          <Tooltip
+            contentClassName="bg-dark p-3 text-center"
+            contentAbsoluteStartingPosition="left"
+          >
+            {levelData.tooltipText}
+          </Tooltip>
+        </div>
+      </div>
+
+      <div className={textClassName}>{levelData.name}</div>
     </div>
   );
 };

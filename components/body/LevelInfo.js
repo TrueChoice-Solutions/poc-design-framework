@@ -7,6 +7,10 @@
  * use it only in accordance with the terms of the license agreement you entered into with the company.
  */
 
+// dependencies
+// local files
+import Tooltip from '../shared/Tooltip';
+
 /**
  * @description - returns icon, tooltip and text
  * @return {jsx} - the LevelInfo component to render
@@ -14,7 +18,7 @@
 const LevelInfo = () => {
   return (
     <div>
-      <div>Level Info!</div>
+      <Tooltip></Tooltip>
     </div>
   );
 };
@@ -22,7 +26,6 @@ const LevelInfo = () => {
 export default LevelInfo;
 
 /*
- * add description info for LevelInfo func
  * add icon, tooltip, text here. (maybe use children..?)
  * update description with props
  * move onto LevelSlider component

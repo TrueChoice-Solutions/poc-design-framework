@@ -50,6 +50,7 @@ const Level = ({ levelData, levelTextBoxHeightRem = '100%' }) => {
         </div>
         <Slider
           sliderClassName="mt-3 d-flex align-items-center"
+          displayValueClassName="ms-3"
           handleInputChange={handleInputChange}
           name="range-slider"
           value={inputValue}

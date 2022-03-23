@@ -23,6 +23,7 @@
  */
 const Slider = ({
   sliderClassName,
+  displayValueClassName,
   handleInputChange,
   name,
   value,
@@ -47,7 +48,7 @@ const Slider = ({
         /* if orient is set to any truthy value, add 'vertical' */
         orient={orient && 'vertical'}
       />
-      <div>{value}</div>
+      <div className={displayValueClassName}>{value}</div>
     </div>
   );
 };

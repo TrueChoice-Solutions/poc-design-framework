@@ -17,18 +17,18 @@ import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
  * @return {jsx} - the Navigation component to render
  */
 const Navigation = ({
-  forwardButtonText = '',
+  forwardButtonText,
   forwardButtonTextClassName,
-  backButtonText = '',
+  backButtonText,
   backButtonTextClassName
 }) => {
   return (
     <div className="d-flex">
-      <Button className="d-flex align-items-center btn-secondary">
+      <Button variant="secondary" className="d-flex align-items-center">
         <ChevronLeft size={24} />
         <span className={backButtonTextClassName}>{backButtonText}</span>
       </Button>
-      <Button className="d-flex bg-primary align-items-center ms-2 bg-success">
+      <Button variant="success" className="d-flex align-items-center ms-2">
         <span className={forwardButtonTextClassName}>{forwardButtonText}</span>
         <ChevronRight size={24} />
       </Button>

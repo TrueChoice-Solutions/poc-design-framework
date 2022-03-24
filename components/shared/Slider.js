@@ -29,6 +29,11 @@ const Slider = ({
   maxValue,
   orient
 }) => {
+  // helper functions
+  /**
+   * @description - median of maxValue & minValue; sets default slider starting point
+   * @return {string} - return median as string if integer. Return median rounded down as string if float.
+   */
   const getDefaultInputValue = () => {
     // midpoint should be (max + min) / 2 to get median
     let midpoint = (Number(maxValue) + Number(minValue)) / 2;

@@ -29,10 +29,24 @@ const Slider = ({
   maxValue,
   orient
 }) => {
-  // state
-  const [inputValue, setInputValue] = useState('5');
+  const getDefaultInputValue = () => {
+    // 6 - 10 (should be 8)
+    // 1- 10 (should be 5)
+    let midpoint = (Number(maxValue) + Number(minValue)) / 2;
+    // check if integer
+    if (midpoint % 1 === 0) {
+      return midpoint.toString();
+    } else {
+      // check if float (decimal). Round down to nearest integer
+      let midpointRoundedDown = Math.floor(midpoint);
+      return midpointRoundedDown.toString();
+    }
+  };
 
-  // event handler
+  // state
+  const [inputValue, setInputValue] = useState(getDefaultInputValue());
+
+  // event handlers
   /**
    * @description - stores input range value into 'inputValue' state
    * @param {object} event - get user's value from interacting with range slider

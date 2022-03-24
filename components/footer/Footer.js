@@ -22,6 +22,10 @@ import Disclaimer from './Disclaimer';
  */
 const Footer = ({ children, showNavigation = true }) => {
   // conditional renders
+  /**
+   * @description - conditionally render Navigation component, based on 'showNavigation' prop
+   * @return {jsx} - the Navigation component to render
+   */
   const renderNavigation = () => {
     return (
       showNavigation && (

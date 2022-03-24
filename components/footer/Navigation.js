@@ -27,10 +27,16 @@ const Navigation = ({
   backButtonTextClassName
 }) => {
   // event handlers
+  /**
+   * @description - on click event handler goes back a page
+   */
   const handleBackButtonClick = () => {
     console.log('back button was clicked!');
   };
 
+  /**
+   * @description - on click event handler goes next page
+   */
   const handleForwardButtonClick = () => {
     console.log('forward button was clicked!');
   };

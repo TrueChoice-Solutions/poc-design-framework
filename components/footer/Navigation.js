@@ -10,6 +10,7 @@
 // dependencies
 import { Button } from 'react-bootstrap';
 import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
+import { useRouter } from 'next/router';
 // local files
 
 /**
@@ -26,12 +27,15 @@ const Navigation = ({
   backButtonText,
   backButtonTextClassName
 }) => {
+  // useRouter
+  const router = useRouter();
+
   // event handlers
   /**
    * @description - on click event handler goes back a page
    */
   const handleBackButtonClick = () => {
-    console.log('back button was clicked!');
+    router.back();
   };
 
   /**

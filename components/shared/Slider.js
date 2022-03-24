@@ -8,13 +8,13 @@
  */
 
 // dependencies
+import { useState } from 'react';
 // local files
 
 /**
  * @description - returns input slider
  * @param {string} props.sliderClassName - bootstrap class names for general slider layout
  * @param {string} props.displayValueClassName - bootstrap class names for display value
- * @param {function} props.handleInputChange - on change event handler
  * @param {string} props.name - name to group the inputs into a category
  * @param {string} props.value - what the slider is currently on
  * @param {string} props.minValue - slider value lowest point
@@ -25,13 +25,23 @@
 const Slider = ({
   sliderClassName,
   displayValueClassName,
-  handleInputChange,
   name,
-  value,
   minValue,
   maxValue,
   orient
 }) => {
+  // state
+  const [inputValue, setInputValue] = useState('5');
+
+  // event handler
+  /**
+   * @description - stores input range value into 'inputValue' state
+   * @param {object} event - get user's value from interacting with range slider
+   */
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
   return (
     /*
      * storing input & input value display here for now - Later will refactor to only be input.
@@ -43,13 +53,13 @@ const Slider = ({
         type="range"
         onChange={handleInputChange}
         name={name}
-        value={value}
+        value={inputValue}
         min={minValue}
         max={maxValue}
         /* if orient is set to any truthy value, add 'vertical' */
         orient={orient && 'vertical'}
       />
-      <div className={displayValueClassName}>{value}</div>
+      <div className={displayValueClassName}>{inputValue}</div>
     </div>
   );
 };

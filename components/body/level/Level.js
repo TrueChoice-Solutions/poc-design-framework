@@ -8,7 +8,6 @@
  */
 
 // dependencies
-import { useState } from 'react';
 // local files
 import styles from './Level.module.css';
 import LevelInfo from './LevelInfo';
@@ -20,18 +19,6 @@ import Slider from '../../shared/Slider';
  * @return {jsx} - the Level component to render
  */
 const Level = ({ levelData }) => {
-  // state
-  const [inputValue, setInputValue] = useState('5');
-
-  // event handler
-  /**
-   * @description - stores input range value into 'inputValue' state
-   * @param {object} event - get user's value from interacting with range slider
-   */
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
-
   return (
     <div>
       {/* screen < 576px display ONLY small screen content */}
@@ -46,9 +33,7 @@ const Level = ({ levelData }) => {
         <Slider
           sliderClassName="mt-3 d-flex align-items-center"
           displayValueClassName="ms-3"
-          handleInputChange={handleInputChange}
           name="range-slider"
-          value={inputValue}
           minValue="1"
           maxValue="10"
         />
@@ -64,9 +49,7 @@ const Level = ({ levelData }) => {
         />
         <Slider
           sliderClassName="mt-3"
-          handleInputChange={handleInputChange}
           name="range-slider"
-          value={inputValue}
           minValue="1"
           maxValue="10"
           orient="vertical"

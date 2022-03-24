@@ -10,7 +10,7 @@
 // dependencies
 import * as Icons from 'react-bootstrap-icons';
 // local files
-import Tooltip from '../shared/Tooltip';
+import Tooltip from '../../shared/Tooltip';
 
 /**
  * @description - returns icon, tooltip and text

@@ -11,9 +11,9 @@
 import { Container, Row, Col } from 'react-bootstrap';
 // local files
 import styles from './LevelsContent.module.css';
-import Tooltip from '../shared/Tooltip';
-import Badge from '../shared/Badge';
-import Headline from './Headline';
+import Tooltip from '../../shared/Tooltip';
+import Badge from '../../shared/Badge';
+import Headline from '../Headline';
 import Level from './Level';
 
 /**

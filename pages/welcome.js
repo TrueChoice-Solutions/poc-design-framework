@@ -12,7 +12,7 @@
 import BackgroundImage from '../components/background/BackgroundImage';
 import BackgroundOverlayTint from '../components/background/BackgroundOverlayTint';
 import Header from '../components/header/Header';
-import WelcomeContent from '../components/body/WelcomeContent';
+import WelcomeContent from '../components/body/welcome/WelcomeContent';
 import Footer from '../components/footer/Footer';
 
 /**

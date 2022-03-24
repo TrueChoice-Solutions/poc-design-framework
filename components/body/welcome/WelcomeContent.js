@@ -10,7 +10,7 @@
 // dependencies
 import { Container, Row, Col } from 'react-bootstrap';
 // local files
-import Headline from './Headline';
+import Headline from '../Headline';
 import WelcomeCta from './WelcomeCta';
 
 /**

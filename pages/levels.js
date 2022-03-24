@@ -12,7 +12,7 @@
 import BackgroundImage from '../components/background/BackgroundImage';
 import BackgroundOverlayTint from '../components/background/BackgroundOverlayTint';
 import Header from '../components/header/Header';
-import LevelsContent from '../components/body/LevelsContent';
+import LevelsContent from '../components/body/level/LevelsContent';
 import Footer from '../components/footer/Footer';
 import applicationData from '../data/application.json';
 

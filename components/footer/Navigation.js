@@ -39,10 +39,10 @@ const Navigation = ({
   };
 
   /**
-   * @description - on click event handler goes next page
+   * @description - on click event handler goes to starting levels page
    */
   const handleForwardButtonClick = () => {
-    console.log('forward button was clicked!');
+    router.push('/levels');
   };
 
   return (
@@ -68,9 +68,3 @@ const Navigation = ({
 };
 
 export default Navigation;
-
-/*
- * console log content for now
- * add description for each event handler function
- * use next router to goBack or for next, set up => WelcomePage for now
- */

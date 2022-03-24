@@ -34,6 +34,7 @@ const Footer = ({ showNavigation = true, children }) => {
           forwardButtonText="Next"
           forwardButtonTextClassName="d-inline-block me-2 mb-1"
           backButtonTextClassName="d-inline-block"
+          path="/levels"
         />
       )
     );

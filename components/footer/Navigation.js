@@ -25,7 +25,8 @@ const Navigation = ({
   forwardButtonText,
   forwardButtonTextClassName,
   backButtonText,
-  backButtonTextClassName
+  backButtonTextClassName,
+  path
 }) => {
   // useRouter
   const router = useRouter();
@@ -42,7 +43,7 @@ const Navigation = ({
    * @description - on click event handler goes to starting levels page
    */
   const handleForwardButtonClick = () => {
-    router.push('/levels');
+    router.push(path);
   };
 
   return (

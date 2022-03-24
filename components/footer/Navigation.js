@@ -19,6 +19,7 @@ import { useRouter } from 'next/router';
  * @param {string} props.forwardButtonTextClassName - bootstrap class names to style forward button text
  * @param {string} props.backButtonText - text for back button
  * @param {string} props.backButtonTextClassName - bootstrap class names to style back button text
+ * @param {string} props.path - router path for forward button
  * @return {jsx} - the Navigation component to render
  */
 const Navigation = ({

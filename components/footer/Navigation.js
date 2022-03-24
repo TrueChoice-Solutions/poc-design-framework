@@ -14,6 +14,10 @@ import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
 
 /**
  * @description - Stores a back and forward button, used to navigate pages
+ * @param {string} props.forwardButtonText - text for forward button
+ * @param {string} props.forwardButtonTextClassName - bootstrap class names to style forward button text
+ * @param {string} props.backButtonText - text for back button
+ * @param {string} props.backButtonTextClassName - bootstrap class names to style back button text
  * @return {jsx} - the Navigation component to render
  */
 const Navigation = ({
@@ -38,10 +42,7 @@ const Navigation = ({
 
 export default Navigation;
 
-/* pass Button text as props (for both? If user wants to do 'back' text)
- * add as params, update description
- * set default prop values to blank, just in case user only wants icons
- * fix styling on text added next to icons, slightly off centered
+/*
  * set up on click handlers for each button
  * console log content for now
  * add description for each event handler function

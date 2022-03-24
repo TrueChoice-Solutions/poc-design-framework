@@ -16,7 +16,6 @@ import { useState } from 'react';
  * @param {string} props.sliderClassName - bootstrap class names for general slider layout
  * @param {string} props.displayValueClassName - bootstrap class names for display value
  * @param {string} props.name - name to group the inputs into a category
- * @param {string} props.value - what the slider is currently on
  * @param {string} props.minValue - slider value lowest point
  * @param {string} props.maxValue - slider value highest point
  * @param {string} props.orient - sets slider to vertical position

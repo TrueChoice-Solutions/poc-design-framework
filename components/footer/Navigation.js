@@ -25,12 +25,12 @@ const Navigation = ({
   return (
     <div className="d-flex">
       <Button className="d-flex align-items-center btn-secondary">
-        <ChevronLeft className="border" size={24} />
+        <ChevronLeft size={24} />
         <span className={backButtonTextClassName}>{backButtonText}</span>
       </Button>
       <Button className="d-flex bg-primary align-items-center ms-2 bg-success">
         <span className={forwardButtonTextClassName}>{forwardButtonText}</span>
-        <ChevronRight size={24} className="border" />
+        <ChevronRight size={24} />
       </Button>
     </div>
   );

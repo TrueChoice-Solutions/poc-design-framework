@@ -37,7 +37,11 @@ const Footer = ({ children }) => {
             </HelpChat>
           </div>
           <div>
-            <Navigation forwardButtonText="Next" />
+            <Navigation
+              forwardButtonText="Next"
+              forwardButtonTextClassName="d-inline-block me-2 mb-1"
+              backButtonTextClassName="d-inline-block ms-2 mb-1"
+            />
           </div>
         </Container>
       </Container>

@@ -16,16 +16,21 @@ import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
  * @description - Stores a back and forward button, used to navigate pages
  * @return {jsx} - the Navigation component to render
  */
-const Navigation = ({ forwardButtonText = '', backButtonText = '' }) => {
+const Navigation = ({
+  forwardButtonText = '',
+  forwardButtonTextClassName,
+  backButtonText = '',
+  backButtonTextClassName
+}) => {
   return (
-    <div className="border d-flex">
-      <Button className="btn-dark border d-flex align-items-center">
-        <ChevronLeft className="border" />
-        <span>{backButtonText}</span>
+    <div className="d-flex">
+      <Button className="d-flex align-items-center btn-secondary">
+        <ChevronLeft className="border" size={24} />
+        <span className={backButtonTextClassName}>{backButtonText}</span>
       </Button>
-      <Button>
-        <span className="d-inline-block me-2">{forwardButtonText}</span>
-        <ChevronRight />
+      <Button className="d-flex bg-primary align-items-center ms-2 bg-success">
+        <span className={forwardButtonTextClassName}>{forwardButtonText}</span>
+        <ChevronRight size={24} className="border" />
       </Button>
     </div>
   );

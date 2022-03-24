@@ -47,9 +47,7 @@ const WelcomeCta = ({
       </Col>
       <Button
         text={buttonText}
-        bgColor="btn-danger"
-        textColor="text-white"
-        outline="btn-danger"
+        className="btn-danger text-white"
         onClick={handleButtonClick}
       />
     </div>

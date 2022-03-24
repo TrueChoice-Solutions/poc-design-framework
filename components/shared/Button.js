@@ -19,14 +19,10 @@
  * @param {function} props.onClick - on click event handler to run after button is clicked
  * @return {jsx} - the Button component to render
  */
-const Button = ({ text, bgColor, textColor, outline, onClick }) => {
+const Button = ({ text, className, onClick }) => {
   // helper functions
   return (
-    <button
-      type="button"
-      className={`btn ${bgColor} ${textColor} ${outline}`}
-      onClick={onClick}
-    >
+    <button type="button" className={`btn ${className}`} onClick={onClick}>
       {text}
     </button>
   );

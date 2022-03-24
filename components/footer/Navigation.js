@@ -26,13 +26,30 @@ const Navigation = ({
   backButtonText,
   backButtonTextClassName
 }) => {
+  // event handlers
+  const handleBackButtonClick = () => {
+    console.log('back button was clicked!');
+  };
+
+  const handleForwardButtonClick = () => {
+    console.log('forward button was clicked!');
+  };
+
   return (
     <div className="d-flex">
-      <Button variant="secondary" className="d-flex align-items-center">
+      <Button
+        variant="secondary"
+        className="d-flex align-items-center"
+        onClick={handleBackButtonClick}
+      >
         <ChevronLeft size={24} />
         <span className={backButtonTextClassName}>{backButtonText}</span>
       </Button>
-      <Button variant="success" className="d-flex align-items-center ms-2">
+      <Button
+        variant="success"
+        className="d-flex align-items-center ms-2"
+        onClick={handleForwardButtonClick}
+      >
         <span className={forwardButtonTextClassName}>{forwardButtonText}</span>
         <ChevronRight size={24} />
       </Button>
@@ -43,7 +60,6 @@ const Navigation = ({
 export default Navigation;
 
 /*
- * set up on click handlers for each button
  * console log content for now
  * add description for each event handler function
  * use next router to goBack or for next, set up => WelcomePage for now

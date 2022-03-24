@@ -31,7 +31,7 @@ const Welcome = () => {
       />
       <Header text="Welcome" progressBarValue="0" />
       <WelcomeContent />
-      <Footer>
+      <Footer showNavigation={false}>
         <p className="w-75 mb-3">
           Please indicate how much you prefer or value each item in relation to
           the others. How far you move the slider depends on how strongly you

@@ -20,7 +20,20 @@ import Disclaimer from './Disclaimer';
  * @param {jsx} props.children - chat bot paragraph texts
  * @return {jsx} - the Footer component to render
  */
-const Footer = ({ children }) => {
+const Footer = ({ children, showNavigation = true }) => {
+  // conditional renders
+  const renderNavigation = () => {
+    return (
+      showNavigation && (
+        <Navigation
+          forwardButtonText="Next"
+          forwardButtonTextClassName="d-inline-block me-2 mb-1"
+          backButtonTextClassName="d-inline-block"
+        />
+      )
+    );
+  };
+
   return (
     <footer>
       <Container
@@ -36,13 +49,7 @@ const Footer = ({ children }) => {
               {children}
             </HelpChat>
           </div>
-          <div>
-            <Navigation
-              forwardButtonText="Next"
-              forwardButtonTextClassName="d-inline-block me-2 mb-1"
-              backButtonTextClassName="d-inline-block"
-            />
-          </div>
+          <div>{renderNavigation()}</div>
         </Container>
       </Container>
 

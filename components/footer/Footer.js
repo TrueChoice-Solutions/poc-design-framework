@@ -17,10 +17,11 @@ import Disclaimer from './Disclaimer';
 
 /**
  * @description - returns Footer component
+ * @param {boolean} props.showNavigation - true or false boolean values to conditionally render Navigation component
  * @param {jsx} props.children - chat bot paragraph texts
  * @return {jsx} - the Footer component to render
  */
-const Footer = ({ children, showNavigation = true }) => {
+const Footer = ({ showNavigation = true, children }) => {
   // conditional renders
   /**
    * @description - conditionally render Navigation component, based on 'showNavigation' prop

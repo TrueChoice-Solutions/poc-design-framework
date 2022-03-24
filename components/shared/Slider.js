@@ -30,14 +30,15 @@ const Slider = ({
   orient
 }) => {
   const getDefaultInputValue = () => {
-    // 6 - 10 (should be 8)
-    // 1- 10 (should be 5)
+    // midpoint should be (max + min) / 2 to get median
     let midpoint = (Number(maxValue) + Number(minValue)) / 2;
     // check if integer
+    // 6 - 10 (should be 8)
     if (midpoint % 1 === 0) {
       return midpoint.toString();
     } else {
       // check if float (decimal). Round down to nearest integer
+      // 1- 10 (5.5 should be 5)
       let midpointRoundedDown = Math.floor(midpoint);
       return midpointRoundedDown.toString();
     }

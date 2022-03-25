@@ -9,12 +9,11 @@
 
 // dependencies
 import { Container, Row, Col } from 'react-bootstrap';
-import * as Icons from 'react-bootstrap-icons';
 // local files
 import styles from './LevelsContent.module.css';
-import Tooltip from '../shared/Tooltip';
-import Badge from '../shared/Badge';
-import Headline from './Headline';
+import Tooltip from '../../shared/Tooltip';
+import Badge from '../../shared/Badge';
+import Headline from '../Headline';
 import Level from './Level';
 
 /**
@@ -29,23 +28,11 @@ const LevelsContent = ({ attribute }) => {
    * @return {jsx} - Level component wrapped in Bootstrap Column
    */
   const renderLevels = () => {
-    return attribute.levels.map((level) => {
-      /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
-       * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />
-       */
-      const Icon = Icons[level.icon];
-
-      return (
-        <Col key={level.levelId} md={2}>
-          <Level
-            icon={<Icon size={30} />}
-            text={level.name}
-            tooltipContent={<p>{level.tooltipText}</p>}
-            textBoxHeightRem="7.6rem"
-          />
-        </Col>
-      );
-    });
+    return attribute.levels.map((level) => (
+      <Col key={level.levelId} md={2}>
+        <Level levelData={level} />
+      </Col>
+    ));
   };
 
   return (

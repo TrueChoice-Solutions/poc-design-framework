@@ -11,28 +11,51 @@
 import { Container } from 'react-bootstrap';
 // local files
 import HelpChat from './HelpChat';
+import Navigation from './Navigation';
 import Logo from '../shared/Logo';
 import Disclaimer from './Disclaimer';
 
 /**
  * @description - returns Footer component
+ * @param {boolean} props.showNavigation - true or false boolean values to conditionally render Navigation component
  * @param {jsx} props.children - chat bot paragraph texts
  * @return {jsx} - the Footer component to render
  */
-const Footer = ({ children }) => {
+const Footer = ({ showNavigation = true, children }) => {
+  // conditional renders
+  /**
+   * @description - conditionally render Navigation component, based on 'showNavigation' prop
+   * @return {jsx} - the Navigation component to render
+   */
+  const renderNavigation = () => {
+    return (
+      showNavigation && (
+        <Navigation
+          forwardButtonText="Next"
+          forwardButtonTextClassName="d-inline-block me-2 mb-1"
+          backButtonTextClassName="d-inline-block"
+          path="/levels"
+        />
+      )
+    );
+  };
+
   return (
     <footer>
       <Container
         fluid
         className="position-fixed bottom-0 bg-primary text-white-50"
       >
-        <Container className="h-100">
-          <HelpChat
-            helpChatText="How can I help you?"
-            helpChatTextSmallScreen="Help?"
-          >
-            {children}
-          </HelpChat>
+        <Container className="h-100 d-flex align-items-center justify-content-between">
+          <div>
+            <HelpChat
+              helpChatText="How can I help you?"
+              helpChatTextSmallScreen="Help?"
+            >
+              {children}
+            </HelpChat>
+          </div>
+          <div>{renderNavigation()}</div>
         </Container>
       </Container>
 

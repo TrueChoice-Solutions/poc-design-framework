@@ -8,11 +8,10 @@
  */
 
 // dependencies
-import { Col } from 'react-bootstrap';
+import { Col, Button } from 'react-bootstrap';
 import { Clock } from 'react-bootstrap-icons';
 import { useRouter } from 'next/router';
 // local files
-import Button from '../shared/Button';
 
 /**
  * @description - section for icon, time estimation text, and button
@@ -45,13 +44,9 @@ const WelcomeCta = ({
         {icon}
         <span className="ms-3">{estimateText}</span>
       </Col>
-      <Button
-        text={buttonText}
-        bgColor="btn-danger"
-        textColor="text-white"
-        outline="btn-danger"
-        onClick={handleButtonClick}
-      />
+      <Button variant="danger" onClick={handleButtonClick}>
+        {buttonText}
+      </Button>
     </div>
   );
 };

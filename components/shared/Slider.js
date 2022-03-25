@@ -46,7 +46,6 @@ const Slider = ({
    * @description - median of maxValue & minValue; sets default slider starting point
    * @return {string} - return median as string if integer. Return median rounded down as string if float.
    */
-
   // changed from arrow function (expression) to declaration. Reason: hoisting. Arrow functions are NOT hoisted!
   function getDefaultInputValue() {
     // midpoint should be (max + min) / 2 to get median

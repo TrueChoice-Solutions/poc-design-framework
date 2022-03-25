@@ -29,26 +29,6 @@ const Slider = ({
   maxValue,
   orient
 }) => {
-  // helper functions
-  /**
-   * @description - median of maxValue & minValue; sets default slider starting point
-   * @return {string} - return median as string if integer. Return median rounded down as string if float.
-   */
-  const getDefaultInputValue = () => {
-    // midpoint should be (max + min) / 2 to get median
-    let midpoint = (Number(maxValue) + Number(minValue)) / 2;
-    // check if integer
-    // 6 - 10 (should be 8)
-    if (midpoint % 1 === 0) {
-      return midpoint.toString();
-    } else {
-      // check if float (decimal). Round down to nearest integer
-      // 1- 10 (5.5 should be 5)
-      let midpointRoundedDown = Math.floor(midpoint);
-      return midpointRoundedDown.toString();
-    }
-  };
-
   // state
   const [inputValue, setInputValue] = useState(getDefaultInputValue());
 
@@ -60,6 +40,28 @@ const Slider = ({
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
+
+  // helper functions
+  /**
+   * @description - median of maxValue & minValue; sets default slider starting point
+   * @return {string} - return median as string if integer. Return median rounded down as string if float.
+   */
+
+  // changed from arrow function (expression) to declaration. Reason: hoisting. Arrow functions are NOT hoisted!
+  function getDefaultInputValue() {
+    // midpoint should be (max + min) / 2 to get median
+    const MIDPOINT = (Number(maxValue) + Number(minValue)) / 2;
+    // check if integer
+    // 6 - 10 (should be 8)
+    if (MIDPOINT % 1 === 0) {
+      return MIDPOINT;
+    } else {
+      // check if float (decimal). Round down to nearest integer
+      // 1 - 10 (5.5 should be 5)
+      const MIDPOINT_ROUNDED_DOWN = Math.floor(MIDPOINT);
+      return MIDPOINT_ROUNDED_DOWN;
+    }
+  }
 
   return (
     /*

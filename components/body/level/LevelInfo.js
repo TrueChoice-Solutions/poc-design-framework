@@ -24,11 +24,11 @@ import Tooltip from '../../shared/Tooltip';
  */
 const LevelInfo = ({
   levelData,
-  className,
-  heightRem,
+  className = 'd-flex flex-column align-items-center',
+  heightRem = '100%',
   iconClassName,
-  tooltipClassName,
-  textClassName
+  tooltipClassName = 'position-absolute top-100 start-100 translate-middle ms-3',
+  textClassName = 'mt-3'
 }) => {
   /* Icons is object with nested bootstrap icon name objects. Gets object matching level.
    * Rendering React components, so Icon variable must be capitalized. e.g.<Icon size={30} />

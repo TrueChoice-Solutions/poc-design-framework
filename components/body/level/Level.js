@@ -27,9 +27,9 @@ const Level = ({ levelData }) => {
           levelData={levelData}
           className="d-flex align-items-center"
           iconClassName="d-none"
+          tooltipClassName="position-relative"
           textClassName="ms-2"
         />
-
         <Slider
           sliderClassName="mt-3 d-flex align-items-center"
           displayValueClassName="ms-3"
@@ -38,15 +38,10 @@ const Level = ({ levelData }) => {
           maxValue="10"
         />
       </div>
+
       {/* screen > 576px display ONLY big screen content */}
       <div className={`${styles.regularScreenContent} p-2 text-center`}>
-        <LevelInfo
-          levelData={levelData}
-          heightRem="12.5rem"
-          className="d-flex flex-column align-items-center"
-          tooltipClassName="position-absolute top-100 start-100 translate-middle ms-3"
-          textClassName="d-block mt-3"
-        />
+        <LevelInfo levelData={levelData} heightRem="12.5rem" />
         <Slider
           sliderClassName="mt-3"
           name="range-slider"
